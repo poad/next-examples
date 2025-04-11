@@ -29,6 +29,8 @@ updates:
       - '/sticky-example/'
       - '/vanilla-extract-example/'
       - '/vnc-example/'
+      - '/with-bata/'
+      - '/with-preact/'
     schedule:
       interval: daily
       timezone: Asia/Tokyo

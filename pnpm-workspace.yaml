@@ -12,6 +12,8 @@ packages:
   - './sticky-example'
   - './vanilla-extract-example'
   - './vnc-example'
+  - './with-bata'
+  - './with-preact'
 
 enable-pre-post-scripts: true
 auto-install-peers: true

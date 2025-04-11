@@ -1,7 +1,7 @@
 # This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Node.js CI
+name: CI
 
 on:
   push:
@@ -10,6 +10,9 @@ on:
     branches: [ main ]
 
   workflow_dispatch:
+
+env:
+  NEXT_TELEMETRY_DISABLED: 1
 
 jobs:
   build:
@@ -39,7 +42,41 @@ jobs:
     - uses: oven-sh/setup-bun@v2
 
     - name: lint
+      run: bun run --bun lint
+
+    - name: build
+      run: bun run build
+
+  build-beta:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [22.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - uses: pnpm/action-setup@v4
+      name: Install pnpm
+      with:
+        package_json_file: with-beta/package.json
+        run_install: |
+          - recursive: true
+            cwd: with-beta
+            args: [--no-frozen-lockfile]
+
+    - name: lint
+      working-directory: ./with-beta
       run: pnpm lint
 
     - name: build
+      working-directory: ./with-beta
       run: pnpm build

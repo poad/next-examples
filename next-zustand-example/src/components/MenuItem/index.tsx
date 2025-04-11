@@ -35,7 +35,6 @@ const MenuItem = ({ keyName, text, href, icon, external }: MenuItemProps) => {
             },
           }}
           onClick={
-            // eslint-disable-next-line @typescript-eslint/no-empty-function
             () => {}
           }
         >
@@ -57,7 +56,6 @@ const MenuItem = ({ keyName, text, href, icon, external }: MenuItemProps) => {
           },
         }}
         onClick={
-          // eslint-disable-next-line @typescript-eslint/no-empty-function
           () => {}
         }
       >

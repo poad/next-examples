@@ -29,7 +29,7 @@ updates:
       - '/sticky-example/'
       - '/vanilla-extract-example/'
       - '/vnc-example/'
-      - '/with-bata/'
+      - '/with-beta/'
       - '/with-preact/'
     schedule:
       interval: daily

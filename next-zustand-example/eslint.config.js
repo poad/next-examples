@@ -10,11 +10,7 @@ import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  eslint.configs.recommended,
-  ...tseslint.configs.strict,
-  ...tseslint.configs.stylistic,
   {
-    files: ['**/*.ts', '**/*.tsx'],
     ignores: [
       '**/*.d.ts',
       '*.js',
@@ -23,9 +19,15 @@ export default tseslint.config(
       'src/stories',
       'node_modules/**/*',
       './.next/*',
+      'out',
     ],
+  },
+  eslint.configs.recommended,
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
+  {
+    files: ['**/*.ts', '**/*.tsx'],
     plugins: {
-      // @ts-expect-error ignore type errors
       react: reactPlugin,
       'react-hooks': hooksPlugin,
       '@next/next': nextPlugin,

@@ -7,8 +7,8 @@
     "export": "echo \"no action in script. Please run pnpm build (includes next export)\"",
     "start": "next start",
     "analyze": "ANALYZE=true next build",
-    "lint": "eslint './src/**/*{.ts,.tsx}'",
-    "lint-fix": "eslint --fix './src/**/*{.ts,.tsx}'",
+    "lint": "eslint",
+    "lint-fix": "eslint --fix",
     "all": "pnpm lint-fix && pnpm build && pnpm analyze"
   },
   "dependencies": {

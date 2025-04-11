@@ -5,14 +5,13 @@
   "type": "module",
   "scripts": {
     "test": "echo ''",
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "analyze": "ANALYZE=true next build",
-    "lint": "eslint ./src/**/*{.ts,.tsx}",
-    "lint-fix": "eslint --fix ./src/**/*{.ts,.tsx}",
+    "lint": "eslint",
+    "lint-fix": "eslint --fix",
     "clean": "rimraf build",
-    "pretest": "pnpm build",
     "all": "pnpm lint && pnpm build && pnpm test"
   },
   "dependencies": {

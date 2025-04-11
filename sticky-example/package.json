@@ -5,13 +5,13 @@
   "type": "module",
   "scripts": {
     "test": "jest --passWithNoTests",
-    "dev": "next dev --turbo",
+    "dev": "next dev --turbopack",
     "clean": "rimraf .next",
     "build": "next build",
     "export": "echo \"no action in script. Please run pnpm build (includes next export)\"",
     "start": "next start",
-    "lint": "eslint ./src/**/*{.ts,.tsx}",
-    "lint-fix": "eslint --fix ./src/**/*{.ts,.tsx}",
+    "lint": "eslint",
+    "lint-fix": "eslint --fix",
     "analyze": "ANALYZE=true next build",
     "all": "pnpm lint && pnpm build && pnpm test"
   },

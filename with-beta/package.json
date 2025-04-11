@@ -7,8 +7,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "pnpm dlx serve@latest out",
-    "lint-fix": "eslint --fix src",
-    "lint": "eslint src"
+    "lint-fix": "eslint --fix",
+    "lint": "eslint"
   },
   "dependencies": {
     "next": "^15.3.0",
@@ -56,5 +56,6 @@
       "babel-plugin-react-compiler": "npm:babel-plugin-react-compiler@beta",
       "eslint-plugin-react-compiler": "npm:eslint-plugin-react-compiler@beta"
     }
-  }
+  },
+  "packageManager": "pnpm@10.8.0"
 }

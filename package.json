@@ -5,10 +5,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "pnpm -r --if-present build",
-    "lint": "pnpm -r --if-present lint",
-    "prelint": "pnpm -r install",
-    "lint-fix": "pnpm -r --if-present lint-fix"
+    "build": "pnpm -r --if-present --parallel build",
+    "lint": "pnpm -r --if-present --parallel lint",
+    "lint-fix": "pnpm -r --if-present --parallel lint-fix"
   },
   "keywords": [],
   "author": "",

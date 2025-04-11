@@ -2,6 +2,7 @@
   "name": "next-ts-radixui-example",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -9,12 +10,6 @@
     "lint": "eslint",
     "lint-fix": "eslint --fix",
     "clean": "rimraf build",
-    "pretest": "pnpm build",
-    "prelint": "pnpm install",
-    "prelint-fix": "pnpm install",
-    "prebuild": "pnpm lint",
-    "preexport": "pnpm build",
-    "predev": "pnpm install",
     "all": "pnpm build"
   },
   "dependencies": {

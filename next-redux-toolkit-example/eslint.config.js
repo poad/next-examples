@@ -63,7 +63,7 @@ export default tseslint.config(
         },
       },
     },
-    // @ts-ignore
+    // @ts-expect-error ignore errors
     rules: {
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs['core-web-vitals'].rules,

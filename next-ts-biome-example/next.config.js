@@ -1,4 +1,4 @@
-const withBundleAnalyzer = require("@next/bundle-analyzer");
+import withBundleAnalyzer from "@next/bundle-analyzer";
 
 /** @type {import('next').NextConfig} */
 const config = {
@@ -15,6 +15,6 @@ const config = {
     ignoreDuringBuilds: true,
   },
 };
-module.exports = withBundleAnalyzer({
+export default withBundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 })(config);

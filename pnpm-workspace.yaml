@@ -1,4 +1,5 @@
 packages:
+  - ./
   - ./kuma-ui-example
   - ./next-amplified
   - ./next-gsap-example
@@ -12,7 +13,7 @@ packages:
   - ./sticky-example
   - ./vanilla-extract-example
   - ./vnc-example
-  - ./with-bata
+  - '!./with-beta/**'
   - ./with-preact
 
 enable-pre-post-scripts: true
@@ -25,3 +26,13 @@ overrides:
   postcss@<8.4.31: '>=8.4.31'
   nth-check@<2.0.1: '>=2.0.1'
   esbuild@<=0.24.2: '>=0.25.0'
+
+onlyBuiltDependencies:
+  - '@biomejs/biome'
+  - '@swc/core'
+  - core-js
+  - core-js-pure
+  - esbuild
+  - msw
+  - next-plugin-preact
+  - sharp

@@ -1,6 +1,4 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-});
+import withBundleAnalyzer from '@next/bundle-analyzer';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -9,6 +7,9 @@ const nextConfig = {
   cleanDistDir: true,
   images: {
     unoptimized: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 
   webpack: (config, { dev, isServer }) => {
@@ -24,4 +25,6 @@ const nextConfig = {
   },
 };
 
-module.exports = withBundleAnalyzer(nextConfig);
+export default withBundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true',
+})(nextConfig);

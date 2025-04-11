@@ -1,0 +1,18 @@
+packages:
+  - './kuma-ui-example'
+  - './next-amplified'
+  - './next-gsap-example'
+  - './next-redux-toolkit-example'
+  - './next-ts-amplify-hosting-template'
+  - './next-ts-amplify-hosting-template/cdk'
+  - './next-ts-biome-example'
+  - './next-ts-radixui-example'
+  - './next-zustand-example'
+  - './nextjs-dynamic-routing-app/app'
+  - './sticky-example'
+  - './vanilla-extract-example'
+  - './vnc-example'
+
+enable-pre-post-scripts: true
+auto-install-peers: true
+strict-peer-dependencies: false

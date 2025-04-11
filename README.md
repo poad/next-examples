@@ -1,1 +1,3 @@
-# nextjs-examples
+# Examples of the Next.js
+
+

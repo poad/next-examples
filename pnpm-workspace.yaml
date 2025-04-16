@@ -15,6 +15,7 @@ packages:
   - ./vnc-example
   - '!./with-beta/**'
   - ./with-preact
+  - ./with-rspack
 
 enable-pre-post-scripts: true
 

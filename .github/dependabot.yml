@@ -31,6 +31,7 @@ updates:
       - '/vnc-example/'
       - '/with-beta/'
       - '/with-preact/'
+      - '/with-rspack/'
     schedule:
       interval: daily
       timezone: Asia/Tokyo

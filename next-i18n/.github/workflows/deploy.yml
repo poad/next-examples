@@ -1,0 +1,48 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+    - main
+
+  workflow_dispatch:
+
+
+env:
+  AWS_REGION: us-west-2
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js 22.x
+      uses: actions/setup-node@v4.0.0
+      with:
+        node-version: 22.x
+        check-latest: true
+
+    - name: Install pnpm
+      uses: pnpm/action-setup@v4
+      id: pnpm-install
+      with:
+        run_install: |
+          - recursive: true
+            args: [--frozen-lockfile]
+          - args: [--global, aws-cdk]
+
+    - name: configure aws credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
+        role-session-name: GitHubActions
+        aws-region: ${{ env.AWS_REGION }}
+
+    - name: Deploy
+      working-directory: infra
+      run: cdk deploy -c env=dev

@@ -1,0 +1,35 @@
+name: Build and Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js 22.x
+      uses: actions/setup-node@v4
+      with:
+        node-version: 22.x
+        check-latest: true
+
+    - uses: pnpm/action-setup@v4
+      name: Install pnpm
+      with:
+        run_install: |
+          - recursive: true
+            args: [--frozen-lockfile, --strict-peer-dependencies]
+
+    - name: Build (app)
+      working-directory: app
+      run: rm -rf out .next && pnpm build && pnpm test && rm -rf out .next
+
+    - name: Build (infra)
+      working-directory: infra
+      run: rm -rf build && pnpm build

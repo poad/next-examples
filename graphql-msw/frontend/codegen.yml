@@ -1,0 +1,16 @@
+override: true
+schema: "../schema.graphqls"
+documents: src/**/*.{ts,tsx}
+generates:
+  src/gql/:
+    preset: client
+    congig:
+      useIndexSignature: true
+      scalars:
+        URI: string
+        DateTime: string
+      strictScalars: true
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"
+      - "jsdoc"

@@ -23,6 +23,9 @@ packages:
   - ./vanilla-extract-example
   - ./vnc-example
   - '!./with-beta/**'
+  - './wasm'
+  - './wasm/app'
+  - './wasm/infra'
   - ./with-preact
   - ./with-rspack
 

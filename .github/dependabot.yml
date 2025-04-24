@@ -14,6 +14,21 @@ updates:
         patterns:
           - '*'
 
+  - package-ecosystem: cargo
+    directory: '/wasm/app/wasm/'
+    schedule:
+      interval: daily
+      timezone: Asia/Tokyo
+    allow:
+      - dependency-type: all
+    rebase-strategy: auto
+    assignees:
+      - poad
+    groups:
+      cargo:
+        patterns:
+          - '*'
+
   - package-ecosystem: npm
     directories:
       - '/cloudwatch-rum/pages/'
@@ -38,6 +53,9 @@ updates:
       - '/sticky-example/'
       - '/vanilla-extract-example/'
       - '/vnc-example/'
+      - '/wasm/'
+      - '/wasm/app/'
+      - '/wasm/infra/'
       - '/with-beta/'
       - '/with-preact/'
       - '/with-rspack/'

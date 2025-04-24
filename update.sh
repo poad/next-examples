@@ -26,6 +26,15 @@ if [ $result -ne 0 ]; then
   cd "${CUR}" || exit
   exit $result
 fi
+cd "${CURRENT}/wasm/app/wasm" || exit
+result=$?
+if [ $result -ne 0 ]; then
+  cd "${CUR}" || exit
+  exit $result
+fi
+echo ""
+pwd
+cargo update
 
 cd "${CURRENT}" || exit
 result=$?

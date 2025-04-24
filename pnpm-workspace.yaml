@@ -1,5 +1,11 @@
 packages:
   - ./
+  - ./cloudwatch-rum/pages
+  - ./cloudwatch-rum/infra
+  - ./cloudwatch-rum/infra/function
+  - ./github-auth-ssg/frontend
+  - ./github-auth-ssg/frontend/cdk
+  - ./github-auth-ssg/backend
   - ./kuma-ui-example
   - ./next-amplified
   - ./next-gsap-example
@@ -13,9 +19,6 @@ packages:
   - ./sticky-example
   - ./vanilla-extract-example
   - ./vnc-example
-  - './cloudwatch-rum/pages'
-  - './cloudwatch-rum/infra'
-  - './cloudwatch-rum/infra/function'
   - '!./with-beta/**'
   - ./with-preact
   - ./with-rspack

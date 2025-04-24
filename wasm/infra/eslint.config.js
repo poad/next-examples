@@ -15,9 +15,10 @@ export default tseslint.config(
       'src/stories',
       '**/*.css',
       'node_modules/**/*',
-      './.next/*',
+      '.next/*',
       'out',
       '.storybook',
+      'wasm',
       '**/*.js',
     ],
   },
@@ -25,17 +26,33 @@ export default tseslint.config(
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
   {
-    files: ['src/**/*.{jsx,tsx}'],
+    files: [
+      'bin/**/*.ts',
+      'lib/**/*.ts',
+    ],
     plugins: {
       '@stylistic': stylistic,
       '@stylistic/ts': stylisticTs,
     },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+      formComponents: ['Form'],
+      linkComponents: [
+        { name: 'Link', linkAttribute: 'to' },
+        { name: 'NavLink', linkAttribute: 'to' },
+      ],
+      'import/resolver': {
+        typescript: {},
+      },
+    },
+    // @ts-ignore
     rules: {
       '@stylistic/semi': 'error',
       '@stylistic/ts/indent': ['error', 2],
       'comma-dangle': ['error', 'always-multiline'],
       'arrow-parens': ['error', 'always'],
-      semi: ['error', 'always'],
       quotes: ['error', 'single'],
     },
   },

@@ -9,15 +9,17 @@
     "build": "tsc",
     "watch": "tsc -w",
     "cdk": "cdk",
-    "lint-fix": "eslint --fix './{bin,lib}/**/*.ts'",
-    "lint": "eslint './{bin,lib}/**/*.ts'",
+    "lint-fix": "eslint --fix",
+    "lint": "eslint",
     "clean": "rimraf build"
   },
   "devDependencies": {
     "@types/node": "^22.14.1",
     "aws-cdk": "^2.1012.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "eslint": "^9.25.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.0"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.191.0",

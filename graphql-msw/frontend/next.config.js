@@ -19,5 +19,5 @@ const config = {
 };
 
 export default withBundleAnalyzer({
-  enabled: process.env.ANALYZE === 'true',
+  enabled: import.meta.env.ANALYZE === 'true',
 })(config);

@@ -8,6 +8,7 @@ overrides:
   postcss@<8.4.31: '>=8.4.31'
   nth-check@<2.0.1: '>=2.0.1'
   esbuild@<=0.24.2: '>=0.25.0'
+  '@babel/runtime@<7.26.10': '>=7.26.10'
 
 importers:
 
@@ -505,6 +506,12 @@ importers:
       '@aws-lambda-powertools/logger':
         specifier: ^2.18.0
         version: 2.18.0
+      '@eslint/compat':
+        specifier: ^1.2.8
+        version: 1.2.8(eslint@9.25.1(jiti@2.4.2))
+      '@eslint/js':
+        specifier: ^9.25.1
+        version: 9.25.1
       '@graphql-codegen/cli':
         specifier: ^5.0.5
         version: 5.0.5(@types/node@22.14.1)(graphql-sock@1.0.1(graphql@16.10.0))(graphql@16.10.0)(typescript@5.8.3)
@@ -529,6 +536,18 @@ importers:
       '@graphql-tools/schema':
         specifier: ^10.0.23
         version: 10.0.23(graphql@16.10.0)
+      '@stylistic/eslint-plugin':
+        specifier: ^4.2.0
+        version: 4.2.0(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
+      '@stylistic/eslint-plugin-js':
+        specifier: ^4.2.0
+        version: 4.2.0(eslint@9.25.1(jiti@2.4.2))
+      '@stylistic/eslint-plugin-plus':
+        specifier: ^4.2.0
+        version: 4.2.0(eslint@9.25.1(jiti@2.4.2))
+      '@stylistic/eslint-plugin-ts':
+        specifier: ^4.2.0
+        version: 4.2.0(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
       '@types/aws-lambda':
         specifier: ^8.10.149
         version: 8.10.149
@@ -541,6 +560,24 @@ importers:
       esbuild:
         specifier: ^0.25.3
         version: 0.25.3
+      eslint:
+        specifier: ^9.25.1
+        version: 9.25.1(jiti@2.4.2)
+      eslint-config-import:
+        specifier: ^0.13.0
+        version: 0.13.0(eslint-plugin-import@2.31.0)
+      eslint-import-resolver-typescript:
+        specifier: ^4.3.4
+        version: 4.3.4(eslint-plugin-import@2.31.0)(eslint@9.25.1(jiti@2.4.2))
+      eslint-plugin-flowtype:
+        specifier: ^8.0.3
+        version: 8.0.3(@babel/plugin-syntax-flow@7.26.0(@babel/core@7.26.10))(@babel/plugin-transform-react-jsx@7.25.9(@babel/core@7.26.10))(eslint@9.25.1(jiti@2.4.2))
+      eslint-plugin-import:
+        specifier: ^2.31.0
+        version: 2.31.0(@typescript-eslint/parser@8.31.0(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3))(eslint-import-resolver-typescript@4.3.4)(eslint@9.25.1(jiti@2.4.2))
+      eslint-plugin-promise:
+        specifier: ^7.2.1
+        version: 7.2.1(eslint@9.25.1(jiti@2.4.2))
       graphql-codegen-typescript-validation-schema:
         specifier: ^0.17.1
         version: 0.17.1(graphql@16.10.0)
@@ -850,9 +887,6 @@ importers:
       aws-cdk-lib:
         specifier: ^2.191.0
         version: 2.191.0(constructs@10.4.2)
-      aws-lambda:
-        specifier: ^1.0.7
-        version: 1.0.7
       constructs:
         specifier: ^10.4.2
         version: 10.4.2
@@ -875,12 +909,18 @@ importers:
       esbuild:
         specifier: ^0.25.3
         version: 0.25.3
-      ts-node:
-        specifier: ^10.9.2
-        version: 10.9.2(@swc/core@1.11.20)(@types/node@22.14.1)(typescript@5.8.3)
+      eslint:
+        specifier: ^9.25.1
+        version: 9.25.1(jiti@2.4.2)
+      tsx:
+        specifier: ^4.19.3
+        version: 4.19.3
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.31.0
+        version: 8.31.0(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
 
   mui-github-oauth/frontend:
     dependencies:
@@ -923,9 +963,6 @@ importers:
       react-dom:
         specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
-      typescript:
-        specifier: ^5.8.3
-        version: 5.8.3
       web-vitals:
         specifier: ^4.2.4
         version: 4.2.4
@@ -972,6 +1009,9 @@ importers:
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.3)
+      eslint:
+        specifier: ^9.25.1
+        version: 9.25.1(jiti@2.4.2)
       msw:
         specifier: ^2.7.5
         version: 2.7.5(@types/node@22.14.1)(typescript@5.8.3)
@@ -990,6 +1030,12 @@ importers:
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.17(ts-node@10.9.2(@swc/core@1.11.20(@swc/helpers@0.5.15))(@types/node@22.14.1)(typescript@5.8.3))
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.31.0
+        version: 8.31.0(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
       typewind:
         specifier: ^0.2.0
         version: 0.2.0(@swc/core@1.11.20)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.3)(typescript@5.8.3)(yaml@2.7.1)
@@ -1018,12 +1064,18 @@ importers:
       aws-cdk:
         specifier: ^2.1012.0
         version: 2.1012.0
-      ts-node:
-        specifier: ^10.9.2
-        version: 10.9.2(@swc/core@1.11.20)(@types/node@22.14.1)(typescript@5.8.3)
+      eslint:
+        specifier: ^9.25.1
+        version: 9.25.1(jiti@2.4.2)
+      tsx:
+        specifier: ^4.19.3
+        version: 4.19.3
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.31.0
+        version: 8.31.0(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
 
   next-amplified:
     dependencies:
@@ -4171,10 +4223,6 @@ packages:
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
-
-  '@babel/runtime@7.16.7':
-    resolution: {integrity: sha512-9E9FJowqAsytyOY6LG+1KuueckRL+aQW+mKvXRXnuFGyRAyepJPmEo9vgMfXUA6O9u3IeEdv9MAkppFcaQwogQ==}
-    engines: {node: '>=6.9.0'}
 
   '@babel/runtime@7.27.0':
     resolution: {integrity: sha512-VtPOkrdPHZsKc/clNqyi9WUA8TINkZ4cGk63UUE3u4pmB2k+ZMQRDuIOagv8UVd6j7k0T3+RRIb7beKTebNbcw==}
@@ -17153,10 +17201,6 @@ snapshots:
       pirates: 4.0.7
       source-map-support: 0.5.21
 
-  '@babel/runtime@7.16.7':
-    dependencies:
-      regenerator-runtime: 0.13.11
-
   '@babel/runtime@7.27.0':
     dependencies:
       regenerator-runtime: 0.14.1
@@ -28305,7 +28349,7 @@ snapshots:
 
   next-language-detector@1.1.0:
     dependencies:
-      '@babel/runtime': 7.16.7
+      '@babel/runtime': 7.27.0
       i18next-browser-languagedetector: 7.2.0
 
   next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.0)(next@15.3.1(@babel/core@7.26.10)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(preact-render-to-string@6.5.13(preact@10.26.5))(preact-ssr-prepass@1.2.2(preact@10.26.5))(preact@10.26.5)(webpack@5.99.6(@swc/core@1.11.20(@swc/helpers@0.5.15))):

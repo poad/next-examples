@@ -7,8 +7,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "pnpm dlx serve@latest out",
-    "lint-fix": "eslint --fix './src/**/*.{ts,tsx}'",
-    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "lint-fix": "eslint --fix",
+    "lint": "eslint",
     "predev": "pnpm lint-fix",
     "prestart": "pnpm build",
     "all": "pnpm lint-fix && pnpm build",
@@ -29,7 +29,6 @@
     "next": "15.3.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "typescript": "^5.8.3",
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
@@ -47,6 +46,7 @@
     "@storybook/test": "^8.6.12",
     "@types/react-no-ssr": "^1.1.8",
     "autoprefixer": "^10.4.21",
+    "eslint": "^9.25.1",
     "msw": "^2.7.5",
     "msw-storybook-addon": "^2.0.4",
     "postcss": "^8.5.3",
@@ -54,6 +54,8 @@
     "styled-jsx": "^5.1.6",
     "tailwindcss": "^3.4.17",
     "typewind": "^0.2.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.0",
     "uuid": "^11.1.0"
   },
   "engines": {

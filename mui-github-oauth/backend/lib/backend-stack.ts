@@ -98,7 +98,7 @@ export class BackendStack extends cdk.Stack {
       type: apigateway.ResponseType.UNAUTHORIZED,
       statusCode: '401',
       responseHeaders: {
-        'Access-Control-Allow-Origin': "'*'",
+        'Access-Control-Allow-Origin': '\'*\'',
       },
     });
 
@@ -106,7 +106,7 @@ export class BackendStack extends cdk.Stack {
       restApi: api,
       type: apigateway.ResponseType.DEFAULT_4XX,
       responseHeaders: {
-        'Access-Control-Allow-Origin': "'*'",
+        'Access-Control-Allow-Origin': '\'*\'',
       },
     });
 
@@ -114,7 +114,7 @@ export class BackendStack extends cdk.Stack {
       restApi: api,
       type: apigateway.ResponseType.DEFAULT_5XX,
       responseHeaders: {
-        'Access-Control-Allow-Origin': "'*'",
+        'Access-Control-Allow-Origin': '\'*\'',
       },
     });
 

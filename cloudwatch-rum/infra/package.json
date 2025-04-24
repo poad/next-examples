@@ -1,0 +1,48 @@
+{
+  "name": "infra",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "bin": {
+    "infra": "bin/infra.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "lint": "eslint",
+    "lint-fix": "eslint --fix",
+    "prelint": "pnpm install",
+    "prebuild": "pnpm install",
+    "prefix": "pnpm install",
+    "precheck": "pnpm install",
+    "precheck-fix": "pnpm install",
+    "preformat": "pnpm install",
+    "preformat-check": "pnpm install"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "@stylistic/eslint-plugin-js": "^4.2.0",
+    "@stylistic/eslint-plugin-plus": "^4.2.0",
+    "@stylistic/eslint-plugin-ts": "^4.2.0",
+    "@types/node": "^22.14.1",
+    "aws-cdk": "^2.1010.0",
+    "eslint": "^9.24.0",
+    "eslint-config-import": "^0.13.0",
+    "eslint-import-resolver-typescript": "^4.3.2",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.30.1"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.190.0",
+    "constructs": "^10.4.2",
+    "source-map-support": "^0.5.21"
+  }
+}

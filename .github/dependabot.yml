@@ -16,6 +16,9 @@ updates:
 
   - package-ecosystem: npm
     directories:
+      - '/cloudwatch-rum/pages/'
+      - '/cloudwatch-rum/infra/'
+      - '/cloudwatch-rum/infra/function/'
       - '/kuma-ui-example/'
       - '/next-amplified/'
       - '/next-gsap-example/'

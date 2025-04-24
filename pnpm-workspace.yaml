@@ -13,6 +13,9 @@ packages:
   - ./sticky-example
   - ./vanilla-extract-example
   - ./vnc-example
+  - './cloudwatch-rum/pages'
+  - './cloudwatch-rum/infra'
+  - './cloudwatch-rum/infra/function'
   - '!./with-beta/**'
   - ./with-preact
   - ./with-rspack

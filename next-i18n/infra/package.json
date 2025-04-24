@@ -10,8 +10,8 @@
     "build": "tsc",
     "watch": "tsc -w",
     "cdk": "cdk",
-    "lint": "eslint -c ./eslint.config.mjs './{bin,lib,function}/**/*{.ts,.tsx}'",
-    "lint-fix": "eslint -c ./eslint.config.mjs --fix './{bin,lib,function}/**/*{.ts,.tsx}'"
+    "lint": "eslint",
+    "lint-fix": "eslint --fix"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",

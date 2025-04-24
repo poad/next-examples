@@ -10,26 +10,28 @@ import importPlugin from 'eslint-plugin-import';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  eslint.configs.recommended,
-  ...tseslint.configs.strict,
-  ...tseslint.configs.stylistic,
   {
-    files: [
-      'src/**/*.{ts,tsx}',
-      '{bin,lib,lambda}/**/*.ts',
-      '{bin,lib}/**/*.ts',
-    ],
-    ...importPlugin.flatConfigs.recommended,
-    ...importPlugin.flatConfigs.typescript,
     ignores: [
       '.next',
-      'public/mockServiceWorker.js',
       '**/*.d.ts',
       'out',
       '**/gql/**/*',
       'cdk.out',
       '**/generated/**/*.*',
+      'src/gql/*.ts',
+      'public/**/*.js',
+      'cdk/**/*',
     ],
+  },
+  eslint.configs.recommended,
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
+  {
+    files: [
+      'src/**/*.tsx',
+    ],
+    ...importPlugin.flatConfigs.recommended,
+    ...importPlugin.flatConfigs.typescript,
     plugins: {
       react: reactPlugin,
       'react-hooks': hooksPlugin,

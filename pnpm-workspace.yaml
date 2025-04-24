@@ -6,6 +6,9 @@ packages:
   - ./github-auth-ssg/frontend
   - ./github-auth-ssg/frontend/cdk
   - ./github-auth-ssg/backend
+  - ./mui-github-oauth/frontend/cdk
+  - ./mui-github-oauth/frontend
+  - ./mui-github-oauth/backend
   - ./kuma-ui-example
   - ./next-amplified
   - ./next-gsap-example
@@ -24,9 +27,8 @@ packages:
   - ./with-rspack
 
 enable-pre-post-scripts: true
-
+legacy-peer-deps: true
 auto-install-peers: true
-
 strict-peer-dependencies: false
 
 overrides:

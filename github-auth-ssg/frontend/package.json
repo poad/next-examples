@@ -11,12 +11,6 @@
     "lint": "eslint",
     "lint-fix": "eslint --fix",
     "clean": "rimraf build",
-    "pretest": "pnpm build",
-    "prelint": "pnpm install",
-    "prelint-fix": "pnpm install",
-    "prebuild": "pnpm lint",
-    "preexport": "pnpm build",
-    "predev": "pnpm install",
     "all": "pnpm build"
   },
   "dependencies": {

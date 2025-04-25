@@ -12,14 +12,7 @@
     "watch": "tsc -w",
     "cdk": "cdk",
     "lint": "eslint",
-    "lint-fix": "eslint --fix",
-    "prelint": "pnpm install",
-    "prebuild": "pnpm install",
-    "prefix": "pnpm install",
-    "precheck": "pnpm install",
-    "precheck-fix": "pnpm install",
-    "preformat": "pnpm install",
-    "preformat-check": "pnpm install"
+    "lint-fix": "eslint --fix"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.1",

@@ -11,10 +11,7 @@
     "cdk": "cdk",
     "lint": "eslint",
     "lint-fix": "eslint --fix",
-    "clean": "rimraf build",
-    "prelint": "pnpm install",
-    "prelint-fix": "pnpm install",
-    "prebuild": "pnpm lint"
+    "clean": "rimraf build"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.8",

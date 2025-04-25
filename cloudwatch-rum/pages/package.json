@@ -12,13 +12,6 @@
     "lint-fix": "eslint --fix",
     "clean": "rimraf build",
     "analyze": "ANALYZE=true next build",
-    "pretest": "pnpm build",
-    "predev": "pnpm install",
-    "preanalyze": "pnpm install",
-    "preformat": "pnpm install",
-    "precheck": "pnpm install",
-    "preformat-check": "pnpm install",
-    "precheck-fix": "pnpm install",
     "all": "pnpm build && pnpm test",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"

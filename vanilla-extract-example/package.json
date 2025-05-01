@@ -42,7 +42,7 @@
     "@stylistic/eslint-plugin-jsx": "^4.2.0",
     "@stylistic/eslint-plugin-plus": "^4.2.0",
     "@stylistic/eslint-plugin-ts": "^4.2.0",
-    "@types/node": "^22.15.2",
+    "@types/node": "^22.15.3",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.2",
     "@vanilla-extract/next-plugin": "^2.4.10",
@@ -62,7 +62,7 @@
     "rimraf": "^6.0.1",
     "storybook": "^8.6.12",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.31.0",
+    "typescript-eslint": "^8.31.1",
     "webpack-merge": "^6.0.1"
   },
   "msw": {

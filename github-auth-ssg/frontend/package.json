@@ -29,7 +29,7 @@
     "@stylistic/eslint-plugin-jsx": "^4.2.0",
     "@stylistic/eslint-plugin-plus": "^4.2.0",
     "@stylistic/eslint-plugin-ts": "^4.2.0",
-    "@types/node": "^22.15.2",
+    "@types/node": "^22.15.3",
     "@types/react": "19.1.2",
     "@types/uuid": "^10.0.0",
     "eslint": "^9.25.1",
@@ -44,7 +44,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "rimraf": "^6.0.1",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.31.0",
+    "typescript-eslint": "^8.31.1",
     "uuid": "^11.1.0"
   }
 }

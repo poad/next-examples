@@ -26,7 +26,6 @@ packages:
   - ./next-zustand-example
   - ./nextjs-dynamic-routing-app/app
   - ./sticky-example
-  - ./vanilla-extract-example
   - ./vnc-example
   - '!./with-beta/**'
   - ./wasm

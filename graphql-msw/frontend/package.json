@@ -19,25 +19,25 @@
     "@apollo/client": "^3.13.8",
     "cross-env": "^7.0.3",
     "graphql": "^16.11.0",
-    "msw": "^2.7.5",
+    "msw": "^2.10.2",
     "next": "15.3.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "^5.0.5",
-    "@graphql-codegen/client-preset": "^4.8.0",
-    "@graphql-codegen/typescript-msw": "^3.0.0",
-    "@graphql-codegen/typescript-react-apollo": "^4.3.2",
+    "@graphql-codegen/cli": "^5.0.7",
+    "@graphql-codegen/client-preset": "^4.8.2",
+    "@graphql-codegen/typescript-msw": "^3.0.1",
+    "@graphql-codegen/typescript-react-apollo": "^4.3.3",
     "@graphql-eslint/eslint-plugin": "^4.4.0",
     "@graphql-typed-document-node/apollo-client-3": "^1.0.0",
     "@graphql-typed-document-node/core": "^3.2.0",
     "@next/bundle-analyzer": "15.3.0",
     "@next/eslint-plugin-next": "15.3.0",
-    "@types/node": "^22.15.3",
+    "@types/node": "^22.15.30",
     "@types/react": "19.1.0",
-    "eslint": "^9.25.1",
+    "eslint": "^9.28.0",
     "eslint-config-import": "^0.13.0",
     "eslint-config-next": "15.3.0",
     "eslint-import-resolver-typescript": "^3.10.1",
@@ -49,7 +49,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-storybook": "^0.11.6",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.31.1"
+    "typescript-eslint": "^8.33.1"
   },
   "msw": {
     "workerDirectory": "public"

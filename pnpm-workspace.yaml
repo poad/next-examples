@@ -32,19 +32,11 @@ packages:
   - ./with-preact
   - ./with-rspack
 
+auto-install-peers: true
+
 enable-pre-post-scripts: true
 
 legacy-peer-deps: true
-
-auto-install-peers: true
-
-strict-peer-dependencies: false
-
-overrides:
-  postcss@<8.4.31: '>=8.4.31'
-  nth-check@<2.0.1: '>=2.0.1'
-  esbuild@<=0.24.2: '>=0.25.0'
-  '@babel/runtime@<7.26.10': '>=7.26.10'
 
 onlyBuiltDependencies:
   - '@biomejs/biome'
@@ -55,3 +47,12 @@ onlyBuiltDependencies:
   - msw
   - next-plugin-preact
   - sharp
+
+overrides:
+  postcss@<8.4.31: '>=8.4.31'
+  nth-check@<2.0.1: '>=2.0.1'
+  esbuild@<=0.24.2: '>=0.25.0'
+  '@babel/runtime@<7.26.10': '>=7.26.10'
+  webpack-dev-server@<=5.2.0: '>=5.2.1'
+
+strict-peer-dependencies: false

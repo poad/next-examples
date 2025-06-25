@@ -2,7 +2,6 @@
 
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
 
 import tseslint from 'typescript-eslint';
 
@@ -32,7 +31,7 @@ export default tseslint.config(
     ],
     plugins: {
       '@stylistic': stylistic,
-      '@stylistic/ts': stylisticTs,
+      '@stylistic/ts': stylistic,
     },
     settings: {
       react: {

@@ -5,8 +5,6 @@ import nextPlugin from '@next/eslint-plugin-next';
 import reactPlugin from 'eslint-plugin-react';
 import hooksPlugin from 'eslint-plugin-react-hooks';
 import stylistic from '@stylistic/eslint-plugin';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
-import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
@@ -32,8 +30,8 @@ export default tseslint.config(
       'react-hooks': hooksPlugin,
       '@next/next': nextPlugin,
       '@stylistic': stylistic,
-      '@stylistic/ts': stylisticTs,
-      '@stylistic/jsx': stylisticJsx,
+      '@stylistic/ts': stylistic,
+      '@stylistic/jsx': stylistic,
     },
     // @ts-expect-error ignore type errors
     rules: {

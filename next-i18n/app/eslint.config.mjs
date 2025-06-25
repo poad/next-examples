@@ -5,8 +5,6 @@ import nextPlugin from '@next/eslint-plugin-next';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import stylistic from '@stylistic/eslint-plugin';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
-import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 
 import tseslint from 'typescript-eslint';
 import { FlatCompat } from '@eslint/eslintrc';
@@ -40,11 +38,11 @@ export default tseslint.config(
       'jsx-a11y': jsxA11yPlugin,
       '@next/next': nextPlugin,
       '@stylistic': stylistic,
-      '@stylistic/ts': stylisticTs,
-      '@stylistic/jsx': stylisticJsx,
+      '@stylistic/ts': stylistic,
+      '@stylistic/jsx': stylistic,
     },
     extends: [
-      // @ts-ignore
+      // @ts-expect-error ignore type errors
       ...compat.config(reactHooksPlugin.configs.recommended),
       ...compat.config(jsxA11yPlugin.configs.recommended),
     ],
@@ -61,7 +59,7 @@ export default tseslint.config(
         typescript: {},
       },
     },
-    // @ts-ignore
+    // @ts-expect-error ignore type errors
     rules: {
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs['core-web-vitals'].rules,

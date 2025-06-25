@@ -2,7 +2,6 @@
 
 import eslint from '@eslint/js';
 import nextPlugin from '@next/eslint-plugin-next';
-// @ts-expect-error ignore type errors
 import importPlugin from 'eslint-plugin-import';
 
 import tseslint from 'typescript-eslint';

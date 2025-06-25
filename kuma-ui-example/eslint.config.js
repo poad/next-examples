@@ -2,12 +2,9 @@
 
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
-import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 import nextPlugin from '@next/eslint-plugin-next';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
-// @ts-expect-error ignore type errors
 import importPlugin from 'eslint-plugin-import';
 
 import tseslint from 'typescript-eslint';
@@ -44,8 +41,8 @@ export default tseslint.config(
       '@next/next': nextPlugin,
       'jsx-a11y': jsxA11yPlugin,
       '@stylistic': stylistic,
-      '@stylistic/ts': stylisticTs,
-      '@stylistic/jsx': stylisticJsx,
+      '@stylistic/ts': stylistic,
+      '@stylistic/jsx': stylistic,
     },
     extends: [
       ...compat.config(reactHooksPlugin.configs.recommended),

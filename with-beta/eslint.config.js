@@ -2,8 +2,6 @@
 
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
-import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 import react from 'eslint-plugin-react';
 import globals from 'globals';
 
@@ -36,6 +34,7 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
+  // @ts-ignore
   ...compat.config({
     extends: ['next/core-web-vitals'],
   }),
@@ -73,8 +72,8 @@ export default tseslint.config(
     },
     plugins: {
       '@stylistic': stylistic,
-      '@stylistic/ts': stylisticTs,
-      '@stylistic/jsx': stylisticJsx,
+      '@stylistic/ts': stylistic,
+      '@stylistic/jsx': stylistic,
       react,
       'react-compiler':reactCompiller,
       'jsx-a11y': jsxA11yPlugin,

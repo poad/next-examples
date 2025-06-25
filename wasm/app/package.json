@@ -20,20 +20,20 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.28.0",
+    "@eslint/js": "^9.29.0",
     "@next/bundle-analyzer": "15.3.1",
-    "@next/eslint-plugin-next": "^15.3.3",
+    "@next/eslint-plugin-next": "^15.3.4",
     "@stylistic/eslint-plugin": "^4.4.1",
     "@stylistic/eslint-plugin-js": "^4.4.1",
     "@stylistic/eslint-plugin-jsx": "^4.4.1",
     "@stylistic/eslint-plugin-plus": "^4.4.1",
     "@stylistic/eslint-plugin-ts": "^4.4.1",
-    "@types/node": "^22.15.30",
+    "@types/node": "^22.15.33",
     "@types/react": "19.1.2",
-    "eslint": "^9.28.0",
-    "eslint-config-next": "^15.3.3",
-    "eslint-plugin-import": "^2.31.0",
+    "eslint": "^9.29.0",
+    "eslint-config-next": "^15.3.4",
+    "eslint-plugin-import": "^2.32.0",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.33.1"
+    "typescript-eslint": "^8.35.0"
   }
 }

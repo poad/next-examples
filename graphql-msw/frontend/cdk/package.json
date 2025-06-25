@@ -14,18 +14,18 @@
     "lint": "eslint '{bin,lib}/**/*.ts'"
   },
   "devDependencies": {
-    "@types/node": "^22.15.30",
-    "aws-cdk": "^2.1018.0",
-    "eslint": "^9.28.0",
+    "@types/node": "^22.15.33",
+    "aws-cdk": "^2.1019.1",
+    "eslint": "^9.29.0",
     "eslint-import-resolver-typescript": "^3.10.1",
-    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-promise": "^7.2.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.33.1"
+    "typescript-eslint": "^8.35.0"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.200.1",
+    "aws-cdk-lib": "^2.202.0",
     "constructs": "^10.4.2",
     "esbuild": "^0.25.5",
     "source-map-support": "^0.5.21"

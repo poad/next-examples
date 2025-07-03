@@ -22,7 +22,7 @@
     "@mui/icons-material": "^7.1.2",
     "@mui/material": "^7.1.2",
     "material-react-table": "^3.2.1",
-    "next": "^15.3.4",
+    "next": "^15.3.3",
     "next-plugin-preact": "^3.0.7",
     "preact": "^10.26.9",
     "preact-render-to-string": "^6.5.13",

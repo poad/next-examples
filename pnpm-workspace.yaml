@@ -47,6 +47,7 @@ onlyBuiltDependencies:
   - msw
   - next-plugin-preact
   - sharp
+  - unrs-resolver
 
 overrides:
   postcss@<8.4.31: '>=8.4.31'

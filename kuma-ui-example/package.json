@@ -17,7 +17,7 @@
   "dependencies": {
     "@emotion/cache": "^11.14.0",
     "@kuma-ui/core": "^1.5.9",
-    "@mui/material-nextjs": "^6.4.12",
+    "@mui/material-nextjs": "^6.5.0",
     "next": "15.3.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
@@ -44,7 +44,7 @@
     "@stylistic/eslint-plugin-jsx": "^4.4.1",
     "@stylistic/eslint-plugin-plus": "^4.4.1",
     "@stylistic/eslint-plugin-ts": "^4.4.1",
-    "@types/node": "^22.16.0",
+    "@types/node": "^22.16.2",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.2",
     "cross-env": "^7.0.3",
@@ -62,7 +62,7 @@
     "rimraf": "^6.0.1",
     "storybook": "^8.6.14",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.35.1"
+    "typescript-eslint": "^8.36.0"
   },
   "msw": {
     "workerDirectory": ".storybook/public"

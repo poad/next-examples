@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "gsap": "^3.13.0",
-    "next": "^15.4.3",
+    "next": "^15.4.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.31.0",
+    "@eslint/js": "^9.32.0",
     "@next/eslint-plugin-next": "15.3.0",
     "@stylistic/eslint-plugin": "^4.4.1",
     "@stylistic/eslint-plugin-js": "^4.4.1",
@@ -28,7 +28,7 @@
     "@types/node": "^22.16.5",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.2",
-    "eslint": "^9.31.0",
+    "eslint": "^9.32.0",
     "eslint-config-import": "^0.13.0",
     "eslint-config-next": "15.3.0",
     "eslint-import-resolver-typescript": "^4.4.4",

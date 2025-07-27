@@ -46,7 +46,7 @@
     "@storybook/test": "^8.6.14",
     "@types/react-no-ssr": "^1.1.8",
     "autoprefixer": "^10.4.21",
-    "eslint": "^9.31.0",
+    "eslint": "^9.32.0",
     "msw": "^2.10.4",
     "msw-storybook-addon": "^2.0.5",
     "postcss": "^8.5.6",

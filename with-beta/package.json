@@ -11,14 +11,14 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "^15.4.3",
+    "next": "^15.4.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.31.0",
-    "@next/eslint-plugin-next": "^15.4.3",
+    "@eslint/js": "^9.32.0",
+    "@next/eslint-plugin-next": "^15.4.4",
     "@stylistic/eslint-plugin": "^4.4.1",
     "@stylistic/eslint-plugin-js": "^4.4.1",
     "@stylistic/eslint-plugin-jsx": "^4.4.1",
@@ -29,9 +29,9 @@
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "babel-plugin-react-compiler": "19.1.0-rc.2",
-    "eslint": "^9.31.0",
+    "eslint": "^9.32.0",
     "eslint-config-import": "^0.13.0",
-    "eslint-config-next": "^15.4.3",
+    "eslint-config-next": "^15.4.4",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.32.0",

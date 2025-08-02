@@ -45,12 +45,11 @@ export default tseslint.config(
       '@stylistic/ts': stylistic,
     },
     rules: {
-      '@stylistic/semi': 'error',
-      '@stylistic/ts/indent': ['error', 2],
-      'comma-dangle': ['error', 'always-multiline'],
-      'arrow-parens': ['error', 'always'],
-      'indent': ['error', 2],
-      'quotes': ['error', 'single'],
+      '@stylistic/semi': ['error', 'always'],
+      // '@stylistic/indent': ['error', 2],
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/arrow-parens': ['error', 'always'],
+      '@stylistic/quotes': ['error', 'single'],
     },
   },
 );

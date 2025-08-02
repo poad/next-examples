@@ -8,6 +8,7 @@ import storybookPlugin from 'eslint-plugin-storybook';
 import flowtypePlugin from 'eslint-plugin-flowtype';
 import importPlugin from 'eslint-plugin-import';
 import tseslint from 'typescript-eslint';
+import stylistic from '@stylistic/eslint-plugin';
 
 export default tseslint.config(
   {
@@ -37,6 +38,9 @@ export default tseslint.config(
       'react-hooks': hooksPlugin,
       '@next/next': nextPlugin,
       'flow-type': flowtypePlugin,
+      '@stylistic': stylistic,
+      '@stylistic/ts': stylistic,
+      '@stylistic/jsx': stylistic,
     },
     rules: {
       ...reactPlugin.configs['jsx-runtime'].rules,
@@ -47,9 +51,9 @@ export default tseslint.config(
       '@next/next/no-duplicate-head': 'off',
       '@next/next/no-img-element': 'error',
       '@next/next/no-page-custom-font': 'off',
-      quotes: ['error', 'single'],
-      semi: ['error', 'always'],
-      'comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/quotes': ['error', 'single'],
+      '@stylistic/semi': ['error', 'always'],
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
     },
   },
 );

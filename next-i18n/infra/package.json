@@ -15,22 +15,22 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.32.0",
-    "@next/eslint-plugin-next": "^15.4.5",
-    "@stylistic/eslint-plugin": "^5.2.2",
-    "@types/node": "^20.19.9",
-    "aws-cdk": "^2.1023.0",
-    "eslint": "^9.32.0",
+    "@eslint/js": "^9.33.0",
+    "@next/eslint-plugin-next": "^15.4.6",
+    "@stylistic/eslint-plugin": "^5.2.3",
+    "@types/node": "^20.19.11",
+    "aws-cdk": "^2.1025.0",
+    "eslint": "^9.33.0",
     "eslint-config-import": "^0.13.0",
     "eslint-import-resolver-typescript": "^3.10.1",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.32.0",
-    "tsx": "^4.20.3",
+    "tsx": "^4.20.4",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.38.0"
+    "typescript-eslint": "^8.39.1"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.208.0",
+    "aws-cdk-lib": "^2.211.0",
     "constructs": "^10.4.2",
     "source-map-support": "^0.5.21"
   },

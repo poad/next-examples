@@ -26,14 +26,14 @@
     "@types/node": "^22.17.2",
     "@types/react": "^19.1.10",
     "@types/uuid": "^10.0.0",
-    "next": "^15.4.6",
+    "next": "^15.4.7",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "web-vitals": "^5.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@next/eslint-plugin-next": "^15.4.6",
+    "@next/eslint-plugin-next": "^15.4.7",
     "@storybook/addon-docs": "^9.1.2",
     "@storybook/addon-links": "^9.1.2",
     "@storybook/addon-onboarding": "^9.1.2",
@@ -54,7 +54,7 @@
     "styled-jsx": "^5.1.7",
     "tailwindcss": "^4.1.12",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.39.1",
+    "typescript-eslint": "^8.40.0",
     "uuid": "^11.1.0"
   },
   "msw": {

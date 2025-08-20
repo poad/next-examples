@@ -31,7 +31,8 @@
     "**/*.spec.ts",
     "**/*.spec.tsx",
     "**/*.test.ts",
-    "**/*.test.tsx"
+    "**/*.test.tsx",
+    ".next/types/**/*.ts"
   ],
   "include": [
     "next-env.d.ts",

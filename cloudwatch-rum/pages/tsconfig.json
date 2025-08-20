@@ -57,6 +57,7 @@
     "**/*.spec.tsx",
     "**/*.test.ts",
     "**/*.test.tsx",
+    ".next/types/**/*.ts",
     "eslint.config.js"
   ],
   "include": [

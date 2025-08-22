@@ -44,7 +44,7 @@ function Drawer({
     };
     window.addEventListener('click', handleOutsideClick);
     return () => window.removeEventListener('click', handleOutsideClick);
-  }, [isOpen, ref]);
+  }, [isOpen, ref, toggle]);
 
   // close modal when you click on "ESC" key
   useEffect(() => {
@@ -56,7 +56,7 @@ function Drawer({
     };
     document.addEventListener('keyup', handleEscape);
     return () => document.removeEventListener('keyup', handleEscape);
-  }, [isOpen]);
+  }, [isOpen, toggle]);
 
   // hide scrollbar and prevent body from moving when drawer is open
   useEffect(() => {

@@ -1,8 +1,8 @@
 'use client';
 import Head from 'next/head';
 import { useCallback, useEffect, useState } from 'react';
-import GitHubSignInButton from '../../component/GitHubSignInButton';
-import styles from './styles/Home.module.css';
+import { GitHubSignInButton } from '../../component/GitHubSignInButton';
+import styles from '../styles/Home.module.css';
 
 const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL as string;
 
@@ -23,9 +23,10 @@ export default function Users() {
 
   useEffect(() => {
     if (code && !databaseId) {
-      fetcher(code).then((response) =>
-        response.json().then((json) => setDatabaseId(json.databaseId)),
-      );
+      fetcher(code)
+        .then((response) => response.json())
+        .then((json) => setDatabaseId(json.databaseId))
+        .catch((error) => error);
     }
   }, [code, databaseId, fetcher]);
 

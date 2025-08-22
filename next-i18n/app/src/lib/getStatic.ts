@@ -17,7 +17,7 @@ export const getStaticPaths = () => ({
 
 export const getI18nProps = async (
   ctx: Context,
-  ns = ['common']
+  ns = ['common'],
 ): Promise<SSRConfig> => {
   const locale = ctx?.params?.locale;
   const props = {

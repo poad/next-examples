@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import GitHubSignInButton from '../component/GitHubSignInButton';
+import { GitHubSignInButton } from '../component/GitHubSignInButton';
 import { useGitHubOAuthCode } from '../hooks/useGitHubOAuthCode';
 import './page.css';
 
@@ -31,9 +31,10 @@ export default function Users() {
 
   useEffect(() => {
     if (code && !databaseId) {
-      fetcher(code).then((response) =>
-        response.json().then((json) => setDatabaseId(json.databaseId)),
-      );
+      fetcher(code)
+        .then((response) => response.json())
+        .then((json) => setDatabaseId(json.databaseId))
+        .catch((error) => console.error('Error fetching database ID:', error));
     }
   }, [code, databaseId, fetcher]);
 

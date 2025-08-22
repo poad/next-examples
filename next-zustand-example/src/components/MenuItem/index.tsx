@@ -35,7 +35,9 @@ const MenuItem = ({ keyName, text, href, icon, external }: MenuItemProps) => {
             },
           }}
           onClick={
-            () => {}
+            () => {
+              // no-op for external links
+            }
           }
         >
           <ListItemIcon>{icon}</ListItemIcon>
@@ -56,7 +58,9 @@ const MenuItem = ({ keyName, text, href, icon, external }: MenuItemProps) => {
           },
         }}
         onClick={
-          () => {}
+          () => {
+            // no-op for internal links
+          }
         }
       >
         <ListItemIcon>{icon}</ListItemIcon>

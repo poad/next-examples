@@ -31,7 +31,6 @@ export default tseslint.config(
     ],
     plugins: {
       '@stylistic': stylistic,
-      '@stylistic/ts': stylistic,
     },
     settings: {
       react: {
@@ -44,15 +43,16 @@ export default tseslint.config(
       ],
       'import/resolver': {
         typescript: {},
+        node: true,
       },
     },
     // @ts-ignore
     rules: {
-      '@stylistic/semi': 'error',
-      '@stylistic/ts/indent': ['error', 2],
-      'comma-dangle': ['error', 'always-multiline'],
-      'arrow-parens': ['error', 'always'],
-      quotes: ['error', 'single'],
+      '@stylistic/semi': ['error', 'always'],
+      '@stylistic/indent': ['error', 2],
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/arrow-parens': ['error', 'always'],
+      '@stylistic/quotes': ['error', 'single'],
     },
   },
 );

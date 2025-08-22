@@ -1,9 +1,9 @@
-import { NextConfig } from "next";
+import { NextConfig } from 'next';
 
 import withBundleAnalyzer from '@next/bundle-analyzer';
 
 const config: NextConfig = {
-  output: "export",
+  output: 'export',
   reactStrictMode: true,
   experimental: {
     esmExternals: true,
@@ -15,7 +15,7 @@ const config: NextConfig = {
     };
     config.output.webassemblyModuleFilename = (isServer ? '../' : '') + 'static/wasm/webassembly.wasm';
     return config;
-  }
+  },
 };
 
 module.exports = withBundleAnalyzer({

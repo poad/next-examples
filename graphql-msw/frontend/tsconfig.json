@@ -64,11 +64,6 @@
     "next-env.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx",
-    "eslint.config.js",
-    "eslint.config.mjs",
-    "eslint.config.cjs",
-    "eslint.config.ts",
-    "eslint.config.mts",
-    "eslint.config.cts"
+    "eslint.config.ts"
   ]
 }

@@ -32,5 +32,3 @@ export const GitHubSignInButton = () => {
     </Button>
   );
 };
-
-export default GitHubSignInButton;

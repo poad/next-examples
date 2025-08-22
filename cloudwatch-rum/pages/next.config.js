@@ -8,11 +8,8 @@ const config = {
   images: {
     unoptimized: true,
   },
-  experimental: {
-    //   swcPlugins: [['typewind/swc', {}]],
-  },
 };
 
 export default withBundleAnalyzer({
-  enabled: process.env.ANALYZE === 'true',
+  enabled: import.meta.env.ANALYZE === 'true',
 })(config);

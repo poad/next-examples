@@ -25,10 +25,15 @@
     "@next/eslint-plugin-next": "^15.5.0",
     "@stylistic/eslint-plugin": "^5.2.3",
     "@types/node": "^22.17.2",
-    "@types/react": "^19.1.10",
+    "@types/react": "^19.1.11",
     "eslint": "^9.33.0",
     "eslint-config-next": "^15.5.0",
+    "eslint-import-resolver-typescript": "^3.10.1",
+    "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.40.0"
   }

@@ -62,12 +62,12 @@ const server = new ApolloServer<MyContext>({
   plugins: [
     process.env.NODE_ENV === 'production'
       ? ApolloServerPluginLandingPageProductionDefault({
-          footer: false,
-        })
+        footer: false,
+      })
       : ApolloServerPluginLandingPageLocalDefault({ 
-          embed: false,
-          footer: false,
-        }),
+        embed: false,
+        footer: false,
+      }),
   ],
 });
 

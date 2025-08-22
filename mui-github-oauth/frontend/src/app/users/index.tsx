@@ -1,6 +1,6 @@
 'use client';
 
-import GitHubSignInButton from '../../component/GitHubSignInButton';
+import { GitHubSignInButton } from '../../component/GitHubSignInButton';
 import styles from '../../styles/Home.module.css';
 import { useCallback, useEffect, useState } from 'react';
 import { useGitHubOAuthCode } from '../../hooks/useGitHubOAuthCode';
@@ -31,9 +31,10 @@ export default function Users() {
 
   useEffect(() => {
     if (code && !databaseId) {
-      fetcher(code).then((response) =>
-        response.json().then((json) => setDatabaseId(json.databaseId)),
-      );
+      fetcher(code)
+        .then((response) => response.json())
+        .then((json) => setDatabaseId(json.databaseId))
+        .catch((error) => console.error('Error fetching database ID:', error));
     }
   }, [code, databaseId, fetcher]);
 

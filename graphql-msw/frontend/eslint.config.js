@@ -31,16 +31,40 @@ export default tseslint.config(
     files: [
       'src/**/*.tsx',
     ],
-    ...importPlugin.flatConfigs.recommended,
-    ...importPlugin.flatConfigs.typescript,
+    extends: [
+      importPlugin.flatConfigs.recommended,
+      importPlugin.flatConfigs.typescript,
+    ],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      parser: tseslint.parser,
+      // parserOptions: {
+      //   projectService: true,
+      //   tsconfigRootDir: import.meta.resolve('./'),
+      // },
+    },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+      formComponents: ['Form'],
+      linkComponents: [
+        { name: 'Link', linkAttribute: 'to' },
+        { name: 'NavLink', linkAttribute: 'to' },
+      ],
+      'import/internal-regex': '^~/',
+      'import/resolver': {
+        node: true,
+        typescript: true,
+      },
+    },
     plugins: {
       react: reactPlugin,
       'react-hooks': hooksPlugin,
       '@next/next': nextPlugin,
       'flow-type': flowtypePlugin,
       '@stylistic': stylistic,
-      '@stylistic/ts': stylistic,
-      '@stylistic/jsx': stylistic,
     },
     rules: {
       ...reactPlugin.configs['jsx-runtime'].rules,

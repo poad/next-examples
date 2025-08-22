@@ -1,7 +1,7 @@
 // @ts-chrck
 
 import eslint from '@eslint/js';
-import tseslint from 'typescript-eslint';
+import tseslint, { configs, parser} from 'typescript-eslint';
 import importPlugin from 'eslint-plugin-import';
 import stylistic from '@stylistic/eslint-plugin';
 
@@ -13,21 +13,42 @@ export default tseslint.config(
       '**/gql/**/*',
       'cdk.out',
       '**/generated/**/*.*',
+      'bin/**/*.js',
+      'lib/**/*.js',
     ],
   },
   eslint.configs.recommended,
-  ...tseslint.configs.strict,
-  ...tseslint.configs.stylistic,
-  importPlugin.flatConfigs.recommended,
-  importPlugin.flatConfigs.typescript,
+  ...configs.strict,
+  ...configs.stylistic,
   {
     files: [
-      '{bin,lib}/**/*.ts',
+      'bin/**/*.ts',
+      'lib/**/*.ts',
+      'eslint.config.js',
     ],
     plugins: {
       '@stylistic': stylistic,
-      '@stylistic/ts': stylistic,
-      '@stylistic/jsx': stylistic,
+    },
+    extends: [
+      importPlugin.flatConfigs.recommended,
+      importPlugin.flatConfigs.typescript,
+    ],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      parser,
+      // parserOptions: {
+      //   projectService: true,
+      //   tsconfigRootDir: import.meta.resolve('./'),
+      // },
+    },
+    settings: {
+      'import/resolver': {
+        // You will also need to install and configure the TypeScript resolver
+        // See also https://github.com/import-js/eslint-import-resolver-typescript#configuration
+        'typescript': true,
+        'node': true,
+      },
     },
     rules: {
       '@stylistic/quotes': ['error', 'single'],

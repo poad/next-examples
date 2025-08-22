@@ -37,10 +37,16 @@ export class BackendStack extends cdk.Stack {
       retryAttempts: 0,
       timeout: cdk.Duration.seconds(29),
       environment: {
-        LOG_LEVEL: 'info',
-        NODE_OPTIONS: '–enable-source-maps',
+        LOG_LEVEL: 'INFO',
+        NODE_OPTIONS: '--enable-source-maps',
+        NODE_ENV: 'production',
         S3_BUCKET_NAME: bucketName,
         S3_OBJECT_KEY: 'pokemon.json',
+        // AWS Lambda Powertools設定
+        POWERTOOLS_SERVICE_NAME: 'graphql-api',
+        POWERTOOLS_LOG_LEVEL: 'INFO',
+        POWERTOOLS_LOGGER_LOG_EVENT: 'true',
+        POWERTOOLS_LOGGER_SAMPLE_RATE: '0.1',
       },
       bundling: {
         minify: true,
@@ -48,7 +54,9 @@ export class BackendStack extends cdk.Stack {
         sourceMapMode: nodejs.SourceMapMode.BOTH,
         sourcesContent: true,
         keepNames: true,
-        target: 'node18',
+        target: 'node22',
+        format: nodejs.OutputFormat.ESM,
+        mainFields: ['module', 'main'],
         commandHooks: {
           beforeInstall(): string[] {
             return [''];
@@ -81,8 +89,8 @@ export class BackendStack extends cdk.Stack {
             statements: [
               new iam.PolicyStatement({
                 effect: iam.Effect.ALLOW,
-                actions: ['s3:*'],
-                resources: [bucket.bucketArn, `${bucket.bucketArn}/*`],
+                actions: ['s3:GetObject'],
+                resources: [`${bucket.bucketArn}/*`],
               }),
             ],
           }),
@@ -92,7 +100,7 @@ export class BackendStack extends cdk.Stack {
 
     const api = new apigateway.RestApi(this, 'APIGateway', {
       restApiName: 'GraphQL API',
-      description: 'GraphQL API for msw example',
+      description: 'GraphQL API for msw example with Apollo Server v5',
       deployOptions: {
         stageName: 'default',
       },
@@ -101,19 +109,54 @@ export class BackendStack extends cdk.Stack {
       },
       defaultCorsPreflightOptions: {
         allowOrigins: apigateway.Cors.ALL_ORIGINS,
-        allowMethods: apigateway.Cors.ALL_METHODS,
-        allowHeaders: apigateway.Cors.DEFAULT_HEADERS,
+        allowMethods: ['GET', 'POST', 'OPTIONS'],
+        allowHeaders: [
+          'Content-Type',
+          'X-Amz-Date',
+          'Authorization',
+          'X-Api-Key',
+          'X-Amz-Security-Token',
+          'X-Amz-User-Agent',
+          'Apollo-Require-Preflight',
+        ],
         allowCredentials: true,
         disableCache: true,
         statusCode: 200,
       },
       cloudWatchRole: true,
-      endpointExportName: 'grapgql',
+      endpointExportName: 'graphql',
     });
 
-    api.deploymentStage.urlForPath('/');
+    // GraphQL endpoint
+    api.root.addMethod('POST', new apigateway.LambdaIntegration(fn, {
+      proxy: true,
+      integrationResponses: [
+        {
+          statusCode: '200',
+          responseParameters: {
+            'method.response.header.Access-Control-Allow-Origin': '\'*\'',
+            'method.response.header.Access-Control-Allow-Headers': '\'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,Apollo-Require-Preflight\'',
+            'method.response.header.Access-Control-Allow-Methods': '\'GET,POST,OPTIONS\'',
+          },
+        },
+      ],
+    }), {
+      methodResponses: [
+        {
+          statusCode: '200',
+          responseParameters: {
+            'method.response.header.Access-Control-Allow-Origin': true,
+            'method.response.header.Access-Control-Allow-Headers': true,
+            'method.response.header.Access-Control-Allow-Methods': true,
+          },
+        },
+      ],
+    });
 
-    api.root.addMethod('POST', new apigateway.LambdaIntegration(fn));
+    // Apollo Server v5 supports GET requests for queries
+    api.root.addMethod('GET', new apigateway.LambdaIntegration(fn, {
+      proxy: true,
+    }));
 
     new apigateway.GatewayResponse(this, 'UnauthorizedGatewayResponse', {
       restApi: api,

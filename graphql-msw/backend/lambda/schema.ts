@@ -3,7 +3,7 @@ import { addResolversToSchema } from '@graphql-tools/schema';
 import { loadSchemaSync } from '@graphql-tools/load';
 import { GraphQLSchema } from 'graphql';
 import * as fs from 'fs';
-import resolvers from './resolvers';
+import { resolvers } from './resolvers';
 
 const schemaFilePath = fs.existsSync('/var/task/schema.graphqls')
   ? '/var/task/schema.graphqls'

@@ -10,8 +10,8 @@
     "watch": "tsc -w",
     "cdk": "cdk",
     "clean": "tsc --build --clean",
-    "lint-fix": "eslint --fix '{bin,lib}/**/*.ts'",
-    "lint": "eslint '{bin,lib}/**/*.ts'"
+    "lint-fix": "eslint --fix .",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^5.2.3",

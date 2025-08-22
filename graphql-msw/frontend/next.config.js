@@ -4,7 +4,6 @@ import withBundleAnalyzer from '@next/bundle-analyzer';
 const config = {
   output: 'export',
   reactStrictMode: true,
-  swcMinify: true,
   cleanDistDir: true,
   images: {
     unoptimized: true,

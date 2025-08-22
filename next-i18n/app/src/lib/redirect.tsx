@@ -1,7 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect , JSX } from 'react';
 import { useRouter } from 'next/router';
 import languageDetector from './languageDetector';
-import { JSX } from 'react';
 
 export const useRedirect = (to?: string): JSX.Element => {
   const router = useRouter();

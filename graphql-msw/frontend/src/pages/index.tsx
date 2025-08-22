@@ -1,4 +1,5 @@
-import { gql, useQuery } from '@apollo/client';
+import { gql } from '@apollo/client';
+import { useQuery } from '@apollo/client/react';
 import { QueryPokemonListQuery } from '../gql/graphql';
 import { Inter } from 'next/font/google';
 import styles from '../styles/Home.module.css';

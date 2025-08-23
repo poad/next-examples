@@ -59,9 +59,12 @@
     "**/*.test.tsx"
   ],
   "include": [
+    ".storybook/**/*.ts",
+    "eslint.config.ts",
     "next-env.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx",
-    "eslint.config.ts"
+    ".next/types/**/*.ts",
+    "next.config.ts"
   ]
 }

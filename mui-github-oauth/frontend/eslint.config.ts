@@ -38,7 +38,6 @@ const eslintConfig: ConfigArray = tseslint.config(
       'public/**/*.js',
       'cdk/**/*',
       'storybook-static',
-      '.storybook',
     ],
   },
   eslint.configs.recommended,
@@ -63,7 +62,7 @@ const eslintConfig: ConfigArray = tseslint.config(
       parser,
       parserOptions: {
         projectService: true,
-        tsconfigRootDir: import.meta.dirname,
+        tsconfigRootDir: __dirname,
       },
     },
     settings: {

@@ -10,10 +10,15 @@ import stylistic from '@stylistic/eslint-plugin';
 import flowtypePlugin from 'eslint-plugin-flowtype';
 // @ts-expect-error ignore type errors
 import pluginPromise from 'eslint-plugin-promise';
+// @ts-expect-error ignore type errors
+import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
+import { FlatCompat } from '@eslint/eslintrc';
 
 import { includeIgnoreFile } from '@eslint/compat';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+
+const compat = new FlatCompat();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -32,6 +37,7 @@ const eslintConfig: ConfigArray = tseslint.config(
       'src/gql/*.ts',
       'public/**/*.js',
       'cdk/**/*',
+      'storybook-static',
     ],
   },
   eslint.configs.recommended,
@@ -48,6 +54,7 @@ const eslintConfig: ConfigArray = tseslint.config(
     extends: [
       importPlugin.flatConfigs.recommended,
       importPlugin.flatConfigs.typescript,
+      ...compat.config(jsxA11yPlugin.configs.recommended),
     ],
     languageOptions: {
       ecmaVersion: 'latest',
@@ -55,7 +62,7 @@ const eslintConfig: ConfigArray = tseslint.config(
       parser,
       parserOptions: {
         projectService: true,
-        tsconfigRootDir: import.meta.dirname,
+        tsconfigRootDir: __dirname,
       },
     },
     settings: {
@@ -78,6 +85,7 @@ const eslintConfig: ConfigArray = tseslint.config(
       'react-hooks': hooksPlugin,
       '@next/next': nextPlugin,
       'flow-type': flowtypePlugin,
+      'jsx-a11y': jsxA11yPlugin,
       '@stylistic': stylistic,
     },
     rules: {

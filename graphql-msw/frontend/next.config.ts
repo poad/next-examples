@@ -1,9 +1,8 @@
 import withBundleAnalyzer from '@next/bundle-analyzer';
+import { NextConfig } from 'next';
 
-/** @type {import('next').NextConfig} */
-const config = {
+const config: NextConfig = {
   output: 'export',
-  reactStrictMode: true,
   cleanDistDir: true,
   images: {
     unoptimized: true,
@@ -18,6 +17,5 @@ const config = {
 };
 
 export default withBundleAnalyzer({
-  // eslint-disable-next-line no-undef
   enabled: process.env.ANALYZE === 'true',
 })(config);

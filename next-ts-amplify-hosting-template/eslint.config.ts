@@ -50,6 +50,7 @@ const eslintConfig: ConfigArray = tseslint.config(
       'src/**/*.tsx',
       '*.ts',
       '*.tsx',
+      '.storybook/**/*.ts',
     ],
     extends: [
       importPlugin.flatConfigs.recommended,

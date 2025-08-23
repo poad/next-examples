@@ -8,5 +8,3 @@ node_modules
 cdk.out
 
 **/.yarn/*
-
-!eslint.config.js

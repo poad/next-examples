@@ -6,7 +6,6 @@ import react from 'eslint-plugin-react';
 import globals from 'globals';
 import nextPlugin from '@next/eslint-plugin-next';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
-import importPlugin from 'eslint-plugin-import';
 // @ts-expect-error ignore type errors
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 // @ts-expect-error ignore type errors
@@ -16,7 +15,6 @@ import pluginPromise from 'eslint-plugin-promise';
 import tseslint from 'typescript-eslint';
 import { FlatCompat } from '@eslint/eslintrc';
 
-// @ts-ignore
 import reactCompiller from 'eslint-plugin-react-compiler';
 
 const compat = new FlatCompat();
@@ -37,7 +35,6 @@ export default tseslint.config(
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
   pluginPromise.configs['flat/recommended'],
-  // @ts-ignore
   ...compat.config({
     extends: ['next/core-web-vitals'],
   }),
@@ -73,6 +70,10 @@ export default tseslint.config(
         typescript: true,
       },
     },
+    extends: [
+      ...compat.config(reactHooksPlugin.configs.recommended),
+      ...compat.config(jsxA11yPlugin.configs.recommended),
+    ],
     plugins: {
       '@stylistic': stylistic,
       react,
@@ -81,17 +82,12 @@ export default tseslint.config(
       '@next/next': nextPlugin,
       'flow-type': flowtypePlugin,
     },
-    extends: [
-      // @ts-ignore
-      ...compat.config(reactHooksPlugin.configs.recommended),
-      ...compat.config(jsxA11yPlugin.configs.recommended),
-      importPlugin.flatConfigs.recommended,
-      importPlugin.flatConfigs.typescript,
-    ],
-    // @ts-ignore
+    // @ts-expect-error ignore type errors
     rules: {
-      '@stylistic/semi': 'error',
+      '@stylistic/semi': ['error', 'always'],
       '@stylistic/indent': ['error', 2],
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/quotes': ['error', 'single'],
       'react/jsx-uses-react': 'off',
       'react/jsx-uses-vars': 'off',
       'react/require-render-return': 'off',
@@ -99,19 +95,12 @@ export default tseslint.config(
       'react/no-direct-mutation-state': 'off',
       'react/no-string-refs': 'off',
       'react/jsx-no-undef': 'off',
-      'react-compiler/react-compiler': "error",
+      'react-compiler/react-compiler': 'error',
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs['core-web-vitals'].rules,
       '@next/next/no-duplicate-head': 'off',
       '@next/next/no-img-element': 'error',
       '@next/next/no-page-custom-font': 'off',
-      'import/namespace': 'off',
-      'import/no-named-as-default': 'off',
-      'import/no-named-as-default-member': 'off',
-      'comma-dangle': ['error', 'always-multiline'],
-      semi: ['error', 'always'],
-      quotes: ['error', 'single'],
-      indent: ['error', 2],
     },
   },
 );

@@ -64,6 +64,7 @@
     "next-env.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx",
-    "eslint.config.ts"
+    "eslint.config.ts",
+    "next.config.ts"
   ]
 }

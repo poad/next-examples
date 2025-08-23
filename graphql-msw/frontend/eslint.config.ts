@@ -27,7 +27,7 @@ const eslintConfig: ConfigArray = tseslint.config(
   includeIgnoreFile(gitignorePath),
   {
     ignores: [
-      '.next',
+      '.next/**/*.*',
       '**/*.d.ts',
       'out',
       '**/gql/**/*',

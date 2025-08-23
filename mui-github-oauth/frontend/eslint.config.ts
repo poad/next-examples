@@ -35,7 +35,7 @@ const eslintConfig: ConfigArray = tseslint.config(
       'cdk.out',
       '**/generated/**/*.*',
       'src/gql/*.ts',
-      'public/**/*.js',
+      '**/public/**/*.js',
       'cdk/**/*',
       'storybook-static',
     ],

@@ -16,4 +16,3 @@ cdk.out
 !.yarn/sdks
 !.yarn/versions
 
-!eslint.config.js

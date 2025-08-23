@@ -41,6 +41,7 @@ const eslintConfig: ConfigArray = tseslint.config(
       'src/**/*.tsx',
       '*.ts',
       '*.tsx',
+      'next-i18next.config.js',
     ],
     extends: [
       importPlugin.flatConfigs.recommended,

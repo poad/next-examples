@@ -35,7 +35,7 @@
     "next-language-detector": "^1.1.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-i18next": "^15.7.1",
+    "react-i18next": "^15.7.2",
     "web-vitals": "^3.5.2"
   },
   "devDependencies": {

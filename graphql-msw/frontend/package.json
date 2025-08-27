@@ -16,11 +16,11 @@
     "all": "pnpm lint && pnpm build"
   },
   "dependencies": {
-    "@apollo/client": "^4.0.0",
+    "@apollo/client": "^4.0.1",
     "cross-env": "^10.0.0",
     "graphql": "^16.11.0",
     "msw": "^2.10.5",
-    "next": "^15.5.0",
+    "next": "^15.5.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "rxjs": "^7.8.2",
@@ -35,13 +35,13 @@
     "@graphql-codegen/typescript-react-apollo": "^4.3.3",
     "@graphql-eslint/eslint-plugin": "^4.4.0",
     "@graphql-typed-document-node/core": "^3.2.0",
-    "@next/bundle-analyzer": "^15.5.0",
-    "@next/eslint-plugin-next": "^15.5.0",
+    "@next/bundle-analyzer": "^15.5.2",
+    "@next/eslint-plugin-next": "^15.5.2",
     "@stylistic/eslint-plugin": "^5.2.3",
-    "@types/node": "^22.17.2",
+    "@types/node": "^22.18.0",
     "@types/react": "^19.1.11",
     "eslint": "^9.34.0",
-    "eslint-config-next": "^15.5.0",
+    "eslint-config-next": "^15.5.2",
     "eslint-import-resolver-typescript": "^3.10.1",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.32.0",
@@ -51,7 +51,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-storybook": "^0.11.6",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.40.0"
+    "typescript-eslint": "^8.41.0"
   },
   "msw": {
     "workerDirectory": "public"

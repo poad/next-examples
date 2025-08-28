@@ -18,7 +18,7 @@
     "@next/eslint-plugin-next": "^15.5.2",
     "@stylistic/eslint-plugin": "^5.2.3",
     "@types/node": "^22.18.0",
-    "aws-cdk": "^2.1026.0",
+    "aws-cdk": "^2.1027.0",
     "eslint": "^9.34.0",
     "eslint-plugin-import": "^2.32.0",
     "tsx": "^4.20.5",
@@ -26,7 +26,7 @@
     "typescript-eslint": "^8.41.0"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.212.0",
+    "aws-cdk-lib": "^2.213.0",
     "constructs": "^10.4.2",
     "source-map-support": "^0.5.21"
   },

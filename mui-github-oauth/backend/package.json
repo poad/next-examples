@@ -15,9 +15,9 @@
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.152",
-    "@types/node": "^22.18.0",
+    "@types/node": "^22.18.1",
     "@urql/core": "^5.2.0",
-    "aws-cdk": "^2.1027.0",
+    "aws-cdk": "^2.1028.0",
     "esbuild": "^0.25.9",
     "eslint": "^9.34.0",
     "eslint-import-resolver-typescript": "^4.4.4",
@@ -26,10 +26,10 @@
     "eslint-plugin-promise": "^7.2.1",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.41.0"
+    "typescript-eslint": "^8.42.0"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.213.0",
+    "aws-cdk-lib": "^2.214.0",
     "constructs": "^10.4.2",
     "source-map-support": "^0.5.21"
   }

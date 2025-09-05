@@ -9,7 +9,7 @@
     "start": "pnpm wasm && next start",
     "analyze": "ANALYZE=true next build",
     "export": "pnpm wasm && next build",
-    "wasm": "wasm-pack build --target web wasm",
+    "wasm": "wasm-pack build --target web --no-opt wasm",
     "lint": "eslint",
     "lint-fix": "eslint --fix"
   },

@@ -14,3 +14,6 @@ strip = true
 
 [profile.dev]
 strip = true
+
+[package.metadata.wasm-pack]
+wasm-opt = false

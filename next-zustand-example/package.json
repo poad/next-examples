@@ -30,7 +30,7 @@
     "zustand": "^5.0.8"
   },
   "devDependencies": {
-    "@eslint/js": "^9.34.0",
+    "@eslint/js": "^9.35.0",
     "@next/bundle-analyzer": "^15.5.2",
     "@next/codemod": "^15.5.2",
     "@next/eslint-plugin-next": "^15.5.2",
@@ -39,7 +39,7 @@
     "@types/node": "^22.18.1",
     "@types/react": "^19.1.12",
     "autoprefixer": "^10.4.21",
-    "eslint": "^9.34.0",
+    "eslint": "^9.35.0",
     "eslint-config-next": "^15.5.2",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-flowtype": "^8.0.3",

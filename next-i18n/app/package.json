@@ -30,7 +30,7 @@
     "@mui/material": "^7.3.2",
     "@mui/material-nextjs": "^7.3.2",
     "i18next": "^23.16.8",
-    "next": "^15.5.2",
+    "next": "^15.5.3",
     "next-i18next": "^15.4.2",
     "next-language-detector": "^1.1.1",
     "react": "^19.1.1",
@@ -43,8 +43,8 @@
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.35.0",
     "@mui/icons-material": "^7.3.2",
-    "@next/bundle-analyzer": "^15.5.2",
-    "@next/eslint-plugin-next": "^15.5.2",
+    "@next/bundle-analyzer": "^15.5.3",
+    "@next/eslint-plugin-next": "^15.5.3",
     "@stylistic/eslint-plugin": "^5.3.1",
     "@swc/jest": "^0.2.39",
     "@tailwindcss/postcss": "^4.1.13",
@@ -53,7 +53,7 @@
     "@types/react": "^19.1.12",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.35.0",
-    "eslint-config-next": "^15.5.2",
+    "eslint-config-next": "^15.5.3",
     "eslint-import-resolver-typescript": "^3.10.1",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.32.0",
@@ -69,7 +69,7 @@
     "styled-jsx": "^5.1.7",
     "tailwindcss": "^4.1.13",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.42.0"
+    "typescript-eslint": "^8.43.0"
   },
   "jest": {
     "transform": {

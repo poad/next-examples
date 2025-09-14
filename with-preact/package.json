@@ -24,7 +24,7 @@
     "material-react-table": "^3.2.1",
     "next": "^15.5.3",
     "next-plugin-preact": "^3.0.7",
-    "preact": "^10.27.1",
+    "preact": "^10.27.2",
     "preact-render-to-string": "^6.6.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

@@ -464,8 +464,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0(@apollo/server@5.0.0(graphql@16.11.0))
       '@aws-lambda-powertools/logger':
-        specifier: ^2.26.1
-        version: 2.26.1
+        specifier: ^2.27.0
+        version: 2.27.0
       '@eslint/compat':
         specifier: ^1.4.0
         version: 1.4.0(eslint@9.36.0(jiti@2.6.0))
@@ -625,7 +625,7 @@ importers:
         version: 8.0.3(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.4))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.4))(eslint@9.36.0(jiti@2.6.0))
       eslint-plugin-import:
         specifier: ^2.32.0
-        version: 2.32.0(@typescript-eslint/parser@8.44.1(eslint@9.36.0(jiti@2.6.0))(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1)(eslint@9.36.0(jiti@2.6.0))
+        version: 2.32.0(@typescript-eslint/parser@5.62.0(eslint@9.36.0(jiti@2.6.0))(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1)(eslint@9.36.0(jiti@2.6.0))
       eslint-plugin-jsx-a11y:
         specifier: ^6.10.2
         version: 6.10.2(eslint@9.36.0(jiti@2.6.0))
@@ -683,7 +683,7 @@ importers:
         version: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.36.0(jiti@2.6.0))
       eslint-plugin-import:
         specifier: ^2.32.0
-        version: 2.32.0(@typescript-eslint/parser@8.44.1(eslint@9.36.0(jiti@2.6.0))(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1)(eslint@9.36.0(jiti@2.6.0))
+        version: 2.32.0(@typescript-eslint/parser@5.62.0(eslint@9.36.0(jiti@2.6.0))(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1)(eslint@9.36.0(jiti@2.6.0))
       eslint-plugin-promise:
         specifier: ^7.2.1
         version: 7.2.1(eslint@9.36.0(jiti@2.6.0))
@@ -1070,8 +1070,8 @@ importers:
   next-amplified:
     dependencies:
       '@aws-amplify/ui-react':
-        specifier: ^6.12.0
-        version: 6.12.0(@aws-amplify/core@6.13.2)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(aws-amplify@6.15.6)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(xstate@4.38.3)
+        specifier: ^6.12.1
+        version: 6.12.1(@aws-amplify/core@6.13.2)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(aws-amplify@6.15.6)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(xstate@4.38.3)
       aws-amplify:
         specifier: ^6.15.6
         version: 6.15.6
@@ -1425,8 +1425,8 @@ importers:
   next-ts-amplify-hosting-template:
     dependencies:
       '@aws-amplify/ui-react':
-        specifier: ^6.12.0
-        version: 6.12.0(@aws-amplify/core@6.13.2)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(aws-amplify@6.15.6)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(xstate@4.38.3)
+        specifier: ^6.12.1
+        version: 6.12.1(@aws-amplify/core@6.13.2)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(aws-amplify@6.15.6)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(xstate@4.38.3)
       aws-amplify:
         specifier: ^6.15.6
         version: 6.15.6
@@ -2072,7 +2072,7 @@ importers:
         version: 8.0.3(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.4))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.4))(eslint@9.36.0(jiti@2.6.0))
       eslint-plugin-import:
         specifier: ^2.32.0
-        version: 2.32.0(@typescript-eslint/parser@8.44.1(eslint@9.36.0(jiti@2.6.0))(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1)(eslint@9.36.0(jiti@2.6.0))
+        version: 2.32.0(@typescript-eslint/parser@5.62.0(eslint@9.36.0(jiti@2.6.0))(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1)(eslint@9.36.0(jiti@2.6.0))
       eslint-plugin-jsx-a11y:
         specifier: ^6.10.2
         version: 6.10.2(eslint@9.36.0(jiti@2.6.0))
@@ -2567,14 +2567,14 @@ packages:
     peerDependencies:
       '@aws-amplify/core': ^6.1.0
 
-  '@aws-amplify/ui-react-core@3.4.3':
-    resolution: {integrity: sha512-B0ODGYbCy2nOcm7Ni/3cv+qGVtDkiYvsnojtaN2DyjXJVE33cGRyqsbwhoaWSetUoNGkN2C6Q/twJPHwOq6a2g==}
+  '@aws-amplify/ui-react-core@3.4.4':
+    resolution: {integrity: sha512-S4hiFfCcZeuOjQ7XFDvuNwmrzMm9sC5DntZr1C6iTQf5G+4r3cvmOGunN/NGy8JrEE1pgkcGdN3NFV0bN8auXQ==}
     peerDependencies:
       aws-amplify: ^6.14.3
       react: '>=19.1.1'
 
-  '@aws-amplify/ui-react@6.12.0':
-    resolution: {integrity: sha512-3FwuxB6q5lBxYO14dc8zpSseWZM4knyIkkmhl3oirebt5/0b6lpw5H+2HrADraJ0/uZHfH9AQk1gbDvzdb9M1g==}
+  '@aws-amplify/ui-react@6.12.1':
+    resolution: {integrity: sha512-QJtOSpd45yrqf+BniSxn6D2Z+dfvFPDNXLCbaVlrYcdjfkpR1aOgpLXfPYyr/58bvPmR/gz33DUjpPQwdjydpw==}
     peerDependencies:
       '@aws-amplify/core': '*'
       aws-amplify: ^6.14.3
@@ -2584,8 +2584,8 @@ packages:
       aws-amplify:
         optional: true
 
-  '@aws-amplify/ui@6.10.3':
-    resolution: {integrity: sha512-dWi2W6TrGMPFW5uvDUHpch2Z28m683KsPbFt2E+a4UQp05GP5qXgCa+jIkxVZmoPop3//udfRxwszGi0MQWX9Q==}
+  '@aws-amplify/ui@6.11.0':
+    resolution: {integrity: sha512-izhi1deWKeu+RPCyESWIT2JaNOGYF/bnMk1qrt8nicavJtHxS/Zv0glaO8YawVSM2Sp6aYNFq1Dkdw0fONaEPA==}
     peerDependencies:
       '@aws-amplify/core': '*'
       aws-amplify: ^6.14.3
@@ -2643,13 +2643,13 @@ packages:
   '@aws-crypto/util@5.2.0':
     resolution: {integrity: sha512-4RkU9EsI6ZpBve5fseQlGNUWKMa1RLPQ1dnjnQoe07ldfIzcsGb5hC5W0Dm7u423KWzawlrpbjXBrXCEv9zazQ==}
 
-  '@aws-lambda-powertools/commons@2.26.1':
-    resolution: {integrity: sha512-1UFUiQl5DsD/Sd5G+7JKDdFioWELls156G4i+0o9lwNK24HpV2txJp9mTe7RftuEaw74sT05yQxwCg01oa1V1g==}
+  '@aws-lambda-powertools/commons@2.27.0':
+    resolution: {integrity: sha512-LjrMrSNcAOUw5g9frev4J0NEs3B7AU0uemB0BXbNLAHrYUdP2ls+ncohwNYVVN+DwjfpYj+FYjdRhUlmWzs8Cw==}
 
-  '@aws-lambda-powertools/logger@2.26.1':
-    resolution: {integrity: sha512-OjRyeAtxGGTLG/jLINvHkpxPSjRQ52GhsueCP9w+85tP6jzCNrFSmbypbRaF7k9Izl8EGSbnsLb0rOZK74d3fA==}
+  '@aws-lambda-powertools/logger@2.27.0':
+    resolution: {integrity: sha512-q3W5GAxMs5usQE65mLY3sE6HCebnZxQhZoj0JjvmQRfzUOTfBKhCeKUA+M+G7i+JzhsgWzD0jovVY2d3+DrZbQ==}
     peerDependencies:
-      '@aws-lambda-powertools/jmespath': 2.26.1
+      '@aws-lambda-powertools/jmespath': 2.27.0
       '@middy/core': 4.x || 5.x || 6.x
     peerDependenciesMeta:
       '@aws-lambda-powertools/jmespath':
@@ -11604,9 +11604,9 @@ packages:
     resolution: {integrity: sha512-//nshmD55c46FuFw26xV/xFAaB5HF9Xdap7HJBBnrKdAd6/GxDBaNA1870O79+9ueg61cZLSVc+OaFlfmObYVQ==}
     engines: {node: '>= 14.16'}
 
-  pbkdf2@3.1.4:
-    resolution: {integrity: sha512-0yPXNT01PxSUdkIxL85Fd+yPdeCcvGwFPAAHbR3Z2ukMERcRrJFfLUKK3oglbQ9eUPeX6qDY3QiELqiDarZYUQ==}
-    engines: {node: '>=0.12'}
+  pbkdf2@3.1.5:
+    resolution: {integrity: sha512-Q3CG/cYvCO1ye4QKkuH7EXxs3VC/rI1/trd+qX2+PolbaKG0H+bgcZzrTt96mMyRtejk+JMCiLUn3y29W8qmFQ==}
+    engines: {node: '>= 0.10'}
 
   performance-now@2.1.0:
     resolution: {integrity: sha512-7EAHlyLHI56VEIdK57uwHdHKIaAGbnXPiw0yWbarQZOKaKpvUIgW0jWRVLiatnM+XXlSwsanIBH/hzGMJulMow==}
@@ -14414,9 +14414,9 @@ snapshots:
       fast-xml-parser: 4.5.3
       tslib: 2.8.1
 
-  '@aws-amplify/ui-react-core@3.4.3(@aws-amplify/core@6.13.2)(@types/react@19.1.13)(aws-amplify@6.15.6)(react@19.1.1)':
+  '@aws-amplify/ui-react-core@3.4.4(@aws-amplify/core@6.13.2)(@types/react@19.1.13)(aws-amplify@6.15.6)(react@19.1.1)':
     dependencies:
-      '@aws-amplify/ui': 6.10.3(@aws-amplify/core@6.13.2)(aws-amplify@6.15.6)(xstate@4.38.3)
+      '@aws-amplify/ui': 6.11.0(@aws-amplify/core@6.13.2)(aws-amplify@6.15.6)(xstate@4.38.3)
       '@xstate/react': 3.2.2(@types/react@19.1.13)(react@19.1.1)(xstate@4.38.3)
       aws-amplify: 6.15.6
       lodash: 4.17.21
@@ -14428,11 +14428,11 @@ snapshots:
       - '@types/react'
       - '@xstate/fsm'
 
-  '@aws-amplify/ui-react@6.12.0(@aws-amplify/core@6.13.2)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(aws-amplify@6.15.6)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(xstate@4.38.3)':
+  '@aws-amplify/ui-react@6.12.1(@aws-amplify/core@6.13.2)(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(aws-amplify@6.15.6)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(xstate@4.38.3)':
     dependencies:
       '@aws-amplify/core': 6.13.2
-      '@aws-amplify/ui': 6.10.3(@aws-amplify/core@6.13.2)(aws-amplify@6.15.6)(xstate@4.38.3)
-      '@aws-amplify/ui-react-core': 3.4.3(@aws-amplify/core@6.13.2)(@types/react@19.1.13)(aws-amplify@6.15.6)(react@19.1.1)
+      '@aws-amplify/ui': 6.11.0(@aws-amplify/core@6.13.2)(aws-amplify@6.15.6)(xstate@4.38.3)
+      '@aws-amplify/ui-react-core': 3.4.4(@aws-amplify/core@6.13.2)(@types/react@19.1.13)(aws-amplify@6.15.6)(react@19.1.1)
       '@radix-ui/react-direction': 1.1.1(@types/react@19.1.13)(react@19.1.1)
       '@radix-ui/react-dropdown-menu': 2.1.16(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@radix-ui/react-slider': 1.3.6(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -14450,7 +14450,7 @@ snapshots:
       - '@xstate/fsm'
       - xstate
 
-  '@aws-amplify/ui@6.10.3(@aws-amplify/core@6.13.2)(aws-amplify@6.15.6)(xstate@4.38.3)':
+  '@aws-amplify/ui@6.11.0(@aws-amplify/core@6.13.2)(aws-amplify@6.15.6)(xstate@4.38.3)':
     dependencies:
       '@aws-amplify/core': 6.13.2
       aws-amplify: 6.15.6
@@ -14530,11 +14530,11 @@ snapshots:
       '@smithy/util-utf8': 2.3.0
       tslib: 2.8.1
 
-  '@aws-lambda-powertools/commons@2.26.1': {}
+  '@aws-lambda-powertools/commons@2.27.0': {}
 
-  '@aws-lambda-powertools/logger@2.26.1':
+  '@aws-lambda-powertools/logger@2.27.0':
     dependencies:
-      '@aws-lambda-powertools/commons': 2.26.1
+      '@aws-lambda-powertools/commons': 2.27.0
       lodash.merge: 4.6.2
 
   '@aws-sdk/client-firehose@3.621.0':
@@ -22902,7 +22902,7 @@ snapshots:
       diffie-hellman: 5.0.3
       hash-base: 3.0.5
       inherits: 2.0.4
-      pbkdf2: 3.1.4
+      pbkdf2: 3.1.5
       public-encrypt: 4.0.3
       randombytes: 2.1.0
       randomfill: 1.0.4
@@ -23651,7 +23651,7 @@ snapshots:
       tinyglobby: 0.2.15
       unrs-resolver: 1.11.1
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.44.1(eslint@9.36.0(jiti@2.6.0))(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1)(eslint@9.36.0(jiti@2.6.0))
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@5.62.0(eslint@9.36.0(jiti@2.6.0))(typescript@5.9.2))(eslint-import-resolver-typescript@3.10.1)(eslint@9.36.0(jiti@2.6.0))
     transitivePeerDependencies:
       - supports-color
 
@@ -27272,7 +27272,7 @@ snapshots:
       asn1.js: 4.10.1
       browserify-aes: 1.2.0
       evp_bytestokey: 1.0.3
-      pbkdf2: 3.1.4
+      pbkdf2: 3.1.5
       safe-buffer: 5.2.1
 
   parse-filepath@1.0.2:
@@ -27341,7 +27341,7 @@ snapshots:
 
   pathval@2.0.1: {}
 
-  pbkdf2@3.1.4:
+  pbkdf2@3.1.5:
     dependencies:
       create-hash: 1.2.0
       create-hmac: 1.1.7

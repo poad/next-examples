@@ -17,8 +17,8 @@
     "@eslint/compat": "^1.4.0",
     "@eslint/js": "^9.36.0",
     "@stylistic/eslint-plugin": "^5.4.0",
-    "@types/aws-lambda": "^8.10.152",
-    "@types/node": "^22.18.7",
+    "@types/aws-lambda": "^8.10.153",
+    "@types/node": "^22.18.8",
     "@types/qs": "^6.14.0",
     "aws-cdk": "^2.1029.3",
     "esbuild": "^0.25.10",
@@ -28,7 +28,7 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-promise": "^7.2.1",
     "tsx": "^4.20.6",
-    "typescript": "^5.9.2",
+    "typescript": "^5.9.3",
     "typescript-eslint": "^8.45.0"
   },
   "dependencies": {

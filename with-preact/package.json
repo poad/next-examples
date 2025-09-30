@@ -25,7 +25,7 @@
     "next": "^15.5.4",
     "next-plugin-preact": "^3.0.7",
     "preact": "^10.27.2",
-    "preact-render-to-string": "^6.6.1",
+    "preact-render-to-string": "^6.6.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-ssr-prepass": "npm:preact-ssr-prepass@^1.2.2",
@@ -40,8 +40,8 @@
     "@next/eslint-plugin-next": "^15.5.4",
     "@stylistic/eslint-plugin": "^5.4.0",
     "@tailwindcss/postcss": "^4.1.13",
-    "@types/node": "^22.18.7",
-    "@types/react": "^19.1.15",
+    "@types/node": "^22.18.8",
+    "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9",
     "autoprefixer": "^10.4.21",
     "cross-env": "^7.0.3",
@@ -62,7 +62,7 @@
     "style-loader": "^4.0.0",
     "swc-loader": "^0.2.6",
     "tailwindcss": "^4.1.13",
-    "typescript": "^5.9.2",
+    "typescript": "^5.9.3",
     "typescript-eslint": "^8.45.0"
   },
   "msw": {

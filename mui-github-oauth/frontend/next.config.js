@@ -16,7 +16,7 @@ const config = {
     unoptimized: true,
   },
   // Module not found: Can't resolve 'msw/browser' が解決するまで
-  turbo: {
+  turbopack: {
     resolveAlias: {
       'msw/browser': 'node_modules/msw/lib/browser',
       'msw/node': 'node_modules/msw/lib/node',

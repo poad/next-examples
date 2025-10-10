@@ -3,8 +3,8 @@ import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
 import { Tags } from 'aws-cdk-lib';
 import assert from 'assert';
-import { InfraStack, InfraStackProps } from '../lib/infra-stack';
-import { nextJsExport } from '../lib/process/setup';
+import { InfraStack, InfraStackProps } from '../lib/infra-stack.js';
+import { nextJsExport } from '../lib/process/setup.js';
 
 const app = new cdk.App();
 

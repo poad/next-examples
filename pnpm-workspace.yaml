@@ -55,8 +55,8 @@ onlyBuiltDependencies:
 overrides:
   '@babel/runtime@<7.26.10': '>=7.26.10'
   '@next/eslint-plugin-next@<15.5.0': '>=15.5.0'
-  '@types/react-dom@<19.1.7': '>=19.1.7'
-  '@types/react@<19.1.10': '>=19.1.10'
+  '@types/react-dom@<19.1.7': '>=19.2.2'
+  '@types/react@<19.1.10': '>=19.2.2'
   '@typescript-eslint/typescript-estree@<8.40.0': '>=8.40.0'
   esbuild@<=0.24.2: '>=0.25.0'
   eslint-config-next@<15.5.0: '>=15.5.0'

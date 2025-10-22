@@ -49,6 +49,7 @@ const eslintConfig: ConfigArray = tseslint.config(
       '*.ts',
       '*.tsx',
     ],
+    ...reactPlugin.configs.flat.recommended,
     extends: [
       importPlugin.flatConfigs.recommended,
       importPlugin.flatConfigs.typescript,
@@ -79,17 +80,13 @@ const eslintConfig: ConfigArray = tseslint.config(
       },
     },
     plugins: {
-      react: reactPlugin,
       'react-hooks': hooksPlugin,
       '@next/next': nextPlugin,
       'flow-type': flowtypePlugin,
       'jsx-a11y': jsxA11yPlugin,
       '@stylistic': stylistic,
     },
-    // @ts-expect-error ignore type errors
     rules: {
-      ...reactPlugin.configs['jsx-runtime'].rules,
-      ...hooksPlugin.configs.recommended.rules,
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs['core-web-vitals'].rules,
       '@next/next/no-duplicate-head': 'off',

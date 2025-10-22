@@ -19,18 +19,13 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v5
 
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js
       uses: actions/setup-node@v6
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 'lts/*'
         package-manager-cache: false
 
     - uses: pnpm/action-setup@v4
@@ -48,38 +43,3 @@ jobs:
 
     - name: lint
       run: bun run --bun lint
-
-  build-beta:
-
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-    - uses: actions/checkout@v5
-
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v6
-      with:
-        node-version: ${{ matrix.node-version }}
-        package-manager-cache: false
-
-    - uses: pnpm/action-setup@v4
-      name: Install pnpm
-      with:
-        package_json_file: with-beta/package.json
-        run_install: |
-          - recursive: true
-            cwd: with-beta
-            args: [--no-frozen-lockfile]
-
-    - name: lint
-      working-directory: ./with-beta
-      run: pnpm lint
-
-    - name: build
-      working-directory: ./with-beta
-      run: pnpm build

@@ -26,9 +26,9 @@
     "@mui/x-date-pickers": "^7.29.4",
     "@tailwindcss/container-queries": "^0.1.1",
     "material-react-table": "^3.2.1",
-    "next": "^15.5.6",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "next": "16.0.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
     "react-hook-form": "^7.65.0",
     "react-loader": "^2.4.7",
     "web-vitals": "^4.2.4"
@@ -36,8 +36,8 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.38.0",
-    "@next/bundle-analyzer": "^15.5.6",
-    "@next/eslint-plugin-next": "^15.5.6",
+    "@next/bundle-analyzer": "16.0.0",
+    "@next/eslint-plugin-next": "16.0.0",
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/addon-interactions": "^8.6.14",
     "@storybook/addon-links": "^8.6.14",
@@ -48,36 +48,30 @@
     "@storybook/react": "^8.6.14",
     "@storybook/test": "^8.6.14",
     "@stylistic/eslint-plugin": "^5.5.0",
-    "@tailwindcss/postcss": "^4.1.14",
-    "@types/node": "^22.18.11",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
+    "@tailwindcss/postcss": "^4.1.15",
+    "@types/node": "^22.18.12",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.38.0",
-    "eslint-config-next": "^15.5.6",
+    "eslint-config-next": "16.0.0",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-storybook": "^0.12.0",
-    "msw": "^2.11.5",
+    "msw": "^2.11.6",
     "msw-storybook-addon": "^2.0.6",
-    "pnpm": "^10.18.3",
+    "pnpm": "^10.19.0",
     "postcss": "^8.5.6",
     "rimraf": "^6.0.1",
     "storybook": "^8.6.14",
-    "tailwindcss": "^4.1.14",
+    "tailwindcss": "^4.1.15",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.1"
-  },
-  "engines": {
-    "npm": "use pnpm please!",
-    "yarn": "use pnpm please!",
-    "pnpm": ">=8.7.0"
+    "typescript-eslint": "^8.46.2"
   },
   "msw": {
     "workerDirectory": ".storybook/public"
-  },
-  "packageManager": "pnpm@10.8.0"
+  }
 }

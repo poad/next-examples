@@ -59,7 +59,6 @@ updates:
       - '/wasm/'
       - '/wasm/app/'
       - '/wasm/infra/'
-      - '/with-beta/'
       - '/with-preact/'
       - '/with-rspack/'
     schedule:

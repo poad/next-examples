@@ -5,7 +5,7 @@
   "scripts": {
     "preinstall": "cargo install wasm-pack",
     "dev": "pnpm wasm && next dev --turbopack",
-    "build": "pnpm wasm && next build",
+    "build": "pnpm wasm && next build --webpack",
     "start": "pnpm wasm && next start",
     "analyze": "ANALYZE=true next build",
     "export": "pnpm wasm && next build",

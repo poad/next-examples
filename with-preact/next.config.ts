@@ -8,9 +8,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   webpack: (config: any, { dev, isServer }: any) => {

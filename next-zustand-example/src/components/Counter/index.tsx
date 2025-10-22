@@ -1,4 +1,3 @@
-import React from 'react';
 import Box from '@mui/material/Box';
 import Add from '@mui/icons-material/Add';
 import Remove from '@mui/icons-material/Remove';

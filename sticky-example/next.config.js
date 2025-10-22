@@ -7,9 +7,6 @@ const config = {
   compiler: {
     emotion: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   // Module not found: Can't resolve 'msw/browser' が解決するまで
   turbopack: {
     resolveAlias: {

@@ -14,9 +14,6 @@ const config: NextConfig = {
   compiler: {
     emotion: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   experimental: {
     esmExternals: true,
   },

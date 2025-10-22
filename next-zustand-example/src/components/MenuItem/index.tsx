@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import Link from 'next/link';
 import { useTheme } from '@mui/material/styles';

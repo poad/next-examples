@@ -1,6 +1,6 @@
 'use client';
 import Box from '@mui/material/Box';
-import React, { JSX } from 'react';
+import { JSX } from 'react';
 import { Counter } from '../components/Counter';
 
 const Info = (): JSX.Element => {

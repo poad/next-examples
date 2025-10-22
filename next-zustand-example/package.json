@@ -1,5 +1,5 @@
 {
-  "name": "next-ts-template",
+  "name": "@next-examples/next-zustand-example",
   "version": "0.0.1",
   "private": true,
   "type": "module",

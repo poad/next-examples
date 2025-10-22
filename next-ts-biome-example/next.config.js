@@ -11,9 +11,6 @@ const config = {
   compiler: {
     emotion: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
 };
 export default withBundleAnalyzer({
   enabled: process.env.ANALYZE === "true",

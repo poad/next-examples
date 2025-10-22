@@ -30,7 +30,6 @@ packages:
   - ./wasm/app
   - ./wasm/infra
   - ./with-preact
-  - ./with-rspack
 
 auto-install-peers: true
 

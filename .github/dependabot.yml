@@ -60,7 +60,6 @@ updates:
       - '/wasm/app/'
       - '/wasm/infra/'
       - '/with-preact/'
-      - '/with-rspack/'
     schedule:
       interval: daily
       timezone: Asia/Tokyo

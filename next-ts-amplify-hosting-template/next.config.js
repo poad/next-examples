@@ -6,9 +6,6 @@ const config = {
   images: {
     unoptimized: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
 };
 
 export default config;

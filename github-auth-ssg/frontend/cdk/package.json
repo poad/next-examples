@@ -16,7 +16,7 @@
   "devDependencies": {
     "@eslint/compat": "^1.4.0",
     "@stylistic/eslint-plugin": "^5.5.0",
-    "@types/node": "^22.18.12",
+    "@types/node": "^22.18.13",
     "aws-cdk": "^2.1031.0",
     "esbuild": "^0.25.11",
     "eslint": "^9.38.0",
@@ -29,7 +29,7 @@
     "typescript-eslint": "^8.46.2"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.220.0",
+    "aws-cdk-lib": "^2.221.0",
     "constructs": "^10.4.2",
     "source-map-support": "^0.5.21"
   }

@@ -23,7 +23,7 @@
     "@mui/icons-material": "^7.3.4",
     "@mui/material": "^7.3.4",
     "@mui/material-nextjs": "^7.3.3",
-    "@types/node": "^22.18.13",
+    "@types/node": "^22.19.0",
     "@types/react": "19.2.2",
     "@types/uuid": "^10.0.0",
     "next": "16.0.0",
@@ -44,7 +44,7 @@
     "@types/react-no-ssr": "^1.1.8",
     "autoprefixer": "^10.4.21",
     "css-loader": "^7.1.2",
-    "eslint": "^9.38.0",
+    "eslint": "^9.39.1",
     "eslint-config-next": "16.0.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-flowtype": "^8.0.3",
@@ -62,7 +62,7 @@
     "styled-jsx": "^5.1.7",
     "tailwindcss": "^4.1.16",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.2",
+    "typescript-eslint": "^8.46.3",
     "uuid": "^11.1.0"
   },
   "msw": {

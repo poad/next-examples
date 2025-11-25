@@ -32,6 +32,29 @@ if [ $result -ne 0 ]; then
   cd "${CUR}" || exit
   exit $result
 fi
+echo ""
+pwd
+cargo update
+result=$?
+if [ $result -ne 0 ]; then
+  cd "${CUR}" || exit
+  exit $result
+fi
+
+cd "${CURRENT}/with-preact" || exit
+result=$?
+if [ $result -ne 0 ]; then
+  cd "${CUR}" || exit
+  exit $result
+fi
+echo ""
+pwd
+npx -y pnpm@latest self-update && pnpm install -r && pnpm up -r && pnpm audit --fix && pnpm lint-fix && pnpm build
+result=$?
+if [ $result -ne 0 ]; then
+  cd "${CUR}" || exit
+  exit $result
+fi
 
 cd "${CURRENT}" || exit
 result=$?

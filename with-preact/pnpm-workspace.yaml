@@ -1,35 +1,5 @@
 packages:
   - ./
-  - ./cloudwatch-rum/pages
-  - ./cloudwatch-rum/infra
-  - ./cloudwatch-rum/infra/function
-  - ./github-auth-ssg/frontend
-  - ./github-auth-ssg/frontend/cdk
-  - ./github-auth-ssg/backend
-  - ./graphql-msw/frontend/cdk
-  - ./graphql-msw/frontend
-  - ./graphql-msw/backend
-  - ./mui-github-oauth/frontend/cdk
-  - ./mui-github-oauth/frontend
-  - ./mui-github-oauth/backend
-  - ./kuma-ui-example
-  - ./next-amplified
-  - ./next-gsap-example
-  - ./next-i18n/app
-  - ./next-i18n/infra
-  - ./next-i18n/infra/function
-  - ./next-ts-amplify-hosting-template
-  - ./next-ts-amplify-hosting-template/cdk
-  - ./next-ts-biome-example
-  - ./next-zustand-example
-  - ./nextjs-dynamic-routing-app/app
-  - ./sticky-example
-  - ./vnc-example
-  - '!./with-beta/**'
-  - ./wasm
-  - ./wasm/app
-  - ./wasm/infra
-  - '!./with-preact/**'
 
 auto-install-peers: true
 
@@ -62,8 +32,8 @@ overrides:
   webpack-dev-server@<=5.2.0: '>=5.2.1'
   '@types/react-dom': '^19.2.2'
   '@types/react': '^19.2.2'
-  react@<=19.2.0: '^19.2.0'
-  react-dom@<=19.2.0: '^19.2.0'
+  react@<=19.2.0: 'npm:@preact/compat@^18.3.1'
+  react-dom@<=19.2.0: 'npm:@preact/compat@^18.3.1'
   next@=16.0.0: '^16.0.0'
   eslint-config-next@<=15.5.0: '^16.0.0'
   '@next/bundle-analyzer@<=16.0.0': '^16.0.0'

@@ -22,11 +22,11 @@
     "eslint-plugin-promise": "^7.2.1",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.47.0"
+    "typescript-eslint": "^8.48.0"
   },
   "dependencies": {
     "@aws-cdk/aws-amplify-alpha": "2.189.0-alpha.0",
-    "aws-cdk-lib": "^2.227.0",
+    "aws-cdk-lib": "^2.229.0",
     "constructs": "^10.4.3",
     "source-map-support": "^0.5.21"
   },

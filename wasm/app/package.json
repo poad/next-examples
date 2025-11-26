@@ -14,15 +14,15 @@
     "lint-fix": "eslint --fix"
   },
   "dependencies": {
-    "next": "^16.0.4",
+    "next": "^16.0.5",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.39.1",
-    "@next/bundle-analyzer": "^16.0.4",
-    "@next/eslint-plugin-next": "^16.0.4",
+    "@next/bundle-analyzer": "^16.0.5",
+    "@next/eslint-plugin-next": "^16.0.5",
     "@stylistic/eslint-plugin": "^5.6.1",
     "@types/node": "^22.19.1",
     "@types/react": "^19.2.7",

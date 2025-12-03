@@ -45,11 +45,11 @@ importers:
         specifier: ^3.2.1
         version: 3.2.1(c1120aee8dcae1d0876343e44b278f75)
       next:
-        specifier: ^16.0.6
-        version: 16.0.6(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2))
+        specifier: ^16.0.7
+        version: 16.0.7(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2))
       next-plugin-preact:
         specifier: ^3.0.7
-        version: 3.0.7(@prefresh/babel-plugin@0.5.0)(next@16.0.6(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2)))(preact-render-to-string@6.6.3(preact@10.27.2))(preact-ssr-prepass@1.2.2(preact@10.27.2))(preact@10.27.2)(webpack@5.103.0(@swc/core@1.15.3)(esbuild@0.27.0))
+        version: 3.0.7(@prefresh/babel-plugin@0.5.0)(next@16.0.7(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2)))(preact-render-to-string@6.6.3(preact@10.27.2))(preact-ssr-prepass@1.2.2(preact@10.27.2))(preact@10.27.2)(webpack@5.103.0(@swc/core@1.15.3)(esbuild@0.27.0))
       preact:
         specifier: ^10.27.2
         version: 10.27.2
@@ -97,10 +97,10 @@ importers:
         specifier: ^22.19.1
         version: 22.19.1
       '@types/react':
-        specifier: ^19.2.7
+        specifier: ^19.2.2
         version: 19.2.7
       '@types/react-dom':
-        specifier: ^19.2.3
+        specifier: ^19.2.2
         version: 19.2.3(@types/react@19.2.7)
       autoprefixer:
         specifier: ^10.4.22
@@ -949,8 +949,26 @@ packages:
       '@types/react':
         optional: true
 
+  '@mui/types@7.4.9':
+    resolution: {integrity: sha512-dNO8Z9T2cujkSIaCnWwprfeKmTWh97cnjkgmpFJ2sbfXLx8SMZijCYHOtP/y5nnUb/Rm2omxbDMmtUoSaUtKaw==}
+    peerDependencies:
+      '@types/react': ^19.2.2
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
   '@mui/utils@7.3.5':
     resolution: {integrity: sha512-jisvFsEC3sgjUjcPnR4mYfhzjCDIudttSGSbe1o/IXFNu0kZuR+7vqQI0jg8qtcVZBHWrwTfvAZj9MNMumcq1g==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      '@types/react': ^19.2.2
+      react: ^17.0.0 || ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@mui/utils@7.3.6':
+    resolution: {integrity: sha512-jn+Ba02O6PiFs7nKva8R2aJJ9kJC+3kQ2R0BbKNY3KQQ36Qng98GnPRFTlbwYTdMD6hLEBKaMLUktyg/rTfd2w==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@types/react': ^19.2.2
@@ -1012,56 +1030,56 @@ packages:
     resolution: {integrity: sha512-P0WKRByHa0sAcPw2wFriY9EvSzJ00Ij/cfdD6e48HzF0YFyn1q3zUL8PMlgFvXxwIP9ccwwjSQvRfj12EFO17A==}
     hasBin: true
 
-  '@next/env@16.0.6':
-    resolution: {integrity: sha512-PFTK/G/vM3UJwK5XDYMFOqt8QW42mmhSgdKDapOlCqBUAOfJN2dyOnASR/xUR/JRrro0pLohh/zOJ77xUQWQAg==}
+  '@next/env@16.0.7':
+    resolution: {integrity: sha512-gpaNgUh5nftFKRkRQGnVi5dpcYSKGcZZkQffZ172OrG/XkrnS7UBTQ648YY+8ME92cC4IojpI2LqTC8sTDhAaw==}
 
   '@next/eslint-plugin-next@16.0.6':
     resolution: {integrity: sha512-9INsBF3/4XL0/tON8AGsh0svnTtDMLwv3iREGWnWkewGdOnd790tguzq9rX8xwrVthPyvaBHhw1ww0GZz0jO5Q==}
 
-  '@next/swc-darwin-arm64@16.0.6':
-    resolution: {integrity: sha512-AGzKiPlDiui+9JcPRHLI4V9WFTTcKukhJTfK9qu3e0tz+Y/88B7vo5yZoO7UaikplJEHORzG3QaBFQfkjhnL0Q==}
+  '@next/swc-darwin-arm64@16.0.7':
+    resolution: {integrity: sha512-LlDtCYOEj/rfSnEn/Idi+j1QKHxY9BJFmxx7108A6D8K0SB+bNgfYQATPk/4LqOl4C0Wo3LACg2ie6s7xqMpJg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@next/swc-darwin-x64@16.0.6':
-    resolution: {integrity: sha512-LlLLNrK9WCIUkq2GciWDcquXYIf7vLxX8XE49gz7EncssZGL1vlHwgmURiJsUZAvk0HM1a8qb1ABDezsjAE/jw==}
+  '@next/swc-darwin-x64@16.0.7':
+    resolution: {integrity: sha512-rtZ7BhnVvO1ICf3QzfW9H3aPz7GhBrnSIMZyr4Qy6boXF0b5E3QLs+cvJmg3PsTCG2M1PBoC+DANUi4wCOKXpA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@next/swc-linux-arm64-gnu@16.0.6':
-    resolution: {integrity: sha512-r04NzmLSGGfG8EPXKVK72N5zDNnq9pa9el78LhdtqIC3zqKh74QfKHnk24DoK4PEs6eY7sIK/CnNpt30oc59kg==}
+  '@next/swc-linux-arm64-gnu@16.0.7':
+    resolution: {integrity: sha512-mloD5WcPIeIeeZqAIP5c2kdaTa6StwP4/2EGy1mUw8HiexSHGK/jcM7lFuS3u3i2zn+xH9+wXJs6njO7VrAqww==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-arm64-musl@16.0.6':
-    resolution: {integrity: sha512-hfB/QV0hA7lbD1OJxp52wVDlpffUMfyxUB5ysZbb/pBC5iuhyLcEKSVQo56PFUUmUQzbMsAtUu6k2Gh9bBtWXA==}
+  '@next/swc-linux-arm64-musl@16.0.7':
+    resolution: {integrity: sha512-+ksWNrZrthisXuo9gd1XnjHRowCbMtl/YgMpbRvFeDEqEBd523YHPWpBuDjomod88U8Xliw5DHhekBC3EOOd9g==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-x64-gnu@16.0.6':
-    resolution: {integrity: sha512-PZJushBgfvKhJBy01yXMdgL+l5XKr7uSn5jhOQXQXiH3iPT2M9iG64yHpPNGIKitKrHJInwmhPVGogZBAJOCPw==}
+  '@next/swc-linux-x64-gnu@16.0.7':
+    resolution: {integrity: sha512-4WtJU5cRDxpEE44Ana2Xro1284hnyVpBb62lIpU5k85D8xXxatT+rXxBgPkc7C1XwkZMWpK5rXLXTh9PFipWsA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-linux-x64-musl@16.0.6':
-    resolution: {integrity: sha512-LqY76IojrH9yS5fyATjLzlOIOgwyzBuNRqXwVxcGfZ58DWNQSyfnLGlfF6shAEqjwlDNLh4Z+P0rnOI87Y9jEw==}
+  '@next/swc-linux-x64-musl@16.0.7':
+    resolution: {integrity: sha512-HYlhqIP6kBPXalW2dbMTSuB4+8fe+j9juyxwfMwCe9kQPPeiyFn7NMjNfoFOfJ2eXkeQsoUGXg+O2SE3m4Qg2w==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-win32-arm64-msvc@16.0.6':
-    resolution: {integrity: sha512-eIfSNNqAkj0tqKRf0u7BVjqylJCuabSrxnpSENY3YKApqwDMeAqYPmnOwmVe6DDl3Lvkbe7cJAyP6i9hQ5PmmQ==}
+  '@next/swc-win32-arm64-msvc@16.0.7':
+    resolution: {integrity: sha512-EviG+43iOoBRZg9deGauXExjRphhuYmIOJ12b9sAPy0eQ6iwcPxfED2asb/s2/yiLYOdm37kPaiZu8uXSYPs0Q==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@next/swc-win32-x64-msvc@16.0.6':
-    resolution: {integrity: sha512-QGs18P4OKdK9y2F3Th42+KGnwsc2iaThOe6jxQgP62kslUU4W+g6AzI6bdIn/pslhSfxjAMU5SjakfT5Fyo/xA==}
+  '@next/swc-win32-x64-msvc@16.0.7':
+    resolution: {integrity: sha512-gniPjy55zp5Eg0896qSrf3yB1dw4F/3s8VK1ephdsZZ129j2n6e1WqCbE2YgcKhW9hPB9TVZENugquWJD5x0ug==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -1793,6 +1811,9 @@ packages:
 
   caniuse-lite@1.0.30001757:
     resolution: {integrity: sha512-r0nnL/I28Zi/yjk1el6ilj27tKcdjLsNqAOZr0yVjWPrSQyHgKI2INaEWw21bAQSv2LXRt1XuCS/GomNpWOxsQ==}
+
+  caniuse-lite@1.0.30001759:
+    resolution: {integrity: sha512-Pzfx9fOKoKvevQf8oCXoyNRQ5QyxJj+3O0Rqx2V5oxT61KGx8+n6hV/IUyJeifUci2clnmmKVpvtiqRzgiWjSw==}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -3049,8 +3070,8 @@ packages:
       preact-render-to-string: '>=5'
       preact-ssr-prepass: '>=1'
 
-  next@16.0.6:
-    resolution: {integrity: sha512-2zOZ/4FdaAp5hfCU/RnzARlZzBsjaTZ/XjNQmuyYLluAPM7kcrbIkdeO2SL0Ysd1vnrSgU+GwugfeWX1cUCgCg==}
+  next@16.0.7:
+    resolution: {integrity: sha512-3mBRJyPxT4LOxAJI6IsXeFtKfiJUbjCLgvXO02fV8Wy/lIhPvP94Fe7dGhUgHXcQy4sSuYwQNcOLhIfOm0rL0A==}
     engines: {node: '>=20.9.0'}
     hasBin: true
     peerDependencies:
@@ -3358,6 +3379,9 @@ packages:
 
   react-is@19.2.0:
     resolution: {integrity: sha512-x3Ax3kNSMIIkyVYhWPyO09bu0uttcAIoecO/um/rKGQ4EltYWVYtyiGkS/3xMynrbVQdS69Jhlv8FXUEZehlzA==}
+
+  react-is@19.2.1:
+    resolution: {integrity: sha512-L7BnWgRbMwzMAubQcS7sXdPdNLmKlucPlopgAzx7FtYbksWZgEWiuYM5x9T6UqS2Ne0rsgQTq5kY2SGqpzUkYA==}
 
   react-transition-group@4.4.5:
     resolution: {integrity: sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==}
@@ -4762,6 +4786,12 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.7
 
+  '@mui/types@7.4.9(@types/react@19.2.7)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+    optionalDependencies:
+      '@types/react': 19.2.7
+
   '@mui/utils@7.3.5(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7)':
     dependencies:
       '@babel/runtime': 7.28.4
@@ -4774,12 +4804,24 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.7
 
+  '@mui/utils@7.3.6(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7)':
+    dependencies:
+      '@babel/runtime': 7.28.4
+      '@mui/types': 7.4.9(@types/react@19.2.7)
+      '@types/prop-types': 15.7.15
+      clsx: 2.1.1
+      prop-types: 15.8.1
+      react: '@preact/compat@18.3.1(preact@10.27.2)'
+      react-is: 19.2.1
+    optionalDependencies:
+      '@types/react': 19.2.7
+
   '@mui/x-date-pickers@8.19.0(46c85543c063fdd64245198a909f288a)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@mui/material': 7.3.5(@emotion/react@11.14.0(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7))(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7))(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7)
       '@mui/system': 7.3.5(@emotion/react@11.14.0(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7))(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7))(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7)
-      '@mui/utils': 7.3.5(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7)
+      '@mui/utils': 7.3.6(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7)
       '@mui/x-internals': 8.19.0(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7)
       '@types/react-transition-group': 4.4.12(@types/react@19.2.7)
       clsx: 2.1.1
@@ -4796,7 +4838,7 @@ snapshots:
   '@mui/x-internals@8.19.0(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7)':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@mui/utils': 7.3.5(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7)
+      '@mui/utils': 7.3.6(@preact/compat@18.3.1(preact@10.27.2))(@types/react@19.2.7)
       react: '@preact/compat@18.3.1(preact@10.27.2)'
       reselect: 5.1.1
       use-sync-external-store: 1.6.0(@preact/compat@18.3.1(preact@10.27.2))
@@ -4834,34 +4876,34 @@ snapshots:
       - '@babel/preset-env'
       - supports-color
 
-  '@next/env@16.0.6': {}
+  '@next/env@16.0.7': {}
 
   '@next/eslint-plugin-next@16.0.6':
     dependencies:
       fast-glob: 3.3.1
 
-  '@next/swc-darwin-arm64@16.0.6':
+  '@next/swc-darwin-arm64@16.0.7':
     optional: true
 
-  '@next/swc-darwin-x64@16.0.6':
+  '@next/swc-darwin-x64@16.0.7':
     optional: true
 
-  '@next/swc-linux-arm64-gnu@16.0.6':
+  '@next/swc-linux-arm64-gnu@16.0.7':
     optional: true
 
-  '@next/swc-linux-arm64-musl@16.0.6':
+  '@next/swc-linux-arm64-musl@16.0.7':
     optional: true
 
-  '@next/swc-linux-x64-gnu@16.0.6':
+  '@next/swc-linux-x64-gnu@16.0.7':
     optional: true
 
-  '@next/swc-linux-x64-musl@16.0.6':
+  '@next/swc-linux-x64-musl@16.0.7':
     optional: true
 
-  '@next/swc-win32-arm64-msvc@16.0.6':
+  '@next/swc-win32-arm64-msvc@16.0.7':
     optional: true
 
-  '@next/swc-win32-x64-msvc@16.0.6':
+  '@next/swc-win32-x64-msvc@16.0.7':
     optional: true
 
   '@nodelib/fs.scandir@2.1.5':
@@ -4901,13 +4943,13 @@ snapshots:
     dependencies:
       preact: 10.27.2
 
-  '@prefresh/next@1.7.0(next@16.0.6(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2)))(preact@10.27.2)(webpack@5.103.0(@swc/core@1.15.3)(esbuild@0.27.0))':
+  '@prefresh/next@1.7.0(next@16.0.7(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2)))(preact@10.27.2)(webpack@5.103.0(@swc/core@1.15.3)(esbuild@0.27.0))':
     dependencies:
       '@prefresh/babel-plugin': 0.5.0
       '@prefresh/core': 1.5.9(preact@10.27.2)
       '@prefresh/utils': 1.2.1
       '@prefresh/webpack': 4.0.6(@prefresh/babel-plugin@0.5.0)(preact@10.27.2)(webpack@5.103.0(@swc/core@1.15.3)(esbuild@0.27.0))
-      next: 16.0.6(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2))
+      next: 16.0.7(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2))
       preact: 10.27.2
       webpack: 5.103.0(@swc/core@1.15.3)(esbuild@0.27.0)
 
@@ -5600,6 +5642,8 @@ snapshots:
   callsites@3.1.0: {}
 
   caniuse-lite@1.0.30001757: {}
+
+  caniuse-lite@1.0.30001759: {}
 
   chalk@4.1.2:
     dependencies:
@@ -7086,9 +7130,9 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.0)(next@16.0.6(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2)))(preact-render-to-string@6.6.3(preact@10.27.2))(preact-ssr-prepass@1.2.2(preact@10.27.2))(preact@10.27.2)(webpack@5.103.0(@swc/core@1.15.3)(esbuild@0.27.0)):
+  next-plugin-preact@3.0.7(@prefresh/babel-plugin@0.5.0)(next@16.0.7(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2)))(preact-render-to-string@6.6.3(preact@10.27.2))(preact-ssr-prepass@1.2.2(preact@10.27.2))(preact@10.27.2)(webpack@5.103.0(@swc/core@1.15.3)(esbuild@0.27.0)):
     dependencies:
-      '@prefresh/next': 1.7.0(next@16.0.6(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2)))(preact@10.27.2)(webpack@5.103.0(@swc/core@1.15.3)(esbuild@0.27.0))
+      '@prefresh/next': 1.7.0(next@16.0.7(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2)))(preact@10.27.2)(webpack@5.103.0(@swc/core@1.15.3)(esbuild@0.27.0))
       '@prefresh/webpack': 3.3.4(@prefresh/babel-plugin@0.5.0)(preact@10.27.2)(webpack@5.103.0(@swc/core@1.15.3)(esbuild@0.27.0))
       module-alias: 2.2.3
       preact: 10.27.2
@@ -7099,24 +7143,24 @@ snapshots:
       - next
       - webpack
 
-  next@16.0.6(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2)):
+  next@16.0.7(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2)):
     dependencies:
-      '@next/env': 16.0.6
+      '@next/env': 16.0.7
       '@swc/helpers': 0.5.15
-      caniuse-lite: 1.0.30001757
+      caniuse-lite: 1.0.30001759
       postcss: 8.4.31
       react: '@preact/compat@18.3.1(preact@10.27.2)'
       react-dom: '@preact/compat@18.3.1(preact@10.27.2)'
       styled-jsx: 5.1.6(@babel/core@7.28.5)(@preact/compat@18.3.1(preact@10.27.2))
     optionalDependencies:
-      '@next/swc-darwin-arm64': 16.0.6
-      '@next/swc-darwin-x64': 16.0.6
-      '@next/swc-linux-arm64-gnu': 16.0.6
-      '@next/swc-linux-arm64-musl': 16.0.6
-      '@next/swc-linux-x64-gnu': 16.0.6
-      '@next/swc-linux-x64-musl': 16.0.6
-      '@next/swc-win32-arm64-msvc': 16.0.6
-      '@next/swc-win32-x64-msvc': 16.0.6
+      '@next/swc-darwin-arm64': 16.0.7
+      '@next/swc-darwin-x64': 16.0.7
+      '@next/swc-linux-arm64-gnu': 16.0.7
+      '@next/swc-linux-arm64-musl': 16.0.7
+      '@next/swc-linux-x64-gnu': 16.0.7
+      '@next/swc-linux-x64-musl': 16.0.7
+      '@next/swc-win32-arm64-msvc': 16.0.7
+      '@next/swc-win32-x64-msvc': 16.0.7
       sharp: 0.34.5
     transitivePeerDependencies:
       - '@babel/core'
@@ -7391,6 +7435,8 @@ snapshots:
   react-is@16.13.1: {}
 
   react-is@19.2.0: {}
+
+  react-is@19.2.1: {}
 
   react-transition-group@4.4.5(@preact/compat@18.3.1(preact@10.27.2))(@preact/compat@18.3.1(preact@10.27.2)):
     dependencies:

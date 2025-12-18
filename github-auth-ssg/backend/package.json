@@ -14,28 +14,28 @@
     "clean": "rimraf build"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.4.1",
-    "@eslint/js": "^9.39.1",
+    "@eslint/compat": "^2.0.0",
+    "@eslint/js": "^9.39.2",
     "@stylistic/eslint-plugin": "^5.6.1",
     "@types/aws-lambda": "^8.10.159",
-    "@types/node": "^22.19.1",
+    "@types/node": "^24.10.4",
     "@types/qs": "^6.14.0",
-    "aws-cdk": "^2.1033.0",
-    "esbuild": "^0.25.12",
-    "eslint": "^9.39.1",
+    "aws-cdk": "^2.1100.1",
+    "esbuild": "^0.27.2",
+    "eslint": "^9.39.2",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-promise": "^7.2.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.48.0"
+    "typescript-eslint": "^8.50.0"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.230.0",
-    "constructs": "^10.4.3",
+    "aws-cdk-lib": "^2.233.0",
+    "constructs": "^10.4.4",
     "graphql": "^16.12.0",
-    "graphql-request": "^7.3.5",
+    "graphql-request": "^7.4.0",
     "qs": "^6.14.0",
     "source-map-support": "^0.5.21"
   }

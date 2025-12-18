@@ -9,9 +9,6 @@ packages:
   - ./graphql-msw/frontend/cdk
   - ./graphql-msw/frontend
   - ./graphql-msw/backend
-  - ./mui-github-oauth/frontend/cdk
-  - ./mui-github-oauth/frontend
-  - ./mui-github-oauth/backend
   - ./kuma-ui-example
   - ./next-amplified
   - ./next-gsap-example
@@ -52,14 +49,14 @@ onlyBuiltDependencies:
   - unrs-resolver
 
 overrides:
-  '@babel/runtime@<7.26.10': '>=7.26.10'
-  '@typescript-eslint/typescript-estree@<8.40.0': '>=8.40.0'
-  esbuild@<=0.24.2: '^0.27.0'
+  esbuild@<=0.24.2: '>=0.25.0'
   nth-check@<2.0.1: '>=2.0.1'
   postcss@<8.4.31: '>=8.4.31'
-  tailwindcss@<4.0.0: '>=4.0.0'
-  vite@>=7.1.0 <=7.1.4: '^7.1.5'
   webpack-dev-server@<=5.2.0: '>=5.2.1'
+
+  '@typescript-eslint/typescript-estree@<8.40.0': '^8.40.0'
+  tailwindcss@<4.0.0: '^4.0.0'
+  vite@>=7.1.0 <=7.1.4: '^7.1.5'
   '@types/react-dom': '^19.2.2'
   '@types/react': '^19.2.2'
   react@<=19.2.0: '^19.2.0'
@@ -68,5 +65,25 @@ overrides:
   eslint-config-next@<=15.5.0: '^16.0.0'
   '@next/bundle-analyzer@<=16.0.0': '^16.0.0'
   '@next/eslint-plugin-next@<=16.0.0': '^16.0.0'
+  '@eslint/compat': '^2.0.0'
+  "eslint-import-resolver-typescript": "^4.4.4"
+  "esbuild": "^0.27.2"
+  "@storybook/addon-docs": "^10.1.10"
+  "@storybook/addon-links": "^10.1.10"
+  "@storybook/addon-onboarding": "^10.1.10"
+  "@storybook/addon-styling-webpack": "^3.0.0"
+  "@storybook/addon-themes": "^10.1.10"
+  "@storybook/nextjs": "^10.1.10"
+  "eslint-plugin-storybook": "^10.1.10"
+  "storybook": "^10.1.10"
+  "uuid": "^13.0.0"
+  "@types/node": "^24.10.4"
+  "@graphql-codegen/cli": "^6.1.0"
+  "@graphql-codegen/client-preset": "^5.2.2"
+  "@graphql-codegen/typescript-msw": "^3.0.1"
+  "@graphql-codegen/typescript-react-apollo": "^4.3.4"
+  "@graphql-eslint/eslint-plugin": "^4.4.0"
+  "@graphql-typed-document-node/core": "^3.2.0"
+  "eslint-plugin-react-hooks": "^7.0.1"
 
 strictPeerDependencies: false

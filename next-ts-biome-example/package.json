@@ -27,7 +27,7 @@
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.10",
+    "@biomejs/biome": "^2.3.11",
     "@next/bundle-analyzer": "^16.1.1",
     "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^24.10.4",

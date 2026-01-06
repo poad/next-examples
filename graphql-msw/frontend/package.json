@@ -32,7 +32,7 @@
     "@graphql-codegen/cli": "^6.1.0",
     "@graphql-codegen/client-preset": "^5.2.2",
     "@graphql-codegen/typescript-msw": "^3.0.1",
-    "@graphql-codegen/typescript-react-apollo": "^4.3.4",
+    "@graphql-codegen/typescript-react-apollo": "^4.4.0",
     "@graphql-eslint/eslint-plugin": "^4.4.0",
     "@graphql-typed-document-node/core": "^3.2.0",
     "@next/bundle-analyzer": "^16.1.1",

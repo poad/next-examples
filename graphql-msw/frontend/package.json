@@ -27,7 +27,7 @@
     "web-vitals": "^5.1.0"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.0.0",
+    "@eslint/compat": "^2.0.1",
     "@eslint/eslintrc": "^3.3.3",
     "@graphql-codegen/cli": "^6.1.0",
     "@graphql-codegen/client-preset": "^5.2.2",
@@ -37,8 +37,8 @@
     "@graphql-typed-document-node/core": "^3.2.0",
     "@next/bundle-analyzer": "^16.1.1",
     "@next/eslint-plugin-next": "^16.1.1",
-    "@stylistic/eslint-plugin": "^5.6.1",
-    "@types/node": "^24.10.4",
+    "@stylistic/eslint-plugin": "^5.7.0",
+    "@types/node": "^24.10.6",
     "@types/react": "^19.2.7",
     "eslint": "^9.39.2",
     "eslint-config-next": "16.0.0",

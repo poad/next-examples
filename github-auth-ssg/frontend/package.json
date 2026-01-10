@@ -20,12 +20,12 @@
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.0.0",
+    "@eslint/compat": "^2.0.1",
     "@eslint/eslintrc": "^3.3.3",
     "@eslint/js": "^9.39.2",
     "@next/eslint-plugin-next": "^16.1.1",
-    "@stylistic/eslint-plugin": "^5.6.1",
-    "@types/node": "^24.10.4",
+    "@stylistic/eslint-plugin": "^5.7.0",
+    "@types/node": "^24.10.6",
     "@types/react": "^19.2.7",
     "eslint": "^9.39.2",
     "eslint-config-next": "16.0.0",

@@ -23,6 +23,6 @@
     "eslint-plugin-promise": "^7.2.1",
     "jiti": "^2.6.1",
     "pnpm": "^10.28.0",
-    "typescript-eslint": "^8.52.0"
+    "typescript-eslint": "^8.53.0"
   }
 }

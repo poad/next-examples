@@ -45,7 +45,7 @@
     "@mui/icons-material": "^7.3.7",
     "@next/bundle-analyzer": "^16.1.4",
     "@next/eslint-plugin-next": "^16.1.4",
-    "@stylistic/eslint-plugin": "^5.7.0",
+    "@stylistic/eslint-plugin": "^5.7.1",
     "@swc/jest": "^0.2.39",
     "@tailwindcss/postcss": "^4.1.18",
     "@types/jest": "^29.5.14",

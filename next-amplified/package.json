@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@aws-amplify/ui-react": "^6.13.2",
-    "aws-amplify": "^6.16.0",
+    "aws-amplify": "^6.16.2",
     "next": "^16.1.6",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
@@ -22,8 +22,8 @@
     "@eslint/js": "^9.39.2",
     "@next/eslint-plugin-next": "^16.1.6",
     "@tailwindcss/postcss": "^4.1.18",
-    "@types/node": "^24.10.10",
-    "@types/react": "^19.2.10",
+    "@types/node": "^24.10.11",
+    "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.24",
     "eslint": "^9.39.2",

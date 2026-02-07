@@ -39,5 +39,7 @@ overrides:
   tailwindcss@<4.0.0: '>=4.0.0'
   vite@>=7.1.0 <=7.1.4: ^7.1.5
   webpack-dev-server@<=5.2.0: '>=5.2.1'
+  webpack@>=5.49.0 <5.104.0: '>=5.104.0'
+  webpack@>=5.49.0 <=5.104.0: '>=5.104.1'
 
 strictPeerDependencies: false

@@ -1,5 +1,5 @@
 import type { StorybookConfig } from '@storybook/nextjs';
-import KumaUIWebpackPlugin from "@kuma-ui/webpack-plugin";
+import KumaUIWebpackPlugin from '@kuma-ui/webpack-plugin';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -7,31 +7,31 @@ const config: StorybookConfig = {
     '@storybook/addon-docs',
     '@storybook/addon-links',
     '@storybook/addon-onboarding',
-    "@storybook/addon-themes",
+    '@storybook/addon-themes',
     {
-      name: "@storybook/addon-styling-webpack",
-       options: {
-         rules: [
-           // Replaces existing CSS rules to support PostCSS
-           {
-             test: /\.css$/,
-             use: [
-               "style-loader",
-               {
-                 loader: "css-loader",
-                 options: { importLoaders: 1 },
-               },
-               {
-                 // Gets options from `postcss.config.js` in +your project root
-                 loader: "postcss-loader",
-                 options: {
-                   implementation: require.resolve("postcss"),
-                 },
-               },
-             ],
-           },
-         ],
-       },
+      name: '@storybook/addon-styling-webpack',
+      options: {
+        rules: [
+          // Replaces existing CSS rules to support PostCSS
+          {
+            test: /\.css$/,
+            use: [
+              'style-loader',
+              {
+                loader: 'css-loader',
+                options: { importLoaders: 1 },
+              },
+              {
+                // Gets options from `postcss.config.js` in +your project root
+                loader: 'postcss-loader',
+                options: {
+                  implementation: require.resolve('postcss'),
+                },
+              },
+            ],
+          },
+        ],
+      },
     },
   ],
   framework: {

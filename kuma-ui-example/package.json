@@ -36,7 +36,7 @@
     "@storybook/addon-themes": "^10.2.7",
     "@storybook/nextjs": "^10.2.7",
     "@stylistic/eslint-plugin": "^5.7.1",
-    "@types/node": "^24.10.11",
+    "@types/node": "^24.10.12",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
     "cross-env": "^10.1.0",

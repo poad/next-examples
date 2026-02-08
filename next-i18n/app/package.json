@@ -49,7 +49,7 @@
     "@swc/jest": "^0.2.39",
     "@tailwindcss/postcss": "^4.1.18",
     "@types/jest": "^29.5.14",
-    "@types/node": "^24.10.11",
+    "@types/node": "^24.10.12",
     "@types/react": "^19.2.13",
     "autoprefixer": "^10.4.24",
     "eslint": "^9.39.2",

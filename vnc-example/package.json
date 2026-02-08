@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@reach/portal": "^0.18.0",
-    "@types/node": "^24.10.11",
+    "@types/node": "^24.10.12",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.24",
@@ -40,7 +40,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
-    "pnpm": "^10.28.2",
+    "pnpm": "^10.29.1",
     "postcss": "^8.4.45",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.54.0"

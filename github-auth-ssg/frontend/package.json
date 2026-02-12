@@ -24,9 +24,9 @@
     "@eslint/eslintrc": "^3.3.3",
     "@eslint/js": "^9.39.2",
     "@next/eslint-plugin-next": "^16.1.6",
-    "@stylistic/eslint-plugin": "^5.7.1",
-    "@types/node": "^24.10.12",
-    "@types/react": "^19.2.13",
+    "@stylistic/eslint-plugin": "^5.8.0",
+    "@types/node": "^24.10.13",
+    "@types/react": "^19.2.14",
     "eslint": "^9.39.2",
     "eslint-config-next": "16.0.0",
     "eslint-import-resolver-typescript": "^4.4.4",
@@ -38,7 +38,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "rimraf": "^6.1.2",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.54.0",
+    "typescript-eslint": "^8.55.0",
     "uuid": "^13.0.0"
   }
 }

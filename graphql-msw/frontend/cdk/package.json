@@ -24,11 +24,11 @@
     "eslint-plugin-promise": "^7.2.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.55.0"
+    "typescript-eslint": "^8.56.0"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.238.0",
-    "constructs": "^10.4.5",
+    "constructs": "^10.5.0",
     "esbuild": "^0.27.3",
     "source-map-support": "^0.5.21"
   },

@@ -24,8 +24,8 @@
     "@graphql-codegen/cli": "^6.1.1",
     "@graphql-codegen/introspection": "^5.0.0",
     "@graphql-codegen/jsdoc": "^3.0.1",
-    "@graphql-codegen/typescript": "^5.0.7",
-    "@graphql-codegen/typescript-resolvers": "^5.1.5",
+    "@graphql-codegen/typescript": "^5.0.8",
+    "@graphql-codegen/typescript-resolvers": "^5.1.6",
     "@graphql-tools/graphql-file-loader": "^8.1.9",
     "@graphql-tools/load": "^8.1.8",
     "@graphql-tools/schema": "^10.0.31",
@@ -42,14 +42,14 @@
     "graphql-codegen-typescript-validation-schema": "^0.17.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.55.0",
+    "typescript-eslint": "^8.56.0",
     "yup": "^1.7.1"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.988.0",
+    "@aws-sdk/client-s3": "^3.992.0",
     "aws-cdk-lib": "^2.238.0",
     "aws-lambda": "^1.0.7",
-    "constructs": "^10.4.5",
+    "constructs": "^10.5.0",
     "graphql": "^16.12.0",
     "source-map-support": "^0.5.21"
   },

@@ -29,9 +29,10 @@ packages:
   - '!./with-preact/**'
 
 auto-install-peers: true
+
 enablePrePostScripts: true
+
 legacy-peer-deps: true
-strictPeerDependencies: false
 
 onlyBuiltDependencies:
   - '@apollo/protobufjs'
@@ -49,6 +50,7 @@ onlyBuiltDependencies:
 
 overrides:
   '@eslint/compat': ^2.0.0
+  '@eslint/js': ^9
   '@graphql-codegen/cli': ^6.1.0
   '@graphql-codegen/client-preset': ^5.2.2
   '@graphql-codegen/typescript-msw': ^3.0.1
@@ -68,12 +70,17 @@ overrides:
   '@types/react': ^19.2.2
   '@types/react-dom': ^19.2.2
   '@typescript-eslint/typescript-estree@<8.40.0': ^8.40.0
+  '@eslint/eslintrc>ajv': ^6.12.4
+  ajv@<8.18.0: '>=8.18.0'
+  eslint>ajv: ^6.12.4
   diff@<8.0.3: '>=8.0.3'
   esbuild: ^0.27.2
+  eslint: ^9
   eslint-config-next@<=15.5.0: ^16.0.0
   eslint-import-resolver-typescript: ^4.4.4
   eslint-plugin-react-hooks: ^7.0.1
   eslint-plugin-storybook: ^10.1.10
+  fast-xml-parser@>=4.1.3 <5.3.6: '>=5.3.6'
   fast-xml-parser@>=4.3.6 <=5.3.3: '>=5.3.4'
   lodash@>=4.0.0 <=4.17.22: '>=4.17.23'
   next@=16.0.0: ^16.0.0
@@ -86,5 +93,5 @@ overrides:
   uuid: ^13.0.0
   vite@>=7.1.0 <=7.1.4: ^7.1.5
   webpack-dev-server@<=5.2.0: '>=5.2.1'
-  eslint: "^9"
-  '@eslint/js': "^9"
+
+strictPeerDependencies: false

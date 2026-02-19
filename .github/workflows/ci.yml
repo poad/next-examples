@@ -35,11 +35,9 @@ jobs:
           - recursive: true
             args: [--no-frozen-lockfile]
 
-    - uses: oven-sh/setup-bun@v2
-
     # wsam のビルドを先に実施しないと import 解決できずに lint でエラーになるため
     - name: build
-      run: bun run build
+      run: pnpm build
 
     - name: lint
-      run: bun run --bun lint
+      run: pnpm lint

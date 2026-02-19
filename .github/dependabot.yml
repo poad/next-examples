@@ -46,8 +46,6 @@ updates:
       - '/next-i18n/app/'
       - '/next-i18n/infra/'
       - '/next-i18n/infra/function/'
-      - '/next-ts-amplify-hosting-template/'
-      - '/next-ts-amplify-hosting-template/cdk/'
       - '/next-ts-biome-example/'
       - '/next-zustand-example/'
       - '/nextjs-dynamic-routing-app/app/'
@@ -56,7 +54,6 @@ updates:
       - '/wasm/'
       - '/wasm/app/'
       - '/wasm/infra/'
-      - '/with-preact/'
     schedule:
       interval: daily
       timezone: Asia/Tokyo

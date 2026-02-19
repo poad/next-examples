@@ -6,8 +6,6 @@ import tseslint, { configs, parser, ConfigArray } from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
 import hooksPlugin from 'eslint-plugin-react-hooks';
 // @ts-expect-error ignore type errors
-import flowtypePlugin from 'eslint-plugin-flowtype';
-// @ts-expect-error ignore type errors
 import pluginPromise from 'eslint-plugin-promise';
 // @ts-expect-error ignore type errors
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
@@ -82,7 +80,6 @@ const eslintConfig: ConfigArray = tseslint.config(
       react: reactPlugin,
       'react-hooks': hooksPlugin,
       '@next/next': nextPlugin,
-      'flow-type': flowtypePlugin,
       'jsx-a11y': jsxA11yPlugin,
       '@stylistic': stylistic,
     },

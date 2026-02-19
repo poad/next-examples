@@ -6,8 +6,6 @@ import importPlugin from 'eslint-plugin-import';
 import tseslint, { configs, parser, ConfigArray } from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
 // @ts-expect-error ignore type errors
-import flowtypePlugin from 'eslint-plugin-flowtype';
-// @ts-expect-error ignore type errors
 import pluginPromise from 'eslint-plugin-promise';
 
 import { includeIgnoreFile } from '@eslint/compat';
@@ -76,7 +74,6 @@ const eslintConfig: ConfigArray = tseslint.config(
       react: reactPlugin,
       'react-hooks': hooksPlugin,
       '@next/next': nextPlugin,
-      'flow-type': flowtypePlugin,
       '@stylistic': stylistic,
     },
     rules: {

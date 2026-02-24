@@ -7,7 +7,7 @@ edition = "2024"
 crate-type = ["cdylib"]
 
 [dependencies]
-wasm-bindgen = "^0.2.111"
+wasm-bindgen = "^0.2.112"
 
 [profile.release]
 strip = true

@@ -18,7 +18,7 @@
   "dependencies": {
     "@apollo/client": "^4.1.6",
     "cross-env": "^10.1.0",
-    "graphql": "^16.12.0",
+    "graphql": "^16.13.0",
     "msw": "^2.12.10",
     "next": "^16.1.6",
     "react": "^19.2.4",
@@ -48,7 +48,7 @@
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-storybook": "^10.2.11",
+    "eslint-plugin-storybook": "^10.2.12",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.1"
   },

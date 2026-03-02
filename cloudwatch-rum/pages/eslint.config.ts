@@ -1,7 +1,6 @@
 import eslint from '@eslint/js';
 import nextPlugin from '@next/eslint-plugin-next';
 import reactPlugin from 'eslint-plugin-react';
-import storybookPlugin from 'eslint-plugin-storybook';
 import importPlugin from 'eslint-plugin-import';
 import tseslint, { configs, parser, ConfigArray } from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
@@ -90,9 +89,6 @@ const eslintConfig: ConfigArray = tseslint.config(
       ...reactPlugin.configs['jsx-runtime'].rules,
       ...hooksPlugin.configs.recommended.rules,
       ...nextPlugin.configs.recommended.rules,
-      // @ts-expect-error ignore type errors
-      // eslint-disable-next-line import/no-named-as-default-member
-      ...storybookPlugin.configs.recommended.rules,
       ...nextPlugin.configs['core-web-vitals'].rules,
       '@next/next/no-duplicate-head': 'off',
       '@next/next/no-img-element': 'error',

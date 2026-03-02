@@ -50,7 +50,6 @@ updates:
       - '/next-zustand-example/'
       - '/nextjs-dynamic-routing-app/app/'
       - '/sticky-example/'
-      - '/vnc-example/'
       - '/wasm/'
       - '/wasm/app/'
       - '/wasm/infra/'

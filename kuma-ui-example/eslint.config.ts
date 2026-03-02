@@ -1,6 +1,5 @@
 import { defineConfig, globalIgnores } from 'eslint/config';
 import eslint from '@eslint/js';
-import storybookPlugin from 'eslint-plugin-storybook';
 import stylistic from '@stylistic/eslint-plugin';
 import react from 'eslint-plugin-react';
 // @ts-expect-error ignore plugin type
@@ -61,8 +60,6 @@ export default defineConfig(
       '@stylistic': stylistic,
     },
     rules: {
-      // @ts-expect-error ignore type errors
-      ...storybookPlugin.configs.recommended.rules,
       '@stylistic/semi': 'error',
       '@stylistic/indent': ['error', 2],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],

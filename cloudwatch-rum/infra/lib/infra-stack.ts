@@ -7,8 +7,8 @@ import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 import { Construct } from 'constructs';
 
 export interface InfraStackProps extends cdk.StackProps {
-  name: string;
-  region: string;
+  readonly name: string;
+  readonly region: string;
 }
 
 export class InfraStack extends cdk.Stack {

@@ -1,3 +1,4 @@
+import * as crypto from 'crypto';
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as s3 from 'aws-cdk-lib/aws-s3';
@@ -6,10 +7,9 @@ import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 import { CacheControl } from 'aws-cdk-lib/aws-codepipeline-actions';
 import * as iam from 'aws-cdk-lib/aws-iam';
-import * as crypto from 'crypto';
 
 export interface InfraStackProps extends cdk.StackProps {
-  appName: string;
+  readonly appName: string;
 }
 
 export class InfraStack extends cdk.Stack {

@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "tsc index.ts",
+    "build": "tsc",
     "watch": "tsc -w index.ts"
   },
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   }
 }

@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-import 'source-map-support/register';
+import { NextCloudFrontTemplateStack } from '../lib/cloudfront-s3-cdn-stack.js';
+import { nextJsExport } from '../lib/process/setup.js';
 import * as cdk from 'aws-cdk-lib';
-import { NextCloudFrontTemplateStack } from '../lib/cloudfront-s3-cdn-stack';
-import { nextJsExport } from '../lib/process/setup';
 
 const app = new cdk.App();
 

@@ -9,9 +9,9 @@ import * as s3 from 'aws-cdk-lib/aws-s3';
 import { Construct } from 'constructs';
 
 interface BackendStackProps extends cdk.StackProps {
-  appName: string;
-  parameterName: string;
-  bucketName: string;
+  readonly appName: string;
+  readonly parameterName: string;
+  readonly bucketName: string;
 }
 
 export class BackendStack extends cdk.Stack {

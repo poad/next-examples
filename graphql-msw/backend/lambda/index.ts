@@ -12,7 +12,7 @@ import {
   Context,
 } from 'aws-lambda';
 import { Logger } from '@aws-lambda-powertools/logger';
-import schemaWithResolvers from './schema';
+import schemaWithResolvers from './schema.js';
 
 // AWS Lambda Powertools Logger設定
 const logger = new Logger({
@@ -54,7 +54,7 @@ const server = new ApolloServer<MyContext>({
         };
       }
     }
-    
+
     // 開発環境では詳細なエラー情報を表示
     logger.error('GraphQL Error', { error: formattedError });
     return formattedError;
@@ -64,7 +64,7 @@ const server = new ApolloServer<MyContext>({
       ? ApolloServerPluginLandingPageProductionDefault({
         footer: false,
       })
-      : ApolloServerPluginLandingPageLocalDefault({ 
+      : ApolloServerPluginLandingPageLocalDefault({
         embed: false,
         footer: false,
       }),

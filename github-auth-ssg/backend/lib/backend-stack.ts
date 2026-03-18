@@ -8,9 +8,9 @@ import * as ssm from 'aws-cdk-lib/aws-ssm';
 import type { Construct } from 'constructs';
 
 interface BackendStackProps extends cdk.StackProps {
-  appName: string;
-  parameterName: string;
-  githubOauth: {
+  readonly appName: string;
+  readonly parameterName: string;
+  readonly githubOauth: {
     clientId: string;
     clientSecret: string;
   };

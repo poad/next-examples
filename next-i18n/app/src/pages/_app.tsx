@@ -2,7 +2,7 @@ import { AppProps } from 'next/app';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import theme from '../styles/theme';
 import '../styles/globals.css';
-import { appWithTranslation } from 'next-i18next';
+import { appWithTranslation } from 'next-i18next/pages';
 import i18nextConfig from '../../next-i18next.config';
 import { AppCacheProvider } from '@mui/material-nextjs/v15-pagesRouter';
 

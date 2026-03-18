@@ -8,7 +8,7 @@ import * as deployment from 'aws-cdk-lib/aws-s3-deployment';
 import type { Construct } from 'constructs';
 
 interface NextCloudFrontTemplateStackProps extends cdk.StackProps {
-  appName: string;
+  readonly appName: string;
 }
 
 export class NextCloudFrontTemplateStack extends cdk.Stack {

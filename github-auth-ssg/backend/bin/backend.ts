@@ -1,7 +1,6 @@
 #!/usr/bin/env node
+import { BackendStack } from '../lib/backend-stack.js';
 import * as cdk from 'aws-cdk-lib';
-import 'source-map-support/register';
-import { BackendStack } from '../lib/backend-stack';
 
 const app = new cdk.App();
 

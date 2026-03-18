@@ -7,7 +7,6 @@ import styles from '../styles/Home.module.css';
 const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL as string;
 
 export default function Users() {
-  const [code, setCode] = useState<string>();
   const [databaseId, setDatabaseId] = useState<number>();
 
   const fetcher = useCallback(async (code: string) => {
@@ -21,6 +20,8 @@ export default function Users() {
     });
   }, []);
 
+  const code = new URLSearchParams(window.location.search).get('code')?.toString();
+
   useEffect(() => {
     if (code && !databaseId) {
       fetcher(code)
@@ -29,12 +30,6 @@ export default function Users() {
         .catch((error) => error);
     }
   }, [code, databaseId, fetcher]);
-
-  useEffect(() => {
-    setCode(
-      new URLSearchParams(window.location.search).get('code')?.toString(),
-    );
-  }, []);
 
   return (
     <>

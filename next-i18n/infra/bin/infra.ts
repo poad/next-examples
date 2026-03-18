@@ -1,10 +1,9 @@
 #!/usr/bin/env node
-import 'source-map-support/register';
-import * as cdk from 'aws-cdk-lib';
-import { Tags } from 'aws-cdk-lib';
 import assert from 'assert';
 import { InfraStack, InfraStackProps } from '../lib/infra-stack.js';
 import { nextJsExport } from '../lib/process/setup.js';
+import { Tags } from 'aws-cdk-lib';
+import * as cdk from 'aws-cdk-lib';
 
 const app = new cdk.App();
 

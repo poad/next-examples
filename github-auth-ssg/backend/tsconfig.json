@@ -1,16 +1,12 @@
 {
-  "ts-node": {
-    "esm": true,
-    "experimentalSpecifierResolution": "node"
-  },
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
+    "module": "nodenext",
     "lib": [
       "esnext",
       "dom"
     ],
-    "moduleResolution": "bundler",
+    "moduleResolution": "nodenext",
     "declaration": true,
     "strict": true,
     "noImplicitAny": true,
@@ -25,12 +21,15 @@
     "inlineSources": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
+    "noEmit": true,
+    "rootDirs": ["bin", "lib"],
     "typeRoots": [
       "./node_modules/@types"
-    ]
+    ],
+    "types": [ "node" ]
   },
   "exclude": [
-    "node_modules",
+    "**/node_modules",
     "cdk.out"
   ]
 }

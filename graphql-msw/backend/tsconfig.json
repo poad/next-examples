@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
+    "target": "ES2023",
     "module": "esnext",
     "lib": [
-      "ES2022",
+      "ES2023",
       "dom"
     ],
     "moduleResolution": "bundler",
@@ -27,7 +27,8 @@
     "forceConsistentCasingInFileNames": true,
     "typeRoots": [
       "./node_modules/@types"
-    ]
+    ],
+    "types": [ "node" ]
   },
   "exclude": [
     "node_modules",

@@ -1,8 +1,8 @@
 import { Box, Link, Typography } from '@mui/material';
 import { Trans, useTranslation } from 'react-i18next';
 
-import Layout from '../../components/Layout';
-import { getStaticPaths, makeStaticProps } from 'lib/getStatic';
+import Layout from '../../components/Layout/';
+import { getStaticPaths, makeStaticProps } from '../../lib/getStatic';
 import { ReactNode } from 'react';
 
 function CardStyleLink({

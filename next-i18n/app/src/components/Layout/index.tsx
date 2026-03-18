@@ -18,8 +18,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '@mui/material/styles';
 import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
-import LangSwitcher from 'components/LangSwitcher';
-import GitHubProjectLink from 'components/GitHubProjectLink';
+import LangSwitcher from '../LangSwitcher';
+import GitHubProjectLink from '../GitHubProjectLink';
 
 const drawerWidth = 240;
 

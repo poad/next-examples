@@ -1,12 +1,12 @@
+import { defineConfig, globalIgnores } from 'eslint/config';
 import eslint from '@eslint/js';
-import nextPlugin from '@next/eslint-plugin-next';
-import reactPlugin from 'eslint-plugin-react';
-import importPlugin from 'eslint-plugin-import';
-import tseslint, { configs, parser, ConfigArray } from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
-import hooksPlugin from 'eslint-plugin-react-hooks';
-// @ts-expect-error ignore type errors
+// @ts-expect-error ignore plugin type
 import pluginPromise from 'eslint-plugin-promise';
+import nextVitals from 'eslint-config-next/core-web-vitals';
+import nextTs from 'eslint-config-next/typescript';
+import globals from 'globals';
+import { configs, parser } from 'typescript-eslint';
 
 import { includeIgnoreFile } from '@eslint/compat';
 import path from 'node:path';
@@ -14,21 +14,29 @@ import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const gitignorePath = path.resolve(__dirname, '.gitignore');
+const gitignorePath = path.resolve(__dirname, './.gitignore');
 
-const eslintConfig: ConfigArray = tseslint.config(
+export default defineConfig(
+  ...nextVitals,
+  ...nextTs,
+  // Override default ignores of eslint-config-next.
+  globalIgnores([
+    // Default ignores of eslint-config-next:
+    '.next/**',
+    'out/**',
+    'build/**',
+    'next-env.d.ts',
+  ]),
   includeIgnoreFile(gitignorePath),
   {
     ignores: [
-      '.next',
       '**/*.d.ts',
-      'out',
-      '**/gql/**/*',
-      'cdk.out',
-      '**/generated/**/*.*',
-      'src/gql/*.ts',
-      'public/**/*.js',
-      'cdk/**/*',
+      '*.js',
+      'src/tsconfig.json',
+      'src/next-env.d.ts',
+      'src/stories',
+      'node_modules/**/*',
+      './.next/*',
     ],
   },
   eslint.configs.recommended,
@@ -36,55 +44,23 @@ const eslintConfig: ConfigArray = tseslint.config(
   ...configs.stylistic,
   pluginPromise.configs['flat/recommended'],
   {
-    files: [
-      'src/**/*.ts',
-      'src/**/*.tsx',
-      '*.ts',
-      '*.tsx',
-    ],
-    extends: [
-      importPlugin.flatConfigs.recommended,
-      importPlugin.flatConfigs.typescript,
-    ],
+    files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
-      ecmaVersion: 'latest',
-      sourceType: 'module',
       parser,
-      parserOptions: {
-        projectService: true,
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-    settings: {
-      react: {
-        version: 'detect',
-      },
-      formComponents: ['Form'],
-      linkComponents: [
-        { name: 'Link', linkAttribute: 'to' },
-        { name: 'NavLink', linkAttribute: 'to' },
-      ],
-      'import/internal-regex': '^~/',
-      'import/resolver': {
-        node: true,
-        typescript: true,
+      globals: {
+        ...globals.serviceworker,
+        ...globals.browser,
       },
     },
     plugins: {
-      react: reactPlugin,
-      'react-hooks': hooksPlugin,
-      '@next/next': nextPlugin,
       '@stylistic': stylistic,
     },
     rules: {
-      '@next/next/no-duplicate-head': 'off',
-      '@next/next/no-img-element': 'error',
-      '@next/next/no-page-custom-font': 'off',
-      '@stylistic/quotes': ['error', 'single'],
-      '@stylistic/semi': ['error', 'always'],
+      '@stylistic/semi': 'error',
+      '@stylistic/indent': ['error', 2],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/arrow-parens': ['error', 'always'],
+      '@stylistic/quotes': ['error', 'single'],
     },
   },
 );
-
-export default eslintConfig;

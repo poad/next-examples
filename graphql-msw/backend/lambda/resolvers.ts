@@ -1,6 +1,6 @@
 import { S3Client, GetObjectCommand } from '@aws-sdk/client-s3';
 import { GraphQLError } from 'graphql';
-import { Pokemon, Resolvers } from './generated/graphql';
+import { Pokemon, Resolvers } from './generated/graphql.js';
 import { APIGatewayProxyEvent, Context } from 'aws-lambda';
 import { Logger } from '@aws-lambda-powertools/logger';
 

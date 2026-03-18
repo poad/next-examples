@@ -22,6 +22,7 @@ import MenuItem from '../components/MenuItem';
 import defaultTheme from './styles/theme';
 import './styles/Layout.modules.css';
 import Head from 'next/head';
+import { Roboto } from 'next/font/google';
 
 const drawerWidth = 240;
 
@@ -29,6 +30,13 @@ const sawarabi = Sawarabi_Gothic({
   weight: '400',
   subsets: ['latin-ext'],
   display: 'swap',
+});
+
+const roboto = Roboto({
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto',
 });
 
 function Base({ children }: { children: ReactNode }) {
@@ -155,13 +163,8 @@ export default function Layout({ children }: { children: ReactNode }) {
       <Head>
         {/* PWA primary color */}
         <meta name="theme-color" content={defaultTheme.palette.primary.main} />
-        {}
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-        />
       </Head>
-      <body>
+      <body className={roboto.variable}>
         <ThemeProvider theme={defaultTheme}>
           <Head>
             <title>Home</title>

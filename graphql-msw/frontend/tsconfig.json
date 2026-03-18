@@ -30,7 +30,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "sourceRoot": "src",
-    "baseUrl": ".",
+    "rootDir": ".",
     "typeRoots": [
       "./node_modules/@types",
       ".next"
@@ -53,7 +53,7 @@
     "incremental": true
   },
   "exclude": [
-    "node_modules",
+    "**/node_modules",
     "**/*.spec.ts",
     "**/*.spec.tsx",
     "**/*.test.ts",

@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {/* <ThemeProvider theme={studioTheme}> */}
-          {children}
+        {children}
         {/* </ThemeProvider> */}
       </body>
     </html>

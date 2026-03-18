@@ -3,7 +3,6 @@ import { green } from '@mui/material/colors';
 
 // A theme with custom primary and secondary color.
 // It's optional.
-
 const options = {
   palette: {
     primary: {
@@ -20,6 +19,9 @@ const options = {
     },
   },
   drawerWidth: 240,
+  typography: {
+    fontFamily: 'var(--font-roboto)',
+  },
 };
 
 const theme = createTheme(options);

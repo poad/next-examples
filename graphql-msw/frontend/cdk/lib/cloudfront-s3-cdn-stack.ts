@@ -1,14 +1,14 @@
+import * as crypto from 'crypto';
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as origin from 'aws-cdk-lib/aws-cloudfront-origins';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as deployment from 'aws-cdk-lib/aws-s3-deployment';
-import * as crypto from 'crypto';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
 interface NextCloudFrontTemplateStackProps extends cdk.StackProps {
-  appName: string;
+  readonly appName: string;
 }
 
 export class NextCloudFrontTemplateStack extends cdk.Stack {

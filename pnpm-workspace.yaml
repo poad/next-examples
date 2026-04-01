@@ -25,26 +25,17 @@ packages:
   - ./wasm/infra
   - '!./with-preact/**'
 
-auto-install-peers: true
+enablePrePostScripts: false
 
-enablePrePostScripts: true
-
-legacy-peer-deps: true
-
-onlyBuiltDependencies:
-  - '@apollo/protobufjs'
-  - '@biomejs/biome'
-  - '@swc/core'
-  - '@tailwindcss/oxide'
-  - core-js
-  - core-js-pure
-  - esbuild
-  - msw
-  - next-plugin-preact
-  - sharp
-  - unrs-resolver
 overrides:
+  '@swc/core': '>=1.15.21'
   esbuild@<=0.24.2: '>=0.25.0'
+  eslint-import-resolver-typescript: '>=4'
   immutable@<3.8.3: '>=3.8.3'
+  lodash@>=4.0.0 <=4.17.22: '>=4.17.23'
+  semver: '>=7'
+  ua-parser-js: '>=2'
 
 strictPeerDependencies: false
+
+trustPolicy: no-downgrade

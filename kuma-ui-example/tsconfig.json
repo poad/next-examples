@@ -16,17 +16,31 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
-    "incremental": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
+    "incremental": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      ".next"
+    ],
     "paths": {
+      "~/*": [
+        "../*"
+      ],
       "@/*": [
-        "./src/*"
+        "../*"
+      ],
+      "../*": [
+        "../*"
       ]
-    }
+    },
+    "types": [
+      "node",
+      "react"
+    ],
   },
   "include": [
     "**/*.ts",

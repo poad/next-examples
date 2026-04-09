@@ -51,7 +51,7 @@ function Home() {
             lineHeight: '1.15',
           }}
         >
-          <Typography component="h1" align="center" fontSize="3rem">
+          <Typography component="h1" align="center">
             mui with sticky table
           </Typography>
         </Box>

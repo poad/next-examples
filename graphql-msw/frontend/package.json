@@ -20,9 +20,9 @@
     "cross-env": "^10.1.0",
     "graphql": "^16.13.2",
     "msw": "^2.12.14",
-    "next": "^16.2.2",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "next": "^16.2.3",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "rxjs": "^7.8.2",
     "web-vitals": "^5.2.0"
   },
@@ -35,19 +35,17 @@
     "@graphql-codegen/typescript-react-apollo": "^4.4.1",
     "@graphql-eslint/eslint-plugin": "^4.4.0",
     "@graphql-typed-document-node/core": "^3.2.0",
-    "@next/bundle-analyzer": "^16.2.2",
-    "@next/eslint-plugin-next": "^16.2.2",
+    "@next/bundle-analyzer": "^16.2.3",
+    "@next/eslint-plugin-next": "^16.2.3",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/node": "^24.12.0",
     "@types/react": "^19.2.14",
-    "eslint": "^9.39.4",
-    "eslint-config-next": "^16.2.2",
+    "eslint": "^10.1.0",
+    "eslint-config-next": "^16.2.3",
     "eslint-plugin-promise": "^7.2.1",
+    "globals": "^17.4.0",
     "jiti": "^2.6.1",
     "typescript": "^6.0.2",
     "typescript-eslint": "^8.58.0"
-  },
-  "msw": {
-    "workerDirectory": "public"
   }
 }

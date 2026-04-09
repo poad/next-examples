@@ -1,8 +1,8 @@
 import {
-  createHttpLink,
   ApolloClient,
   InMemoryCache,
 } from '@apollo/client';
+import { HttpLink } from '@apollo/client/link/http';
 import { ApolloProvider } from '@apollo/client/react';
 import type { AppProps } from 'next/app';
 import '../styles/globals.css';
@@ -13,7 +13,7 @@ if (process.env.NEXT_PUBLIC_API_MOCKING === 'enabled') {
 
 const endpoint = process.env.NEXT_PUBLIC_API_URL ?? '';
 
-const link = createHttpLink({
+const link = new HttpLink({
   uri: endpoint,
 });
 

@@ -3,10 +3,11 @@ import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 // @ts-expect-error ignore plugin type
 import pluginPromise from 'eslint-plugin-promise';
+
 import nextVitals from 'eslint-config-next/core-web-vitals';
 import nextTs from 'eslint-config-next/typescript';
+import { parser } from 'typescript-eslint';
 import globals from 'globals';
-import { configs, parser } from 'typescript-eslint';
 
 import { includeIgnoreFile } from '@eslint/compat';
 import path from 'node:path';
@@ -40,11 +41,12 @@ export default defineConfig(
     ],
   },
   eslint.configs.recommended,
-  ...configs.strict,
-  ...configs.stylistic,
   pluginPromise.configs['flat/recommended'],
   {
     files: ['**/*.ts', '**/*.tsx'],
+    plugins: {
+      '@stylistic': stylistic,
+    },
     languageOptions: {
       parser,
       globals: {
@@ -52,8 +54,10 @@ export default defineConfig(
         ...globals.browser,
       },
     },
-    plugins: {
-      '@stylistic': stylistic,
+    settings: {
+      react: {
+        version: '19.2',
+      },
     },
     rules: {
       '@stylistic/semi': 'error',

@@ -47,6 +47,11 @@ export default defineConfig(
     plugins: {
       '@stylistic': stylistic,
     },
+    settings: {
+      react: {
+        version: '19.2',
+      },
+    },
     rules: {
       '@stylistic/semi': 'error',
       '@stylistic/indent': ['error', 2],

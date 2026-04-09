@@ -33,10 +33,10 @@ export function Menu({
   return (
     <Box
       component="nav"
-      textAlign="center"
-      sx={{ width: { sm: width }, flexShrink: { sm: 0 } }}
+      sx={{
+        textAlign: 'center', width: { sm: width }, flexShrink: { sm: 0 }, display: 'contents',
+      }}
       aria-label="folders"
-      display="contents"
     >
       <Drawer
         variant="temporary"

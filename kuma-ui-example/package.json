@@ -16,33 +16,28 @@
     "@emotion/cache": "^11.14.0",
     "@kuma-ui/core": "^1.6.3",
     "@mui/material-nextjs": "^6.5.0",
-    "next": "^16.2.2",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "next": "^16.2.3",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
-    "@eslint/js": "^9.39.4",
+    "@eslint/js": "^10.0.1",
     "@kuma-ui/next-plugin": "^1.4.0",
     "@kuma-ui/webpack-plugin": "^1.5.0",
-    "@next/bundle-analyzer": "^16.2.2",
-    "@next/eslint-plugin-next": "^16.2.2",
+    "@next/bundle-analyzer": "^16.2.3",
+    "@next/eslint-plugin-next": "^16.2.3",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/node": "^24.12.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "cross-env": "^10.1.0",
-    "eslint": "^9.39.4",
-    "eslint-config-next": "^16.2.2",
-    "globals": "^16.5.0",
+    "eslint": "^10.1.0",
+    "eslint-config-next": "^16.2.3",
+    "globals": "^17.4.0",
     "jiti": "^2.6.1",
-    "msw": "^2.12.14",
     "postcss": "^8.5.8",
     "rimraf": "^6.1.3",
-    "typescript": "^6.0.2",
-    "typescript-eslint": "^8.58.0"
-  },
-  "msw": {
-    "workerDirectory": ".storybook/public"
+    "typescript": "^6.0.2"
   }
 }

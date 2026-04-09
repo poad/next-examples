@@ -1,7 +1,10 @@
 import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
 import nextVitals from 'eslint-config-next/core-web-vitals';
-import { configs } from 'typescript-eslint';
+import nextTs from 'eslint-config-next/typescript';
+import { parser } from 'typescript-eslint';
+import globals from 'globals';
+
 import stylistic from '@stylistic/eslint-plugin';
 // @ts-expect-error ignore type errors
 import pluginPromise from 'eslint-plugin-promise';
@@ -15,24 +18,24 @@ const __dirname = path.dirname(__filename);
 const gitignorePath = path.resolve(__dirname, '.gitignore');
 
 export default defineConfig(
+  ...nextVitals,
+  ...nextTs,
   includeIgnoreFile(gitignorePath),
   {
     ignores: [
       '.next',
       '**/*.d.ts',
+      '*.js',
       'out',
       '**/gql/**/*',
       'cdk.out',
       '**/generated/**/*.*',
       'src/gql/*.ts',
       'public/**/*.js',
-      'cdk/**/*',
+      'cdk',
     ],
   },
-  ...nextVitals,
   eslint.configs.recommended,
-  ...configs.strict,
-  ...configs.stylistic,
   pluginPromise.configs['flat/recommended'],
   {
     files: [
@@ -43,6 +46,18 @@ export default defineConfig(
     ],
     plugins: {
       '@stylistic': stylistic,
+    },
+    languageOptions: {
+      parser,
+      globals: {
+        ...globals.serviceworker,
+        ...globals.browser,
+      },
+    },
+    settings: {
+      react: {
+        version: '19.2',
+      },
     },
     rules: {
       '@next/next/no-duplicate-head': 'off',

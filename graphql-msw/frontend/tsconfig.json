@@ -58,7 +58,8 @@
     "**/*.spec.tsx",
     "**/*.test.ts",
     "**/*.test.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "**/cdk/*"
   ],
   "include": [
     "next-env.d.ts",

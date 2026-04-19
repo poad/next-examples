@@ -14,12 +14,12 @@
     "clean": "rimraf build"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.0.3",
+    "@eslint/compat": "^2.0.5",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@types/node": "^24.12.0",
-    "aws-cdk": "^2.1116.0",
+    "@types/node": "^24.12.2",
+    "aws-cdk": "^2.1118.0",
     "esbuild": "^0.28.0",
-    "eslint": "^10.1.0",
+    "eslint": "^10.2.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-awscdk": "4.3.0",
     "eslint-plugin-import-x": "^4.16.2",
@@ -27,10 +27,10 @@
     "jiti": "^2.6.1",
     "tsx": "^4.21.0",
     "typescript": "^6.0.2",
-    "typescript-eslint": "^8.58.0"
+    "typescript-eslint": "^8.58.1"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.247.0",
+    "aws-cdk-lib": "^2.248.0",
     "constructs": "^10.6.0"
   }
 }

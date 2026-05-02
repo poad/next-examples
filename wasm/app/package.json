@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "preinstall": "cargo install wasm-pack",
+    "preinstall": "cargo install wasm-pack --force",
     "dev": "pnpm wasm && next dev --turbopack",
     "build": "pnpm wasm && next build --webpack",
     "start": "pnpm wasm && next start",
@@ -14,24 +14,24 @@
     "lint-fix": "eslint --fix"
   },
   "dependencies": {
-    "next": "^16.2.3",
+    "next": "^16.2.4",
     "react": "^19.2.5",
     "react-dom": "^19.2.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^10.0.1",
-    "@next/bundle-analyzer": "^16.2.3",
-    "@next/eslint-plugin-next": "^16.2.3",
+    "@next/bundle-analyzer": "^16.2.4",
+    "@next/eslint-plugin-next": "^16.2.4",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/node": "^24.12.2",
     "@types/react": "^19.2.14",
-    "eslint": "^10.2.0",
-    "eslint-config-next": "^16.2.3",
+    "eslint": "^10.2.1",
+    "eslint-config-next": "^16.2.4",
     "eslint-plugin-promise": "^7.2.1",
     "globals": "^16.5.0",
     "jiti": "^2.6.1",
-    "typescript": "^6.0.2",
-    "typescript-eslint": "^8.58.2"
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.0"
   }
 }

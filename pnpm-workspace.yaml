@@ -37,6 +37,7 @@ blockExoticSubdeps: true
 minimumReleaseAge: 10080 # 7 days in minutes
 
 minimumReleaseAgeExclude:
+  - esbuild@0.24.3
   - lodash@4.17.24
   - postcss@8.5.10
   - immutable@3.8.3

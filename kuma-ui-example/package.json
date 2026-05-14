@@ -17,8 +17,8 @@
     "@kuma-ui/core": "^1.6.4",
     "@mui/material-nextjs": "^6.5.0",
     "next": "^16.2.6",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
@@ -26,14 +26,14 @@
     "@kuma-ui/next-plugin": "^1.4.0",
     "@kuma-ui/webpack-plugin": "^1.5.0",
     "@next/bundle-analyzer": "^16.2.6",
-    "@next/eslint-plugin-next": "^16.2.4",
+    "@next/eslint-plugin-next": "^16.2.6",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/node": "^24.12.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "cross-env": "^10.1.0",
     "eslint": "^10.3.0",
-    "eslint-config-next": "^16.2.4",
+    "eslint-config-next": "^16.2.5",
     "globals": "^17.6.0",
     "jiti": "^2.7.0",
     "postcss": "^8.5.14",

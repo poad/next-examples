@@ -19,8 +19,8 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/aws-lambda": "^8.10.161",
     "@types/node": "^24.12.2",
-    "@types/qs": "^6.15.0",
-    "aws-cdk": "^2.1120.0",
+    "@types/qs": "^6.15.1",
+    "aws-cdk": "^2.1121.0",
     "esbuild": "^0.28.0",
     "eslint": "^10.3.0",
     "eslint-import-resolver-typescript": "^4.4.4",
@@ -33,9 +33,9 @@
     "typescript-eslint": "^8.59.2"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.252.0",
+    "aws-cdk-lib": "^2.253.0",
     "constructs": "^10.6.0",
-    "graphql": "^16.13.2",
+    "graphql": "^16.14.0",
     "graphql-request": "^7.4.0"
   }
 }

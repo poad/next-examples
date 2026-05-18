@@ -19,7 +19,7 @@
     "@apollo/client": "^4.1.9",
     "cross-env": "^10.1.0",
     "graphql": "^16.14.0",
-    "msw": "^2.14.4",
+    "msw": "^2.14.6",
     "next": "^16.2.6",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
@@ -27,7 +27,7 @@
     "web-vitals": "^5.2.0"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.0.5",
+    "@eslint/compat": "^2.1.0",
     "@eslint/eslintrc": "^3.3.5",
     "@graphql-codegen/cli": "^6.3.1",
     "@graphql-codegen/client-preset": "^5.3.0",
@@ -38,14 +38,14 @@
     "@next/bundle-analyzer": "^16.2.6",
     "@next/eslint-plugin-next": "^16.2.6",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@types/node": "^24.12.2",
+    "@types/node": "^24.12.4",
     "@types/react": "^19.2.14",
     "eslint": "^10.3.0",
-    "eslint-config-next": "^16.2.5",
+    "eslint-config-next": "^16.2.6",
     "eslint-plugin-promise": "^7.3.0",
     "globals": "^17.6.0",
     "jiti": "^2.7.0",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.2"
+    "typescript-eslint": "^8.59.3"
   }
 }

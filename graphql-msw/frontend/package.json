@@ -16,7 +16,7 @@
     "all": "pnpm lint && pnpm build"
   },
   "dependencies": {
-    "@apollo/client": "^4.2.1",
+    "@apollo/client": "^4.2.2",
     "cross-env": "^10.1.0",
     "graphql": "^16.14.1",
     "msw": "^2.14.6",

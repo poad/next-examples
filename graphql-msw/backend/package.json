@@ -31,7 +31,7 @@
     "@graphql-tools/schema": "^10.0.33",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/aws-lambda": "^8.10.161",
-    "@types/node": "^24.12.4",
+    "@types/node": "^24.13.0",
     "aws-cdk": "^2.1126.0",
     "esbuild": "^0.28.0",
     "eslint": "^10.4.1",

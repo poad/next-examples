@@ -28,7 +28,7 @@
     "@next/bundle-analyzer": "^16.2.7",
     "@next/eslint-plugin-next": "^16.2.7",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@types/node": "^24.12.4",
+    "@types/node": "^24.13.0",
     "@types/react": "^19.2.16",
     "@types/react-dom": "^19.2.3",
     "cross-env": "^10.1.0",

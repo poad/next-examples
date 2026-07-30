@@ -16,36 +16,36 @@
     "all": "pnpm lint && pnpm build"
   },
   "dependencies": {
-    "@apollo/client": "^4.2.6",
+    "@apollo/client": "^4.2.7",
     "cross-env": "^10.1.0",
     "graphql": "^16.14.2",
-    "msw": "^2.14.7",
-    "next": "^16.2.10",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
+    "msw": "^2.15.0",
+    "next": "^16.2.11",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "rxjs": "^7.8.2",
     "web-vitals": "^5.3.0"
   },
   "devDependencies": {
     "@eslint/compat": "^2.1.0",
-    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/eslintrc": "^3.3.6",
     "@graphql-codegen/cli": "^6.3.1",
     "@graphql-codegen/client-preset": "^5.3.0",
     "@graphql-codegen/typescript-msw": "^3.0.1",
     "@graphql-codegen/typescript-react-apollo": "^4.4.2",
     "@graphql-eslint/eslint-plugin": "^4.4.0",
     "@graphql-typed-document-node/core": "^3.2.0",
-    "@next/bundle-analyzer": "^16.2.10",
-    "@next/eslint-plugin-next": "^16.2.10",
+    "@next/bundle-analyzer": "^16.2.11",
+    "@next/eslint-plugin-next": "^16.2.11",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@types/node": "^24.13.2",
+    "@types/node": "^24.13.3",
     "@types/react": "^19.2.17",
-    "eslint": "^10.6.0",
-    "eslint-config-next": "^16.2.10",
+    "eslint": "^10.7.0",
+    "eslint-config-next": "^16.2.11",
     "eslint-plugin-promise": "^7.3.0",
     "globals": "^17.7.0",
     "jiti": "^2.7.0",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.63.0"
+    "typescript-eslint": "^8.65.0"
   }
 }

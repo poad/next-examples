@@ -28,14 +28,14 @@
       "name": "pnpm",
       "version": "^11.20.0",
       "onFail": "download"
-    }
-  },
-  "engines": {
+    },
     "runtime": {
       "name": "node",
       "version": "^24.19.0",
       "onFail": "download"
     }
   },
-  "dependencies": {}
+  "engines": {
+    "node": ">=24"
+  }
 }

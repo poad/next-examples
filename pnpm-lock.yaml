@@ -230,10 +230,6 @@ overrides:
 importers:
 
   .:
-    dependencies:
-      node:
-        specifier: runtime:^24.19.0
-        version: runtime:24.19.0
     devDependencies:
       '@eslint/compat':
         specifier: ^2.1.0
@@ -259,6 +255,9 @@ importers:
       jiti:
         specifier: ^2.7.0
         version: 2.7.0
+      node:
+        specifier: runtime:^24.19.0
+        version: runtime:24.19.0
       typescript-eslint:
         specifier: ^8.65.0
         version: 8.65.0(eslint@10.8.0(jiti@2.7.0)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)
@@ -864,10 +863,10 @@ importers:
         version: 10.0.1(eslint@10.8.0(jiti@2.7.0)(supports-color@8.1.1))
       '@kuma-ui/next-plugin':
         specifier: ^1.4.2
-        version: 1.4.2(@babel/core@7.29.7(supports-color@8.1.1))(@types/react@19.2.17)(next@16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(babel-plugin-macros@3.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23))
+        version: 1.4.2(@babel/core@7.29.7(supports-color@8.1.1))(@types/react@19.2.17)(next@16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(babel-plugin-macros@3.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24))
       '@kuma-ui/webpack-plugin':
         specifier: ^1.5.0
-        version: 1.5.0(@types/react@19.2.17)(next@16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(babel-plugin-macros@3.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23))
+        version: 1.5.0(@types/react@19.2.17)(next@16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(babel-plugin-macros@3.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24))
       '@next/bundle-analyzer':
         specifier: ^16.3.0
         version: 16.3.0
@@ -902,8 +901,8 @@ importers:
         specifier: ^2.7.0
         version: 2.7.0
       postcss:
-        specifier: ^8.5.23
-        version: 8.5.23
+        specifier: ^8.5.24
+        version: 8.5.24
       rimraf:
         specifier: ^6.1.3
         version: 6.1.3
@@ -955,7 +954,7 @@ importers:
         version: 19.2.3(@types/react@19.2.17)
       autoprefixer:
         specifier: ^10.5.4
-        version: 10.5.4(postcss@8.5.23)
+        version: 10.5.4(postcss@8.5.24)
       eslint:
         specifier: ^10.8.0
         version: 10.8.0(jiti@2.7.0)(supports-color@8.1.1)
@@ -969,8 +968,8 @@ importers:
         specifier: ^2.7.0
         version: 2.7.0
       postcss:
-        specifier: ^8.5.23
-        version: 8.5.23
+        specifier: ^8.5.24
+        version: 8.5.24
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
@@ -1116,7 +1115,7 @@ importers:
         version: 19.2.17
       autoprefixer:
         specifier: ^10.5.4
-        version: 10.5.4(postcss@8.5.23)
+        version: 10.5.4(postcss@8.5.24)
       eslint:
         specifier: ^10.8.0
         version: 10.8.0(jiti@2.7.0)(supports-color@8.1.1)
@@ -1133,8 +1132,8 @@ importers:
         specifier: ^2.7.0
         version: 2.7.0
       postcss:
-        specifier: ^8.5.23
-        version: 8.5.23
+        specifier: ^8.5.24
+        version: 8.5.24
       rimraf:
         specifier: ^6.1.3
         version: 6.1.3
@@ -1249,8 +1248,8 @@ importers:
         version: 4.2.4
     devDependencies:
       '@biomejs/biome':
-        specifier: ^2.5.5
-        version: 2.5.5
+        specifier: ^2.5.6
+        version: 2.5.6
       '@next/bundle-analyzer':
         specifier: ^16.3.0
         version: 16.3.0
@@ -1265,10 +1264,10 @@ importers:
         version: 19.2.17
       autoprefixer:
         specifier: ^10.5.4
-        version: 10.5.4(postcss@8.5.23)
+        version: 10.5.4(postcss@8.5.24)
       postcss:
-        specifier: ^8.5.23
-        version: 8.5.23
+        specifier: ^8.5.24
+        version: 8.5.24
       rimraf:
         specifier: ^6.1.3
         version: 6.1.3
@@ -1344,7 +1343,7 @@ importers:
         version: 19.2.17
       autoprefixer:
         specifier: ^10.5.4
-        version: 10.5.4(postcss@8.5.23)
+        version: 10.5.4(postcss@8.5.24)
       eslint:
         specifier: ^10.8.0
         version: 10.8.0(jiti@2.7.0)(supports-color@8.1.1)
@@ -1361,8 +1360,8 @@ importers:
         specifier: ^2.7.0
         version: 2.7.0
       postcss:
-        specifier: ^8.5.23
-        version: 8.5.23
+        specifier: ^8.5.24
+        version: 8.5.24
       rimraf:
         specifier: ^6.1.3
         version: 6.1.3
@@ -1468,7 +1467,7 @@ importers:
         version: 19.2.3(@types/react@19.2.17)
       autoprefixer:
         specifier: ^10.5.4
-        version: 10.5.4(postcss@8.5.23)
+        version: 10.5.4(postcss@8.5.24)
       eslint:
         specifier: ^10.8.0
         version: 10.8.0(jiti@2.7.0)(supports-color@8.1.1)
@@ -1488,8 +1487,8 @@ importers:
         specifier: ^2.15.0
         version: 2.15.0(@types/node@24.13.3)(typescript@6.0.3)
       postcss:
-        specifier: ^8.5.23
-        version: 8.5.23
+        specifier: ^8.5.24
+        version: 8.5.24
       rimraf:
         specifier: ^6.1.3
         version: 6.1.3
@@ -1768,8 +1767,8 @@ packages:
   '@aws-amplify/data-schema-types@1.3.0':
     resolution: {integrity: sha512-A9vuOwhdrRFCXIXaL48JtpJjSoAdhpI4CPFRPm7F+i4hF1nQO3+bGdiSHY6iKRrEoBoXCAcwozIjvAImhxz2sg==}
 
-  '@aws-amplify/data-schema@1.26.0':
-    resolution: {integrity: sha512-k8RDc5klcJU2etz1JP3aAebAdzoxK7oCHNyqENGMpEirYtupP9+BYRfkmMq+aWGNaSw28qyjI55UXDy50O/nUg==}
+  '@aws-amplify/data-schema@1.26.1':
+    resolution: {integrity: sha512-69/L0ZTRrpKQ2BsJ6dv90wQ5Ibsrp17Kw9pzjkGjlZDuuuRwbtZoqwR27FWDb/NGSbs7xSTB7mJf4vljMki2UA==}
 
   '@aws-amplify/datastore@5.1.9':
     resolution: {integrity: sha512-5qH+93y4nsnttJzH4Oy6s5TQDox/5+1BYYQgS36mgj8i5A1desFTnBQzK/pbBqYjn7E0DfDyEV39C420/2LMoQ==}
@@ -2565,59 +2564,59 @@ packages:
       '@types/react':
         optional: true
 
-  '@biomejs/biome@2.5.5':
-    resolution: {integrity: sha512-r1S8nFsAG1MY+vJFZALzIvwXAJv6ejDQ0mxP21Tgr9YK3ZFtjrvbBwDdNhx1rUqvccEIeNg20cYCNzl6Cr69pQ==}
+  '@biomejs/biome@2.5.6':
+    resolution: {integrity: sha512-lxVNjv7UF6KfhMJfL9gaUHbWdJdHbsAj6OSmwSYNdhRuG67NxNQ4Xdvh3TUxsSK9sBzJBQhEJj3AopmmNJ5pSA==}
     engines: {node: '>=14.21.3'}
     hasBin: true
 
-  '@biomejs/cli-darwin-arm64@2.5.5':
-    resolution: {integrity: sha512-kUrAhXVWUrwmAUnV2iXSK7umxKFysTwvqK+Ty6ptUcLY/7T3SnCAjUowE4uvwaEej6nXZ7hu/dTtbokKdsPeag==}
+  '@biomejs/cli-darwin-arm64@2.5.6':
+    resolution: {integrity: sha512-zMOLZP4oMrjh6m1zcSj1ud2awUPgTuMVbmQhYYWL7J8HwCnbHHBvTm7VBTRuY7epT5bez76IpKYQ11ZAqHFlnw==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [darwin]
 
-  '@biomejs/cli-darwin-x64@2.5.5':
-    resolution: {integrity: sha512-DamiYc5bUYZ2uxlfc+RLEPtz1Abb6PO5eTbOkufLpSGwd/7AMQAdxhFYiXmwwkJL8IsT8S7GvdgwDHqaMFAvKw==}
+  '@biomejs/cli-darwin-x64@2.5.6':
+    resolution: {integrity: sha512-JAC1VqzvO7Th5ZplU0G2uGfkZbxEe9uDDektPAhF0JLusoz1w+T4okp2bkykI0bbaO2vslKiRfj4gU43JaGreA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [darwin]
 
-  '@biomejs/cli-linux-arm64-musl@2.5.5':
-    resolution: {integrity: sha512-U4WMl/sy/E/Q73vf15VspakLRRs2LDFcCeBxJnQfXzssb88zpV6PJPaQ3ezhQ7H6Ht2/8bvuZeHgJWzmoxllZg==}
+  '@biomejs/cli-linux-arm64-musl@2.5.6':
+    resolution: {integrity: sha512-eUa3jeeYvfMt19LBeh6E5PUZpxnTC4JqNWo+EDjTtQjAr2xLGnWaxACtVU1DQqmHYbvThlJzLX+ZsYgrqh2qVw==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@biomejs/cli-linux-arm64@2.5.5':
-    resolution: {integrity: sha512-lRKF/pH/1RiYiBKExi3TCZVAtvzEm77aifrvcNiDFrR9WxeAnDUjDnseb6y2XV85mjitLs6SILGm2XG77cHtSQ==}
+  '@biomejs/cli-linux-arm64@2.5.6':
+    resolution: {integrity: sha512-6XsYwCFkp5sMxl85ffhgeGpGgs6A7dRYFnkceZ7WVxvycuTnGdD5xa534Z3xfrBQ0JCMK/mujT6ZNPJoghedwg==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@biomejs/cli-linux-x64-musl@2.5.5':
-    resolution: {integrity: sha512-m7wC7tjX5Lrmo69dc4md8FeKpPU1NTCY1v7xUoQQ2vadWwNnBS0KZOG8471otFPHrTHihQJAjQPgMObpLvDe6A==}
+  '@biomejs/cli-linux-x64-musl@2.5.6':
+    resolution: {integrity: sha512-2Vp13QdKysH3HIWLaYLhUUwbK+jbZonJD1K+Lr0d0RO4wH7mkYd43vJixEDm8cUWrowoRz4UUHF1nm9Ae7ym8A==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@biomejs/cli-linux-x64@2.5.5':
-    resolution: {integrity: sha512-H/O39nJEw/2Zm/fm7hrmxxoF8kK/aU1uCoPp70ruXVbomaAdLpJJnCmL11Q2JotT8QVHH06So04Oq53lCSwSwQ==}
+  '@biomejs/cli-linux-x64@2.5.6':
+    resolution: {integrity: sha512-Pop9VXCFUhFTMfFefZ39S+u2rOPyNp5iHlxbZRwXGACHLy2r0jjiRgJHmaEKJzL3SyxlVeGShXhvvElvWowonA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@biomejs/cli-win32-arm64@2.5.5':
-    resolution: {integrity: sha512-7BryINPuYypLUAH3o/o5ZdgomJ4zn3EDR0ChZJst7n32S6ZhKbgHXuYydLu+YAnx59ehGFR0z/MG6qnzQi3Yyw==}
+  '@biomejs/cli-win32-arm64@2.5.6':
+    resolution: {integrity: sha512-tDGshcm6BdkZOCGnTDX0Y8/U4IfBSlnUU7T56nNDuPEfed+aHg+u8G36NB43fJVl0Os6+QURXIE1yuD7AaEofA==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [win32]
 
-  '@biomejs/cli-win32-x64@2.5.5':
-    resolution: {integrity: sha512-bIBFo+n6MIxdNcVFy5CrurbKiZQiUciK3bt8+O9I4wjFZNTfXLpi+giq47522eXqW5NBc9ulx7dR1SlZKi2J5g==}
+  '@biomejs/cli-win32-x64@2.5.6':
+    resolution: {integrity: sha512-WN05KwXnTO/2J45RQPvzZMXf7tZUIofHoR35xIPfCo7pQ2RFidxI8sfb5mGsaTxdMmEOzHzOPRCdA5/fCpc7xQ==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
@@ -3972,11 +3971,12 @@ packages:
     peerDependencies:
       react: ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  '@napi-rs/wasm-runtime@1.1.6':
-    resolution: {integrity: sha512-ZLv/JdUfkvOy9eCnnBaGfiO+XimbjebAeO+MRQqD/B+FR1tnRN0tpKSJHRbE8sFfS6aqsXZ67TQjfwfsxULVbg==}
+  '@napi-rs/wasm-runtime@1.2.0':
+    resolution: {integrity: sha512-kDoONqMa+VnZ4vvvu/ZUurpJ4gkZU57e7g69qpNgWhYcZFPUHZM2CEMKm+cG6ufDVALbjMvfmMjFVqaK7uEMnA==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=23.5.0}
     peerDependencies:
-      '@emnapi/core': ^1.7.1
-      '@emnapi/runtime': ^1.7.1
+      '@emnapi/core': ^2.0.0-alpha.3
+      '@emnapi/runtime': ^2.0.0-alpha.3
 
   '@next/bundle-analyzer@16.3.0':
     resolution: {integrity: sha512-o8OiXKIATcSC6kHm5BIEmaDEDTFUDhpy9POQIbzAQTlb8NWwFhEQheTLFSbyQXxH2ywhjZ/e8EUlbOjj2k22Yg==}
@@ -5007,8 +5007,8 @@ packages:
     resolution: {integrity: sha512-HEHNfbars9v4pgpW6SO1KSPkfoS0xVOM/9UzkJltjlsHZmJasxg8aXkuZa7SMf8vKGIBhpUsPluQSqhJFCqebw==}
     engines: {node: '>=0.4.0'}
 
-  acorn@8.17.0:
-    resolution: {integrity: sha512-xRQbDb9BnwDafYNn6Vwl839DYVjqXYb1XVGtWAZ1kcDc6iwAL4hg3B1dZlRiuENFeO2H53gFG3in621AdERVAg==}
+  acorn@8.18.0:
+    resolution: {integrity: sha512-lGq+9yr1/GuAWaVYIHRjvvySG5/4VfKIvC8EWxStPdcDh/Ka7FG3twP6v4d5BkravUilhIAsG4Qj83t02LWUPQ==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -5649,8 +5649,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.5.396:
-    resolution: {integrity: sha512-yHiw2Y3C3H9U6TMbOfoWK/BPreiOPXRfTWPBwQBoZG6/8TB6eOPnsy5oaRYuatR7Fw2SJ4kKforgufeo7fq0EQ==}
+  electron-to-chromium@1.5.397:
+    resolution: {integrity: sha512-khGTy9U9x02KEtsKM8vx5A62BsRmcOsIgDpWr1ImE32Ax8GxHGPHZf+Eu9H8zOOyHJnB0jTbseyTHbq2XCT8yw==}
 
   emoji-regex@10.6.0:
     resolution: {integrity: sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==}
@@ -7476,8 +7476,8 @@ packages:
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
-  postcss@8.5.23:
-    resolution: {integrity: sha512-g50586zr4bZmwFiTlflMu8E0bDTb5I5gertgwAKmsdUlTQIhZtunzUlD1WSzwcVWPoAVpsrA6vlfCD7oXvRwgg==}
+  postcss@8.5.24:
+    resolution: {integrity: sha512-8RyVklq0owXUTa4xlpzu4l9AaVKIdQvAcOHZWaMh98HgySsUtxRVf/chRe3dsSLqb6i40BzGRzEUddRaI+9TSw==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -8726,7 +8726,7 @@ snapshots:
     dependencies:
       '@aws-amplify/api-rest': 4.6.4(@aws-amplify/core@6.17.0)
       '@aws-amplify/core': 6.17.0
-      '@aws-amplify/data-schema': 1.26.0
+      '@aws-amplify/data-schema': 1.26.1
       '@aws-sdk/types': 3.974.2
       graphql: 15.8.0
       rxjs: 7.8.2
@@ -8742,7 +8742,7 @@ snapshots:
       '@aws-amplify/api-graphql': 4.8.9
       '@aws-amplify/api-rest': 4.6.4(@aws-amplify/core@6.17.0)
       '@aws-amplify/core': 6.17.0
-      '@aws-amplify/data-schema': 1.26.0
+      '@aws-amplify/data-schema': 1.26.1
       rxjs: 7.8.2
       tslib: 2.8.1
 
@@ -8769,7 +8769,7 @@ snapshots:
       graphql: 15.8.0
       rxjs: 7.8.2
 
-  '@aws-amplify/data-schema@1.26.0':
+  '@aws-amplify/data-schema@1.26.1':
     dependencies:
       '@aws-amplify/data-schema-types': 1.3.0
       '@smithy/util-base64': 3.0.0
@@ -9902,39 +9902,39 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.17
 
-  '@biomejs/biome@2.5.5':
+  '@biomejs/biome@2.5.6':
     optionalDependencies:
-      '@biomejs/cli-darwin-arm64': 2.5.5
-      '@biomejs/cli-darwin-x64': 2.5.5
-      '@biomejs/cli-linux-arm64': 2.5.5
-      '@biomejs/cli-linux-arm64-musl': 2.5.5
-      '@biomejs/cli-linux-x64': 2.5.5
-      '@biomejs/cli-linux-x64-musl': 2.5.5
-      '@biomejs/cli-win32-arm64': 2.5.5
-      '@biomejs/cli-win32-x64': 2.5.5
+      '@biomejs/cli-darwin-arm64': 2.5.6
+      '@biomejs/cli-darwin-x64': 2.5.6
+      '@biomejs/cli-linux-arm64': 2.5.6
+      '@biomejs/cli-linux-arm64-musl': 2.5.6
+      '@biomejs/cli-linux-x64': 2.5.6
+      '@biomejs/cli-linux-x64-musl': 2.5.6
+      '@biomejs/cli-win32-arm64': 2.5.6
+      '@biomejs/cli-win32-x64': 2.5.6
 
-  '@biomejs/cli-darwin-arm64@2.5.5':
+  '@biomejs/cli-darwin-arm64@2.5.6':
     optional: true
 
-  '@biomejs/cli-darwin-x64@2.5.5':
+  '@biomejs/cli-darwin-x64@2.5.6':
     optional: true
 
-  '@biomejs/cli-linux-arm64-musl@2.5.5':
+  '@biomejs/cli-linux-arm64-musl@2.5.6':
     optional: true
 
-  '@biomejs/cli-linux-arm64@2.5.5':
+  '@biomejs/cli-linux-arm64@2.5.6':
     optional: true
 
-  '@biomejs/cli-linux-x64-musl@2.5.5':
+  '@biomejs/cli-linux-x64-musl@2.5.6':
     optional: true
 
-  '@biomejs/cli-linux-x64@2.5.5':
+  '@biomejs/cli-linux-x64@2.5.6':
     optional: true
 
-  '@biomejs/cli-win32-arm64@2.5.5':
+  '@biomejs/cli-win32-arm64@2.5.6':
     optional: true
 
-  '@biomejs/cli-win32-x64@2.5.5':
+  '@biomejs/cli-win32-x64@2.5.6':
     optional: true
 
   '@discoveryjs/json-ext@0.5.7': {}
@@ -11108,18 +11108,18 @@ snapshots:
       '@types/react': 19.2.17
       next: 16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(babel-plugin-macros@3.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
 
-  '@kuma-ui/next-plugin@1.4.2(@babel/core@7.29.7(supports-color@8.1.1))(@types/react@19.2.17)(next@16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(babel-plugin-macros@3.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23))':
+  '@kuma-ui/next-plugin@1.4.2(@babel/core@7.29.7(supports-color@8.1.1))(@types/react@19.2.17)(next@16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(babel-plugin-macros@3.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24))':
     dependencies:
       '@babel/preset-env': 7.29.7(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1)
       '@babel/preset-react': 7.29.7(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1)
       '@babel/preset-typescript': 7.29.7(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1)
       '@kuma-ui/core': 1.6.4(@types/react@19.2.17)(next@16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(babel-plugin-macros@3.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)
-      '@kuma-ui/webpack-plugin': 1.5.0(@types/react@19.2.17)(next@16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(babel-plugin-macros@3.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23))
-      babel-loader: 9.2.1(@babel/core@7.29.7(supports-color@8.1.1))(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23))
+      '@kuma-ui/webpack-plugin': 1.5.0(@types/react@19.2.17)(next@16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(babel-plugin-macros@3.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24))
+      babel-loader: 9.2.1(@babel/core@7.29.7(supports-color@8.1.1))(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24))
       browserslist: 4.21.5
       next: 16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(babel-plugin-macros@3.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react: 19.2.8
-      webpack: 5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24)
     optionalDependencies:
       '@types/react': 19.2.17
     transitivePeerDependencies:
@@ -11137,14 +11137,14 @@ snapshots:
 
   '@kuma-ui/wasm@1.1.0': {}
 
-  '@kuma-ui/webpack-plugin@1.5.0(@types/react@19.2.17)(next@16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(babel-plugin-macros@3.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23))':
+  '@kuma-ui/webpack-plugin@1.5.0(@types/react@19.2.17)(next@16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(babel-plugin-macros@3.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24))':
     dependencies:
       '@kuma-ui/compiler': 1.4.0(@types/react@19.2.17)(next@16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@24.13.3)(babel-plugin-macros@3.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)
       '@kuma-ui/sheet': 1.5.2
       '@kuma-ui/system': 1.8.3
       esbuild: 0.28.1
       eval: 0.1.8
-      webpack: 5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24)
     transitivePeerDependencies:
       - '@types/react'
       - next
@@ -11398,7 +11398,7 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@napi-rs/wasm-runtime@1.1.6(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)':
+  '@napi-rs/wasm-runtime@1.2.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)':
     dependencies:
       '@emnapi/core': 1.10.0
       '@emnapi/runtime': 1.10.0
@@ -12023,7 +12023,7 @@ snapshots:
       '@alloc/quick-lru': 5.2.0
       '@tailwindcss/node': 4.3.3
       '@tailwindcss/oxide': 4.3.3
-      postcss: 8.5.23
+      postcss: 8.5.24
       tailwindcss: 4.3.3
 
   '@tanstack/match-sorter-utils@8.19.4':
@@ -12262,7 +12262,7 @@ snapshots:
     dependencies:
       '@emnapi/core': 1.10.0
       '@emnapi/runtime': 1.10.0
-      '@napi-rs/wasm-runtime': 1.1.6(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)
+      '@napi-rs/wasm-runtime': 1.2.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)
     optional: true
 
   '@unrs/resolver-binding-win32-arm64-msvc@1.12.2':
@@ -12403,15 +12403,15 @@ snapshots:
 
   '@xtuc/long@4.2.2': {}
 
-  acorn-jsx@5.3.2(acorn@8.17.0):
+  acorn-jsx@5.3.2(acorn@8.18.0):
     dependencies:
-      acorn: 8.17.0
+      acorn: 8.18.0
 
   acorn-walk@8.3.5:
     dependencies:
-      acorn: 8.17.0
+      acorn: 8.18.0
 
-  acorn@8.17.0: {}
+  acorn@8.18.0: {}
 
   ajv-formats@2.1.1(ajv@8.20.0):
     optionalDependencies:
@@ -12557,13 +12557,13 @@ snapshots:
 
   auto-bind@4.0.0: {}
 
-  autoprefixer@10.5.4(postcss@8.5.23):
+  autoprefixer@10.5.4(postcss@8.5.24):
     dependencies:
       browserslist: 4.28.7
       caniuse-lite: 1.0.30001806
       fraction.js: 5.3.4
       picocolors: 1.1.1
-      postcss: 8.5.23
+      postcss: 8.5.24
       postcss-value-parser: 4.2.0
 
   available-typed-arrays@1.0.7:
@@ -12611,12 +12611,12 @@ snapshots:
 
   axobject-query@4.1.0: {}
 
-  babel-loader@9.2.1(@babel/core@7.29.7(supports-color@8.1.1))(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23)):
+  babel-loader@9.2.1(@babel/core@7.29.7(supports-color@8.1.1))(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24)):
     dependencies:
       '@babel/core': 7.29.7(supports-color@8.1.1)
       find-cache-dir: 4.0.0
       schema-utils: 4.3.3
-      webpack: 5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24)
 
   babel-plugin-macros@3.1.0:
     dependencies:
@@ -12735,7 +12735,7 @@ snapshots:
   browserslist@4.21.5:
     dependencies:
       caniuse-lite: 1.0.30001806
-      electron-to-chromium: 1.5.396
+      electron-to-chromium: 1.5.397
       node-releases: 2.0.51
       update-browserslist-db: 1.2.3(browserslist@4.21.5)
 
@@ -12743,7 +12743,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.11.5
       caniuse-lite: 1.0.30001806
-      electron-to-chromium: 1.5.396
+      electron-to-chromium: 1.5.397
       node-releases: 2.0.51
       update-browserslist-db: 1.2.3(browserslist@4.28.7)
 
@@ -13135,7 +13135,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.396: {}
+  electron-to-chromium@1.5.397: {}
 
   emoji-regex@10.6.0: {}
 
@@ -13542,14 +13542,14 @@ snapshots:
 
   espree@10.4.0:
     dependencies:
-      acorn: 8.17.0
-      acorn-jsx: 5.3.2(acorn@8.17.0)
+      acorn: 8.18.0
+      acorn-jsx: 5.3.2(acorn@8.18.0)
       eslint-visitor-keys: 4.2.1
 
   espree@11.2.0:
     dependencies:
-      acorn: 8.17.0
-      acorn-jsx: 5.3.2(acorn@8.17.0)
+      acorn: 8.18.0
+      acorn-jsx: 5.3.2(acorn@8.18.0)
       eslint-visitor-keys: 5.0.1
 
   esprima@4.0.1: {}
@@ -14056,7 +14056,7 @@ snapshots:
 
   i18next-browser-languagedetector@8.2.0:
     dependencies:
-      '@babel/runtime': 7.28.3
+      '@babel/runtime': 7.29.7
 
   i18next-resources-to-backend@1.2.1:
     dependencies:
@@ -14599,17 +14599,17 @@ snapshots:
 
   minimist@1.2.8: {}
 
-  minimizer-webpack-plugin@5.6.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23)(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23)):
+  minimizer-webpack-plugin@5.6.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24)(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.49.0
-      webpack: 5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23)
+      webpack: 5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24)
     optionalDependencies:
       esbuild: 0.28.1
       lightningcss: 1.32.0
-      postcss: 8.5.23
+      postcss: 8.5.24
 
   minipass@7.1.3: {}
 
@@ -14699,7 +14699,7 @@ snapshots:
       '@swc/helpers': 0.5.15
       baseline-browser-mapping: 2.11.5
       caniuse-lite: 1.0.30001806
-      postcss: 8.5.23
+      postcss: 8.5.24
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
       styled-jsx: 5.1.6(@babel/core@7.29.7(supports-color@8.1.1))(babel-plugin-macros@3.1.0)(react@19.2.8)
@@ -14991,7 +14991,7 @@ snapshots:
 
   postcss-value-parser@4.2.0: {}
 
-  postcss@8.5.23:
+  postcss@8.5.24:
     dependencies:
       nanoid: 3.3.16
       picocolors: 1.1.1
@@ -15266,7 +15266,7 @@ snapshots:
 
   rrweb-snapshot@2.1.1:
     dependencies:
-      postcss: 8.5.23
+      postcss: 8.5.24
 
   rrweb@2.0.0-alpha.4:
     dependencies:
@@ -15656,7 +15656,7 @@ snapshots:
   terser@5.49.0:
     dependencies:
       '@jridgewell/source-map': 0.3.11
-      acorn: 8.17.0
+      acorn: 8.18.0
       commander: 2.20.3
       source-map-support: 0.5.21
 
@@ -15955,7 +15955,7 @@ snapshots:
   webpack-bundle-analyzer@4.10.1:
     dependencies:
       '@discoveryjs/json-ext': 0.5.7
-      acorn: 8.17.0
+      acorn: 8.18.0
       acorn-walk: 8.3.5
       commander: 7.2.0
       debounce: 1.2.1
@@ -15973,14 +15973,14 @@ snapshots:
 
   webpack-sources@3.5.1: {}
 
-  webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23):
+  webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24):
     dependencies:
       '@types/estree': 1.0.9
       '@types/json-schema': 7.0.15
       '@webassemblyjs/ast': 1.14.1
       '@webassemblyjs/wasm-edit': 1.14.1
       '@webassemblyjs/wasm-parser': 1.14.1
-      acorn: 8.17.0
+      acorn: 8.18.0
       browserslist: 4.28.7
       chrome-trace-event: 1.0.4
       enhanced-resolve: 5.24.3
@@ -15989,7 +15989,7 @@ snapshots:
       events: 3.3.0
       graceful-fs: 4.2.11
       mime-db: 1.54.0
-      minimizer-webpack-plugin: 5.6.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23)(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.23))
+      minimizer-webpack-plugin: 5.6.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24)(webpack@5.109.1(esbuild@0.28.1)(lightningcss@1.32.0)(postcss@8.5.24))
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3

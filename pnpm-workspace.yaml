@@ -1,29 +1,28 @@
 packages:
-  - ./
-  - ./cloudwatch-rum/pages
-  - ./cloudwatch-rum/infra
-  - ./cloudwatch-rum/infra/function
-  - ./github-auth-ssg/frontend
-  - ./github-auth-ssg/frontend/cdk
-  - ./github-auth-ssg/backend
-  - ./graphql-msw/frontend/cdk
-  - ./graphql-msw/frontend
-  - ./graphql-msw/backend
-  - ./kuma-ui-example
-  - ./next-amplified
-  - ./next-gsap-example
-  - ./next-i18n/app
-  - ./next-i18n/infra
-  - ./next-i18n/infra/function
-  - ./next-ts-biome-example
-  - ./next-zustand-example
-  - ./nextjs-dynamic-routing-app/app
-  - ./sticky-example
-  - '!./with-beta/**'
-  - ./wasm
-  - ./wasm/app
-  - ./wasm/infra
-  - '!./with-preact/**'
+  - cloudwatch-rum/pages
+  - cloudwatch-rum/infra
+  - cloudwatch-rum/infra/function
+  - github-auth-ssg/frontend
+  - github-auth-ssg/frontend/cdk
+  - github-auth-ssg/backend
+  - graphql-msw/frontend/cdk
+  - graphql-msw/frontend
+  - graphql-msw/backend
+  - kuma-ui-example
+  - next-amplified
+  - next-gsap-example
+  - next-i18n/app
+  - next-i18n/infra
+  - next-i18n/infra/function
+  - next-ts-biome-example
+  - next-zustand-example
+  - nextjs-dynamic-routing-app/app
+  - sticky-example
+  - '!with-beta/**'
+  - wasm
+  - wasm/app
+  - wasm/infra
+  - '!with-preact/**'
 
 allowBuilds:
   '@apollo/protobufjs': false
@@ -38,37 +37,28 @@ blockExoticSubdeps: true
 minimumReleaseAge: 10080 # 7 days in minutes
 
 minimumReleaseAgeExclude:
-  - pnpm@11.21.0
+  - pnpm@12.2.1
 
-  - lodash@4.17.24
-  - postcss@8.5.10 || 8.5.12 || 8.5.18 || 8.5.23
-  - immutable@3.8.3 || 4.3.9
-  - js-yaml@4.3.0
-  - sharp@0.35.0
-  - brace-expansion@1.1.17 || 1.1.18 || 2.1.3 || 2.1.4 || 5.0.9
-  - fast-uri@3.1.5
+  - '@next/env@16.3.3'
+  - '@next/swc-darwin-arm64@16.3.3'
+  - '@next/swc-darwin-x64@16.3.3'
+  - '@next/swc-linux-arm64-gnu@16.3.3'
+  - '@next/swc-linux-arm64-musl@16.3.3'
+  - '@next/swc-linux-x64-gnu@16.3.3'
+  - '@next/swc-linux-x64-musl@16.3.3'
+  - '@next/swc-win32-arm64-msvc@16.3.3'
+  - '@next/swc-win32-x64-msvc@16.3.3'
+  - next@16.3.3
 
 overrides:
-  brace-expansion@<1.1.17: ^1.1.17
-  brace-expansion@<1.1.18: ^1.1.18
-  brace-expansion@>=2.0.0 <2.1.3: ^2.1.3
-  brace-expansion@>=2.0.0 <2.1.4: ^2.1.4
-  brace-expansion@>=4.0.0 <5.0.9: ^5.0.9
   chokidar: '>=5'
-  esbuild@<=0.24.2: ^0.28.1
+  esbuild@<=0.24.2: ^0.25.0
   eslint-import-resolver-typescript: '^4.4.5'
-  fast-uri@>=3.0.0 <3.1.5: ^3.1.5
   immutable@<3.8.3: ^3.8.3
   immutable@<4.3.9: ^4.3.9
-  js-yaml@>=4.0.0 <4.3.0: ^4.3.0
-  lodash@<=4.17.23: ^4.17.24
-  lodash@>=4.0.0 <=4.17.23: ^4.17.24
-  postcss@<8.5.10: ^8.5.10
-  postcss@<=8.5.11: ^8.5.12
-  postcss@<=8.5.17: ^8.5.18
-  postcss@<=8.5.22: ^8.5.23
+  lodash@<=4.17.23: ^4.18.1
+  lodash@>=4.0.0 <=4.17.23: ^4.18.1
   semver: '>=7'
-  sharp@<0.35.0: ^0.35.0
   ua-parser-js: '>=2'
   uuid@<11.1.1: ^14
 

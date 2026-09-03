@@ -51,6 +51,7 @@ updates:
       - '/next-i18n/infra/'
       - '/next-i18n/infra/function/'
       - '/next-ts-biome-example/'
+      - '/next-ts-oxc-example/'
       - '/next-zustand-example/'
       - '/nextjs-dynamic-routing-app/app/'
       - '/sticky-example/'

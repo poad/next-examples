@@ -1,9 +1,7 @@
 {
   "app": "npx tsx bin/backend.ts",
   "watch": {
-    "include": [
-      "**"
-    ],
+    "include": ["**"],
     "exclude": [
       "README.md",
       "cdk*.json",

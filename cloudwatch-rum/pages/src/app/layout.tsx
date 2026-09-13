@@ -1,5 +1,6 @@
 'use client';
-import { ReactNode, useState } from 'react';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import MenuIcon from '@mui/icons-material/Menu';
 import {
   AppBar,
   Box,
@@ -15,13 +16,12 @@ import {
   ThemeProvider,
   Typography,
 } from '@mui/material';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import MenuIcon from '@mui/icons-material/Menu';
-import themes from './styles/theme';
-import { useTheme } from '@mui/material/styles';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
-import { Roboto } from 'next/font/google';
+import { useTheme } from '@mui/material/styles';
 import { AwsRum, AwsRumConfig } from 'aws-rum-web';
+import { Roboto } from 'next/font/google';
+import { ReactNode, useState } from 'react';
+import themes from './styles/theme';
 
 const drawerWidth = 240;
 
@@ -139,7 +139,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       sessionSampleRate: 1,
       identityPoolId: 'us-west-2:10814a26-356a-4508-ab85-92191012e076',
       endpoint: 'https://dataplane.rum.us-west-2.amazonaws.com',
-      telemetries: ['performance','errors','http'],
+      telemetries: ['performance', 'errors', 'http'],
       allowCookies: true,
       enableXRay: false,
     };
@@ -148,12 +148,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     const APPLICATION_VERSION = '1.0.0';
     const APPLICATION_REGION = 'us-west-2';
 
-    new AwsRum(
-      APPLICATION_ID,
-      APPLICATION_VERSION,
-      APPLICATION_REGION,
-      config,
-    );
+    new AwsRum(APPLICATION_ID, APPLICATION_VERSION, APPLICATION_REGION, config);
   } catch {
     // Ignore errors thrown during CloudWatch RUM web client initialization
   }
@@ -168,9 +163,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <AppRouterCacheProvider>
           <ThemeProvider theme={themes}>
             <CssBaseline />
-            <Base>
-              {children}
-            </Base>
+            <Base>{children}</Base>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>

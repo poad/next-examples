@@ -1,5 +1,5 @@
-import { useEffect, JSX } from 'react';
 import { useRouter } from 'next/router';
+import { useEffect, JSX } from 'react';
 import languageDetector from './languageDetector';
 
 export const useRedirect = (to?: string): JSX.Element => {
@@ -29,7 +29,8 @@ export const Redirect = (): JSX.Element => {
   return <></>;
 };
 
-export const getRedirect = (to: string | undefined) => function Redirect(): JSX.Element {
-  useRedirect(to);
-  return <></>;
-};
+export const getRedirect = (to: string | undefined) =>
+  function Redirect(): JSX.Element {
+    useRedirect(to);
+    return <></>;
+  };

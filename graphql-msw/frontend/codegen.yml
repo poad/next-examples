@@ -1,5 +1,5 @@
 override: true
-schema: "../schema.graphqls"
+schema: '../schema.graphqls'
 documents: src/**/*.{ts,tsx}
 generates:
   src/gql/:
@@ -12,5 +12,5 @@ generates:
       strictScalars: true
   ./graphql.schema.json:
     plugins:
-      - "introspection"
-      - "jsdoc"
+      - 'introspection'
+      - 'jsdoc'

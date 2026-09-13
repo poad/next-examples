@@ -26,7 +26,7 @@ function signIn() {
 
 export const GitHubSignInButton = () => {
   return (
-    <button type="button" onClick={signIn} className={inter.className}>
+    <button type='button' onClick={signIn} className={inter.className}>
       Sign in by GitHub
     </button>
   );

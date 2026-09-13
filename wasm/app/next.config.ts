@@ -1,6 +1,5 @@
-import { NextConfig } from 'next';
-
 import withBundleAnalyzer from '@next/bundle-analyzer';
+import { NextConfig } from 'next';
 
 const config: NextConfig = {
   output: 'export',
@@ -13,7 +12,8 @@ const config: NextConfig = {
       asyncWebAssembly: true,
       layers: true,
     };
-    config.output.webassemblyModuleFilename = (isServer ? '../' : '') + 'static/wasm/webassembly.wasm';
+    config.output.webassemblyModuleFilename =
+      (isServer ? '../' : '') + 'static/wasm/webassembly.wasm';
     return config;
   },
 };

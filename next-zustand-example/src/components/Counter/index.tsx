@@ -1,6 +1,6 @@
-import Box from '@mui/material/Box';
 import Add from '@mui/icons-material/Add';
 import Remove from '@mui/icons-material/Remove';
+import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
 import { CounterState, useCounterStore } from '../../store';
 
@@ -12,11 +12,11 @@ export const Counter = () => {
   return (
     <Box>
       <Box>
-        <IconButton color="success" onClick={() => increment(1)}>
+        <IconButton color='success' onClick={() => increment(1)}>
           <Add />
         </IconButton>
         {count}
-        <IconButton color="error" onClick={() => decrement(1)}>
+        <IconButton color='error' onClick={() => decrement(1)}>
           <Remove />
         </IconButton>
       </Box>

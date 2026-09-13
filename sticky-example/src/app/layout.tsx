@@ -1,20 +1,20 @@
 'use client';
 
 import './layout.css';
-import { ReactNode, useState } from 'react';
 import { CssBaseline, ThemeProvider, useMediaQuery } from '@mui/material';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
-import { darkTheme, lightTheme } from './theme';
-import { Menu } from '../components/Menu';
-import { Header } from '../components/Header';
+import { ReactNode, useState } from 'react';
 import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
+import { Menu } from '../components/Menu';
+import { darkTheme, lightTheme } from './theme';
 
 const drawerWidth = 240;
 
 export default function Layout({ children }: { children: ReactNode }) {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const [darkMode, setDarkMode] = useState<boolean>(
-    prefersDarkMode ? true : false,
+    prefersDarkMode ? true : false
   );
 
   const [open, setOpen] = useState(false);
@@ -24,7 +24,7 @@ export default function Layout({ children }: { children: ReactNode }) {
   }
 
   return (
-    <html lang="en">
+    <html lang='en'>
       <body
         style={{
           fontKerning: 'normal',
@@ -42,9 +42,7 @@ export default function Layout({ children }: { children: ReactNode }) {
             onThemeChange={setDarkMode}
           />
           <Menu width={drawerWidth} open={open} onClose={handleDrawerToggle} />
-          <AppRouterCacheProvider>
-            {children}
-          </AppRouterCacheProvider>
+          <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
           <Footer />
         </ThemeProvider>
       </body>

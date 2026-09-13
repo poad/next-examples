@@ -1,5 +1,5 @@
 override: true
-schema: "../schema.graphqls"
+schema: '../schema.graphqls'
 documents: null
 generates:
   lambda/generated/graphql.ts:
@@ -10,10 +10,10 @@ generates:
         DateTime: string
       strictScalars: true
     plugins:
-      - "typescript"
-      - "typescript-resolvers"
-      - "typescript-validation-schema"
+      - 'typescript'
+      - 'typescript-resolvers'
+      - 'typescript-validation-schema'
   ./graphql.schema.json:
     plugins:
-      - "introspection"
-      - "jsdoc"
+      - 'introspection'
+      - 'jsdoc'

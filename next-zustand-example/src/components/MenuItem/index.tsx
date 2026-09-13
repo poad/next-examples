@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
 import { ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
-import Link from 'next/link';
 import { useTheme } from '@mui/material/styles';
+import Link from 'next/link';
+import { ReactNode } from 'react';
 
 const drawerWidth = 240;
 
@@ -22,8 +22,8 @@ const MenuItem = ({ keyName, text, href, icon, external }: MenuItemProps) => {
       <Link
         key={`link-${keyName}`}
         href={href}
-        target="_blank"
-        rel="noreferrer"
+        target='_blank'
+        rel='noreferrer'
       >
         <ListItemButton
           key={`${keyName}-${text}`}
@@ -34,11 +34,9 @@ const MenuItem = ({ keyName, text, href, icon, external }: MenuItemProps) => {
               backgroundColor: theme.palette.primary.light,
             },
           }}
-          onClick={
-            () => {
-              // no-op for external links
-            }
-          }
+          onClick={() => {
+            // no-op for external links
+          }}
         >
           <ListItemIcon>{icon}</ListItemIcon>
           <ListItemText primary={text} />
@@ -57,11 +55,9 @@ const MenuItem = ({ keyName, text, href, icon, external }: MenuItemProps) => {
             backgroundColor: theme.palette.primary.light,
           },
         }}
-        onClick={
-          () => {
-            // no-op for internal links
-          }
-        }
+        onClick={() => {
+          // no-op for internal links
+        }}
       >
         <ListItemIcon>{icon}</ListItemIcon>
         <ListItemText primary={text} />

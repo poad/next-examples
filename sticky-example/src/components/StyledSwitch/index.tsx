@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { SwitchProps, Switch, Theme } from '@mui/material';
 
 export const StyledSwitch = styled((props: SwitchProps) => (
-  <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
+  <Switch focusVisibleClassName='.Mui-focusVisible' disableRipple {...props} />
 ))(({ theme }: { theme: Theme }) => ({
   width: 42,
   height: 26,

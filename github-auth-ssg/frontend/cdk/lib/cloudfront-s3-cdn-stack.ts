@@ -15,7 +15,7 @@ export class NextCloudFrontTemplateStack extends cdk.Stack {
   constructor(
     scope: Construct,
     id: string,
-    props: NextCloudFrontTemplateStackProps,
+    props: NextCloudFrontTemplateStackProps
   ) {
     super(scope, id, props);
 
@@ -40,7 +40,7 @@ export class NextCloudFrontTemplateStack extends cdk.Stack {
               Referer: hash,
             },
             protocolPolicy: cloudfront.OriginProtocolPolicy.HTTP_ONLY,
-          },
+          }
         ),
         cachePolicy: cloudfront.CachePolicy.CACHING_DISABLED,
       },
@@ -89,7 +89,7 @@ export class NextCloudFrontTemplateStack extends cdk.Stack {
             'aws:PrincipalArn': new iam.ArnPrincipal(deployRole.roleArn).arn,
           },
         },
-      }),
+      })
     );
     s3bucket.addToResourcePolicy(
       new iam.PolicyStatement({
@@ -102,7 +102,7 @@ export class NextCloudFrontTemplateStack extends cdk.Stack {
             'aws:Referer': hash,
           },
         },
-      }),
+      })
     );
     s3bucket.addToResourcePolicy(
       new iam.PolicyStatement({
@@ -115,7 +115,7 @@ export class NextCloudFrontTemplateStack extends cdk.Stack {
             's3:ResourceAccount': account,
           },
         },
-      }),
+      })
     );
 
     new deployment.BucketDeployment(this, 'DeployWebsite', {

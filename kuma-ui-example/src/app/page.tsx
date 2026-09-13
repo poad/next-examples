@@ -11,15 +11,15 @@ export default function Home() {
         </p>
         <div className={css.divisionInDescription}>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
+            target='_blank'
+            rel='noopener noreferrer'
             className={css.linkInDescription}
           >
             By{' '}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
+              src='/vercel.svg'
+              alt='Vercel Logo'
               className={css.vercelLogo}
               width={100}
               height={24}
@@ -32,8 +32,8 @@ export default function Home() {
       <div className={css.center}>
         <Image
           className={css.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
+          src='/next.svg'
+          alt='Next.js Logo'
           width={180}
           height={37}
           priority
@@ -42,10 +42,10 @@ export default function Home() {
 
       <div className={css.grid}>
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
           className={css.card}
-          target="_blank"
-          rel="noopener noreferrer"
+          target='_blank'
+          rel='noopener noreferrer'
         >
           <h2 className={css.cardH2}>
             Docs <span>-&gt;</span>
@@ -56,10 +56,10 @@ export default function Home() {
         </a>
 
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
           className={css.card}
-          target="_blank"
-          rel="noopener noreferrer"
+          target='_blank'
+          rel='noopener noreferrer'
         >
           <h2 className={css.cardH2}>
             Learn <span>-&gt;</span>
@@ -70,10 +70,10 @@ export default function Home() {
         </a>
 
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href='https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
           className={css.card}
-          target="_blank"
-          rel="noopener noreferrer"
+          target='_blank'
+          rel='noopener noreferrer'
         >
           <h2 className={css.cardH2}>
             Templates <span>-&gt;</span>
@@ -82,10 +82,10 @@ export default function Home() {
         </a>
 
         <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href='https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
           className={css.card}
-          target="_blank"
-          rel="noopener noreferrer"
+          target='_blank'
+          rel='noopener noreferrer'
         >
           <h2 className={css.cardH2}>
             Deploy <span>-&gt;</span>

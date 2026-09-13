@@ -1,12 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext.asynciterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext.asynciterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,

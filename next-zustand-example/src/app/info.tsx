@@ -6,7 +6,7 @@ import { Counter } from '../components/Counter/index.jsx';
 const Info = (): JSX.Element => {
   return (
     <>
-      <Box component="main" sx={{ width: '100%', color: '#333' }}>
+      <Box component='main' sx={{ width: '100%', color: '#333' }}>
         <Box
           sx={{
             margin: '0',

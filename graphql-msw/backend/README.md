@@ -22,13 +22,13 @@ This project has been migrated to Apollo Server v5 with the following improvemen
 
 ## Useful commands
 
-* `pnpm generate`   generate GraphQL types from schema
-* `pnpm build`      compile typescript to js
-* `pnpm watch`      watch for changes and compile
-* `pnpm test`       perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+- `pnpm generate` generate GraphQL types from schema
+- `pnpm build` compile typescript to js
+- `pnpm watch` watch for changes and compile
+- `pnpm test` perform the jest unit tests
+- `cdk deploy` deploy this stack to your default AWS account/region
+- `cdk diff` compare deployed stack with current state
+- `cdk synth` emits the synthesized CloudFormation template
 
 ## Apollo Server v5 Migration Notes
 

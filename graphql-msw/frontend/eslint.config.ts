@@ -1,16 +1,14 @@
-import { defineConfig, includeIgnoreFile } from 'eslint/config';
-import eslint from '@eslint/js';
-import nextVitals from 'eslint-config-next/core-web-vitals';
-import nextTs from 'eslint-config-next/typescript';
-import { parser } from 'typescript-eslint';
-import globals from 'globals';
-
-import stylistic from '@stylistic/eslint-plugin';
-// @ts-expect-error ignore type errors
-import pluginPromise from 'eslint-plugin-promise';
-
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import eslint from '@eslint/js';
+import stylistic from '@stylistic/eslint-plugin';
+import nextVitals from 'eslint-config-next/core-web-vitals';
+import nextTs from 'eslint-config-next/typescript';
+// @ts-expect-error ignore type errors
+import pluginPromise from 'eslint-plugin-promise';
+import { defineConfig, includeIgnoreFile } from 'eslint/config';
+import globals from 'globals';
+import { parser } from 'typescript-eslint';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -37,12 +35,7 @@ export default defineConfig(
   eslint.configs.recommended,
   pluginPromise.configs['flat/recommended'],
   {
-    files: [
-      'src/**/*.ts',
-      'src/**/*.tsx',
-      '*.ts',
-      '*.tsx',
-    ],
+    files: ['src/**/*.ts', 'src/**/*.tsx', '*.ts', '*.tsx'],
     plugins: {
       '@stylistic': stylistic,
     },
@@ -66,5 +59,5 @@ export default defineConfig(
       '@stylistic/semi': ['error', 'always'],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
     },
-  },
+  }
 );

@@ -7,11 +7,11 @@ const GITHUB_OAUTH_CLIENT_SECRET = process.env
   .GITHUB_OAUTH_CLIENT_SECRET as string;
 
 const QUERY = gql`
-query {
-	viewer {
-    databaseId
+  query {
+    viewer {
+      databaseId
+    }
   }
-}
 `;
 
 interface AccessTokenResponse {
@@ -21,12 +21,12 @@ interface AccessTokenResponse {
 }
 
 type GraphQLResponse =
-	| {
-	  viewer: {
-	    databaseId: number;
-	  };
-	}
-	| GraphQLError;
+  | {
+      viewer: {
+        databaseId: number;
+      };
+    }
+  | GraphQLError;
 
 const client = new GraphQLClient('https://api.github.com/graphql');
 
@@ -46,7 +46,7 @@ const accessToken = async (code: string): Promise<AccessTokenResponse> => {
       headers: {
         Accept: 'application/json',
       },
-    },
+    }
   );
 
   return response.json() as Promise<AccessTokenResponse>;
@@ -58,12 +58,12 @@ const graphqlRequest = async (token: string): Promise<GraphQLResponse> => {
     {},
     {
       authorization: `token ${token}`,
-    },
+    }
   );
 };
 
 export const handler = async (
-  event: APIGatewayProxyEvent,
+  event: APIGatewayProxyEvent
 ): Promise<APIGatewayProxyResult> => {
   if (event.body) {
     const code = new URLSearchParams(event.body).get('code')?.toString();

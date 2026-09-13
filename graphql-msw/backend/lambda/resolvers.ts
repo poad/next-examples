@@ -1,8 +1,8 @@
+import { Logger } from '@aws-lambda-powertools/logger';
 import { S3Client, GetObjectCommand } from '@aws-sdk/client-s3';
+import { APIGatewayProxyEvent, Context } from 'aws-lambda';
 import { GraphQLError } from 'graphql';
 import { Pokemon, Resolvers } from './generated/graphql.js';
-import { APIGatewayProxyEvent, Context } from 'aws-lambda';
-import { Logger } from '@aws-lambda-powertools/logger';
 
 // Context型定義（index.tsと同じ）
 interface MyContext {
@@ -27,7 +27,7 @@ const getPokemons = async (logger?: Logger): Promise<Pokemon[] | undefined> => {
       new GetObjectCommand({
         Bucket: S3_BUCKET_NAME,
         Key: S3_OBJECT_KEY,
-      }),
+      })
     );
 
     const s3objectBody = await s3object.Body?.transformToString();

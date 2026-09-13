@@ -12,12 +12,7 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "skipLibCheck": true,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext.asynciterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext.asynciterable", "esnext"],
     "plugins": [
       {
         "name": "next"
@@ -30,19 +25,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "sourceRoot": "src",
-    "typeRoots": [
-      "./node_modules/@types"
-    ],
+    "typeRoots": ["./node_modules/@types"],
     "paths": {
-      "~/*": [
-        "../*"
-      ],
-      "@/*": [
-        "../*"
-      ],
-      "../*": [
-        "../*"
-      ]
+      "~/*": ["../*"],
+      "@/*": ["../*"],
+      "../*": ["../*"]
     },
     "jsxImportSource": "@emotion/react",
     "incremental": true

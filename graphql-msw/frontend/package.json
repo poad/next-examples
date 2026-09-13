@@ -8,8 +8,8 @@
     "build": "next build",
     "export": "next build",
     "start": "next start",
-    "lint-fix": "eslint . --fix",
-    "lint": "eslint .",
+    "lint-fix": "oxfmt && oxlint --fix",
+    "lint": "oxfmt --check && oxlint",
     "clean": "rimraf build",
     "generate": "graphql-codegen --config codegen.yml",
     "analyze": "cross-env ANALYZE=true pnpm build",
@@ -45,6 +45,8 @@
     "eslint-plugin-promise": "^7.3.0",
     "globals": "^17.11.0",
     "jiti": "^2.7.0",
+    "oxfmt": "^0.65.0",
+    "oxlint": "^1.81.0",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.68.0"
   }

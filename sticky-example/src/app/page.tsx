@@ -28,13 +28,13 @@ function Home() {
       { accessorKey: 'type1', header: 'タイプ１' },
       { accessorKey: 'type2', header: 'タイプ２' },
     ],
-    [],
+    []
   );
 
   return (
     <>
       <Box
-        component="main"
+        component='main'
         sx={{
           marginTop: '64px',
           width: '100%',
@@ -51,16 +51,18 @@ function Home() {
             lineHeight: '1.15',
           }}
         >
-          <Typography component="h1" align="center">
+          <Typography component='h1' align='center'>
             mui with sticky table
           </Typography>
         </Box>
 
         <Paper elevation={0}>
           <MaterialReactTable
-            muiTableContainerProps={({table}) =>({
+            muiTableContainerProps={({ table }) => ({
               sx: {
-                height: table.getState().isFullScreen ? '100vh' : 'calc(100vh - 80px - 4.5rem)',
+                height: table.getState().isFullScreen
+                  ? '100vh'
+                  : 'calc(100vh - 80px - 4.5rem)',
               },
             })}
             columns={columns}

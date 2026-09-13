@@ -1,5 +1,6 @@
 'use client';
 
+import DashboardIcon from '@mui/icons-material/Dashboard';
 import {
   Box,
   Divider,
@@ -9,7 +10,6 @@ import {
   ListItemIcon,
   ListItemText,
 } from '@mui/material';
-import DashboardIcon from '@mui/icons-material/Dashboard';
 import { useTheme } from '@mui/material/styles';
 import { Inter } from 'next/font/google';
 
@@ -32,15 +32,18 @@ export function Menu({
 
   return (
     <Box
-      component="nav"
+      component='nav'
       sx={{
-        textAlign: 'center', width: { sm: width }, flexShrink: { sm: 0 }, display: 'contents',
+        textAlign: 'center',
+        width: { sm: width },
+        flexShrink: { sm: 0 },
+        display: 'contents',
       }}
-      aria-label="folders"
+      aria-label='folders'
     >
       <Drawer
-        variant="temporary"
-        anchor="left"
+        variant='temporary'
+        anchor='left'
         open={open}
         onClose={onClose}
         sx={{

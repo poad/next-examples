@@ -9,7 +9,7 @@ export const nextJsExport = () => {
     })
       .filter(
         (p) =>
-          p.isFile() && (p.name.endsWith('.js') || p.name.endsWith('.d.ts')),
+          p.isFile() && (p.name.endsWith('.js') || p.name.endsWith('.d.ts'))
       )
       .map((p) => `${process.cwd()}/${f}/${p.name}`)
       .forEach((file) => {

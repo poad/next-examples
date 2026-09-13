@@ -1,7 +1,7 @@
 #!/usr/bin/env node
+import * as cdk from 'aws-cdk-lib';
 import { InfraStack } from '../lib/infra-stack.js';
 import { nextJsExport } from '../lib/process/setup.js';
-import * as cdk from 'aws-cdk-lib';
 
 nextJsExport();
 

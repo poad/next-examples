@@ -4,16 +4,22 @@
   "scripts": {
     "dev": "next dev  --turbopack",
     "build": "next build",
-    "start": "next build && npx serve@latest out"
+    "start": "next build && npx serve@latest out",
+    "lint": "oxfmt --check && oxlint",
+    "lint-fix": "oxfmt && oxlint --fix"
   },
   "dependencies": {
     "next": "^16.3.3",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
+  "devDependencies": {
+    "oxfmt": "^0.65.0",
+    "oxlint": "^1.81.0"
+  },
   "engines": {
     "npm": "use pnpm please!",
-    "yarn": "use pnpm please!",
-    "pnpm": ">=8.6.12"
+    "pnpm": ">=8.6.12",
+    "yarn": "use pnpm please!"
   }
 }

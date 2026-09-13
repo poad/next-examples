@@ -1,9 +1,8 @@
 import { Box, Link, Typography } from '@mui/material';
+import { ReactNode } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
-
 import Layout from '../../components/Layout/';
 import { getStaticPaths, makeStaticProps } from '../../lib/getStatic';
-import { ReactNode } from 'react';
 
 function CardStyleLink({
   children,
@@ -51,7 +50,7 @@ function Home() {
 
   return (
     <Layout title={t('home:title')}>
-      <Box component="main" sx={{ width: '100%', color: '#333' }}>
+      <Box component='main' sx={{ width: '100%', color: '#333' }}>
         <Box
           sx={{
             margin: '0',
@@ -60,16 +59,16 @@ function Home() {
             lineHeight: '1.15',
           }}
         >
-          <Typography component="h1" align="center" fontSize="48px">
+          <Typography component='h1' align='center' fontSize='48px'>
             {t('home:h1')}
           </Typography>
         </Box>
-        <Typography align="center">
+        <Typography align='center'>
           <Trans
             t={t}
-            i18nKey="home:navigation"
+            i18nKey='home:navigation'
             values={{ code: 'pages/index.tsx' }}
-            components={[<code key="nav">pages/index.tsx</code>]}
+            components={[<code key='nav'>pages/index.tsx</code>]}
             shouldUnescape
           />
         </Typography>
@@ -84,20 +83,20 @@ function Home() {
             textDecoration: 'none',
           }}
         >
-          <CardStyleLink href="https://nextjs.org/docs">
-            <Typography component="h3">{t('home:doc')} &rarr;</Typography>
-            <Typography component="p">{t('home:docDesc')}</Typography>
+          <CardStyleLink href='https://nextjs.org/docs'>
+            <Typography component='h3'>{t('home:doc')} &rarr;</Typography>
+            <Typography component='p'>{t('home:docDesc')}</Typography>
           </CardStyleLink>
-          <CardStyleLink href="https://nextjs.org/learn" className="card">
-            <Typography component="h3">{t('home:learn')} &rarr;</Typography>
-            <Typography component="p">{t('home:learnDesc')}</Typography>
+          <CardStyleLink href='https://nextjs.org/learn' className='card'>
+            <Typography component='h3'>{t('home:learn')} &rarr;</Typography>
+            <Typography component='p'>{t('home:learnDesc')}</Typography>
           </CardStyleLink>
           <CardStyleLink
-            href="https://github.com/zeit/next.js/tree/master/examples"
-            className="card"
+            href='https://github.com/zeit/next.js/tree/master/examples'
+            className='card'
           >
-            <Typography component="h3">{t('home:examples')} &rarr;</Typography>
-            <Typography component="p">{t('home:examplesDesc')}</Typography>
+            <Typography component='h3'>{t('home:examples')} &rarr;</Typography>
+            <Typography component='p'>{t('home:examplesDesc')}</Typography>
           </CardStyleLink>
         </Box>
       </Box>

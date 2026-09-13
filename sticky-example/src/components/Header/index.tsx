@@ -1,5 +1,6 @@
 'use client';
 
+import MenuIcon from '@mui/icons-material/Menu';
 import {
   AppBar,
   Box,
@@ -8,7 +9,6 @@ import {
   IconButton,
   Toolbar,
 } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '@mui/material/styles';
 import { StyledSwitch } from '../StyledSwitch';
 
@@ -25,16 +25,16 @@ export function Header({
 
   return (
     <AppBar
-      position="fixed"
+      position='fixed'
       sx={{
         width: '100%',
       }}
     >
       <Toolbar>
         <IconButton
-          color="inherit"
-          aria-label="open drawer"
-          edge="start"
+          color='inherit'
+          aria-label='open drawer'
+          edge='start'
           onClick={onMenuClick}
         >
           <MenuIcon />
@@ -58,7 +58,7 @@ export function Header({
                   checked={darkMode}
                 />
               }
-              label="Dark Mode"
+              label='Dark Mode'
             />
           </FormGroup>
         </Box>

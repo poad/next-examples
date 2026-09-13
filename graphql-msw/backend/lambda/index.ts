@@ -7,17 +7,15 @@ import {
   startServerAndCreateLambdaHandler,
   handlers,
 } from '@as-integrations/aws-lambda';
-import {
-  APIGatewayProxyEvent,
-  Context,
-} from 'aws-lambda';
 import { Logger } from '@aws-lambda-powertools/logger';
+import { APIGatewayProxyEvent, Context } from 'aws-lambda';
 import schemaWithResolvers from './schema.js';
 
 // AWS Lambda Powertools Logger設定
 const logger = new Logger({
   serviceName: 'graphql-api',
-  logLevel: (process.env.LOG_LEVEL as 'DEBUG' | 'INFO' | 'WARN' | 'ERROR') || 'INFO',
+  logLevel:
+    (process.env.LOG_LEVEL as 'DEBUG' | 'INFO' | 'WARN' | 'ERROR') || 'INFO',
   environment: process.env.NODE_ENV || 'development',
 });
 
@@ -62,12 +60,12 @@ const server = new ApolloServer<MyContext>({
   plugins: [
     process.env.NODE_ENV === 'production'
       ? ApolloServerPluginLandingPageProductionDefault({
-        footer: false,
-      })
+          footer: false,
+        })
       : ApolloServerPluginLandingPageLocalDefault({
-        embed: false,
-        footer: false,
-      }),
+          embed: false,
+          footer: false,
+        }),
   ],
 });
 
@@ -98,7 +96,7 @@ export const handler = startServerAndCreateLambdaHandler(
         logger,
       };
     },
-  },
+  }
 );
 
 export default handler;

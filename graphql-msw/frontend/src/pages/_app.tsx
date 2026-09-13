@@ -1,7 +1,4 @@
-import {
-  ApolloClient,
-  InMemoryCache,
-} from '@apollo/client';
+import { ApolloClient, InMemoryCache } from '@apollo/client';
 import { HttpLink } from '@apollo/client/link/http';
 import { ApolloProvider } from '@apollo/client/react';
 import type { AppProps } from 'next/app';

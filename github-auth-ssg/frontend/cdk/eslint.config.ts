@@ -1,17 +1,15 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { defineConfig } from 'eslint/config';
-import cdkPlugin from 'eslint-plugin-awscdk';
+import { includeIgnoreFile } from '@eslint/compat';
 import eslint from '@eslint/js';
-import { configs, parser } from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
-import { importX } from 'eslint-plugin-import-x';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
-
+import cdkPlugin from 'eslint-plugin-awscdk';
+import { importX } from 'eslint-plugin-import-x';
 // @ts-expect-error ignore type errors
 import pluginPromise from 'eslint-plugin-promise';
-
-import { includeIgnoreFile } from '@eslint/compat';
+import { defineConfig } from 'eslint/config';
+import { configs, parser } from 'typescript-eslint';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -20,13 +18,7 @@ const gitignorePath = path.resolve(__dirname, '.gitignore');
 export default defineConfig(
   includeIgnoreFile(gitignorePath),
   {
-    ignores: [
-      '**/*.d.ts',
-      'out',
-      'cdk.out',
-      '**/generated/**',
-      '**/*.js',
-    ],
+    ignores: ['**/*.d.ts', 'out', 'cdk.out', '**/generated/**', '**/*.js'],
   },
   eslint.configs.recommended,
   ...configs.strict,
@@ -47,16 +39,14 @@ export default defineConfig(
         tsconfigRootDir: __dirname,
       },
     },
-    extends: [
-      'import-x/flat/recommended',
-      cdkPlugin.configs.recommended,
-    ],
+    extends: ['import-x/flat/recommended', cdkPlugin.configs.recommended],
     settings: {
       'import-x/resolver-next': [
         createTypeScriptImportResolver({
           alwaysTryTypes: true,
         }),
-      ]    },
+      ],
+    },
     rules: {
       '@stylistic/semi': ['error', 'always'],
       '@stylistic/indent': ['error', 2],
@@ -67,7 +57,7 @@ export default defineConfig(
       'import-x/order': [
         'error',
         {
-          'groups': [
+          groups: [
             // Imports of builtins are first
             'builtin',
             // Then sibling and parent imports. They can be mingled together
@@ -81,5 +71,5 @@ export default defineConfig(
         },
       ],
     },
-  },
+  }
 );

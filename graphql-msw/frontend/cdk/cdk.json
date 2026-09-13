@@ -1,9 +1,7 @@
 {
   "app": "npx tsx bin/cloudfront-s3-cdn.ts",
   "watch": {
-    "include": [
-      "**"
-    ],
+    "include": ["**"],
     "exclude": [
       "README.md",
       "cdk*.json",
@@ -20,7 +18,6 @@
   "versionReporting": false,
   "pathMetadata": false,
   "context": {
-    "dev": {
-    }
+    "dev": {}
   }
 }

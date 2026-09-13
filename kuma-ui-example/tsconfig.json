@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -22,25 +18,13 @@
       }
     ],
     "incremental": true,
-    "typeRoots": [
-      "./node_modules/@types",
-      ".next"
-    ],
+    "typeRoots": ["./node_modules/@types", ".next"],
     "paths": {
-      "~/*": [
-        "../*"
-      ],
-      "@/*": [
-        "../*"
-      ],
-      "../*": [
-        "../*"
-      ]
+      "~/*": ["../*"],
+      "@/*": ["../*"],
+      "../*": ["../*"]
     },
-    "types": [
-      "node",
-      "react"
-    ],
+    "types": ["node", "react"]
   },
   "include": [
     "**/*.ts",
@@ -51,8 +35,5 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],
-  "exclude": [
-    "node_modules",
-    ".next/types/**/*.ts"
-  ]
+  "exclude": ["node_modules", ".next/types/**/*.ts"]
 }

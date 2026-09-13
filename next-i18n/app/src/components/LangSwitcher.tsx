@@ -3,16 +3,16 @@ import {
   usePathname,
   useSearchParams,
 } from 'next/navigation';
+import { JSX } from 'react-dom';
 import { useTranslation } from 'react-i18next';
 import i18nextConfig from '../../next-i18next.config';
 import languageDetector from '../lib/languageDetector';
-import { JSX } from 'react-dom';
 
 const makeHref = (
   pathname: string,
   pName: string,
   locale?: string,
-  href?: string,
+  href?: string
 ) => {
   if (locale) {
     return href ? `/${locale}${href}` : pName;
@@ -23,14 +23,14 @@ const makeHref = (
 const makePathname = (
   origin: string,
   query: ReadonlyURLSearchParams,
-  locale: string,
+  locale: string
 ) => {
   const params = Object.keys(query);
 
   const pathnames = params.map((param) =>
     param === 'locale'
       ? origin.replace(`[${param}]`, locale)
-      : origin.replace(`[${param}]`, query[param] as string),
+      : origin.replace(`[${param}]`, query[param] as string)
   );
   return pathnames[pathnames.length - 1];
 };

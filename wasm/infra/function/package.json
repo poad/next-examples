@@ -5,16 +5,18 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "lint": "eslint './**/*.ts'",
-    "lint-fix": "eslint --fix './**/*.ts'"
+    "lint": "oxfmt --check && oxlint",
+    "lint-fix": "oxfmt && oxlint --fix"
   },
   "devDependencies": {
+    "oxfmt": "^0.65.0",
+    "oxlint": "^1.81.0",
     "typescript": "^6"
   },
   "engines": {
+    "node": ">=20.0.0",
     "npm": "use pnpm please!",
-    "yarn": "use pnpm please!",
     "pnpm": ">=8.7.1",
-    "node": ">=20.0.0"
+    "yarn": "use pnpm please!"
   }
 }

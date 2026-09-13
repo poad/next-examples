@@ -1,12 +1,12 @@
 import * as crypto from 'crypto';
 import * as cdk from 'aws-cdk-lib';
-import { Construct } from 'constructs';
-import * as s3 from 'aws-cdk-lib/aws-s3';
-import * as origin from 'aws-cdk-lib/aws-cloudfront-origins';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
-import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
+import * as origin from 'aws-cdk-lib/aws-cloudfront-origins';
 import { CacheControl } from 'aws-cdk-lib/aws-codepipeline-actions';
 import * as iam from 'aws-cdk-lib/aws-iam';
+import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
+import { Construct } from 'constructs';
 
 export interface InfraStackProps extends cdk.StackProps {
   readonly appName: string;
@@ -36,7 +36,7 @@ export class InfraStack extends cdk.Stack {
               Referer: hash,
             },
             protocolPolicy: cloudfront.OriginProtocolPolicy.HTTP_ONLY,
-          },
+          }
         ),
         cachePolicy: cloudfront.CachePolicy.CACHING_DISABLED,
       },
@@ -85,7 +85,7 @@ export class InfraStack extends cdk.Stack {
             'aws:PrincipalArn': new iam.ArnPrincipal(deployRole.roleArn).arn,
           },
         },
-      }),
+      })
     );
     s3bucket.addToResourcePolicy(
       new iam.PolicyStatement({
@@ -98,7 +98,7 @@ export class InfraStack extends cdk.Stack {
             'aws:Referer': hash,
           },
         },
-      }),
+      })
     );
     s3bucket.addToResourcePolicy(
       new iam.PolicyStatement({
@@ -111,7 +111,7 @@ export class InfraStack extends cdk.Stack {
             's3:ResourceAccount': account,
           },
         },
-      }),
+      })
     );
 
     new s3deploy.BucketDeployment(this, 'DeployWebsite', {

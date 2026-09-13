@@ -1,4 +1,5 @@
-import { PropsWithChildren, useState } from 'react';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import MenuIcon from '@mui/icons-material/Menu';
 import {
   AppBar,
   Box,
@@ -13,13 +14,12 @@ import {
   Toolbar,
   Typography,
 } from '@mui/material';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '@mui/material/styles';
 import Head from 'next/head';
+import { PropsWithChildren, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import LangSwitcher from '../LangSwitcher';
 import GitHubProjectLink from '../GitHubProjectLink';
+import LangSwitcher from '../LangSwitcher';
 
 const drawerWidth = 240;
 
@@ -73,17 +73,17 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
   );
 
   const appBar = (
-    <AppBar position="fixed" sx={{ width: '100%' }}>
+    <AppBar position='fixed' sx={{ width: '100%' }}>
       <Toolbar>
         <IconButton
-          color="inherit"
-          aria-label="open drawer"
-          edge="start"
+          color='inherit'
+          aria-label='open drawer'
+          edge='start'
           onClick={handleDrawerToggle}
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" noWrap sx={{ flexGrow: 1 }}></Typography>
+        <Typography variant='h6' noWrap sx={{ flexGrow: 1 }}></Typography>
         <LangSwitcher />
       </Toolbar>
     </AppBar>
@@ -91,16 +91,16 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
 
   const drawerBox = (
     <Box
-      component="nav"
-      textAlign="center"
+      component='nav'
+      textAlign='center'
       sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
-      aria-label="folders"
-      display="contents"
+      aria-label='folders'
+      display='contents'
     >
       <Drawer
         container={container}
-        variant="temporary"
-        anchor="left"
+        variant='temporary'
+        anchor='left'
         open={mobileOpen}
         onClose={handleDrawerToggle}
         sx={{
@@ -125,7 +125,7 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
             ? title.concat(' - ', t('common:appName'))
             : t('common:appName')}
         </title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <Box
@@ -142,7 +142,7 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
       </Box>
 
       <footer>
-        <GitHubProjectLink owener="poad" repo="next-i18n-example" />
+        <GitHubProjectLink owener='poad' repo='next-i18n-example' />
       </footer>
     </>
   );

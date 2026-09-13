@@ -16,7 +16,7 @@ export default function gsap() {
           <Gsap />
         </div>
         <div className={styles.grid}>
-          <Link href="/" className={styles.card}>
+          <Link href='/' className={styles.card}>
             <h2 className={inter.className}>
               Home <span>-&gt;</span>
             </h2>

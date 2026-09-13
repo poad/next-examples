@@ -1,10 +1,10 @@
 import * as cdk from 'aws-cdk-lib';
-import { Construct } from 'constructs';
-import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
-import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 import * as iam from 'aws-cdk-lib/aws-iam';
+import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
+import { Construct } from 'constructs';
 
 export interface InfraStackProps extends cdk.StackProps {
   readonly name: string;
@@ -36,7 +36,7 @@ export class InfraStack extends cdk.Stack {
         code: cloudfront.FunctionCode.fromFile({
           filePath: 'function/index.js',
         }),
-      },
+      }
     );
     (
       websiteIndexPageForwardFunction.node
@@ -49,7 +49,7 @@ export class InfraStack extends cdk.Stack {
       {
         originAccessControlName: `${props.name}-static-site-oac`,
         signing: cloudfront.Signing.SIGV4_NO_OVERRIDE,
-      },
+      }
     );
 
     const cf = new cloudfront.Distribution(this, 'CloudFront', {
@@ -66,8 +66,7 @@ export class InfraStack extends cdk.Stack {
           },
         ],
         cachedMethods: cloudfront.CachedMethods.CACHE_GET_HEAD,
-        viewerProtocolPolicy:
-          cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+        viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
       },
       httpVersion: cloudfront.HttpVersion.HTTP2_AND_3,
     });
@@ -83,7 +82,7 @@ export class InfraStack extends cdk.Stack {
             'AWS:SourceArn': `arn:aws:cloudfront::${this.account}:distribution/${cf.distributionId}`,
           },
         },
-      }),
+      })
     );
 
     new s3deploy.BucketDeployment(this, 'DeployWebsite', {
@@ -113,7 +112,7 @@ export class InfraStack extends cdk.Stack {
         actions: ['s3:GetObject'],
         principals: [new iam.StarPrincipal()],
         resources: [`${s3bucket.bucketArn}/*`],
-      }),
+      })
     );
   }
 }

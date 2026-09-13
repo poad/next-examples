@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { BackendStack } from '../lib/backend-stack.js';
 import * as cdk from 'aws-cdk-lib';
+import { BackendStack } from '../lib/backend-stack.js';
 
 const app = new cdk.App();
 

@@ -1,10 +1,9 @@
 import { gql } from '@apollo/client';
 import { useQuery } from '@apollo/client/react';
-import { QueryPokemonListQuery } from '../gql/graphql';
 import { Inter } from 'next/font/google';
-import styles from '../styles/Home.module.css';
-
 import type { JSX } from 'react';
+import { QueryPokemonListQuery } from '../gql/graphql';
+import styles from '../styles/Home.module.css';
 
 const inter = Inter({ subsets: ['latin'] });
 

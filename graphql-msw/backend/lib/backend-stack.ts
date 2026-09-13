@@ -4,8 +4,8 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as nodejs from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as awslogs from 'aws-cdk-lib/aws-logs';
-import * as ssm from 'aws-cdk-lib/aws-ssm';
 import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as ssm from 'aws-cdk-lib/aws-ssm';
 import { Construct } from 'constructs';
 
 interface BackendStackProps extends cdk.StackProps {
@@ -128,42 +128,51 @@ export class BackendStack extends cdk.Stack {
     });
 
     // GraphQL endpoint
-    api.root.addMethod('POST', new apigateway.LambdaIntegration(fn, {
-      proxy: true,
-      integrationResponses: [
-        {
-          statusCode: '200',
-          responseParameters: {
-            'method.response.header.Access-Control-Allow-Origin': '\'*\'',
-            'method.response.header.Access-Control-Allow-Headers': '\'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,Apollo-Require-Preflight\'',
-            'method.response.header.Access-Control-Allow-Methods': '\'GET,POST,OPTIONS\'',
+    api.root.addMethod(
+      'POST',
+      new apigateway.LambdaIntegration(fn, {
+        proxy: true,
+        integrationResponses: [
+          {
+            statusCode: '200',
+            responseParameters: {
+              'method.response.header.Access-Control-Allow-Origin': "'*'",
+              'method.response.header.Access-Control-Allow-Headers':
+                "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,Apollo-Require-Preflight'",
+              'method.response.header.Access-Control-Allow-Methods':
+                "'GET,POST,OPTIONS'",
+            },
           },
-        },
-      ],
-    }), {
-      methodResponses: [
-        {
-          statusCode: '200',
-          responseParameters: {
-            'method.response.header.Access-Control-Allow-Origin': true,
-            'method.response.header.Access-Control-Allow-Headers': true,
-            'method.response.header.Access-Control-Allow-Methods': true,
+        ],
+      }),
+      {
+        methodResponses: [
+          {
+            statusCode: '200',
+            responseParameters: {
+              'method.response.header.Access-Control-Allow-Origin': true,
+              'method.response.header.Access-Control-Allow-Headers': true,
+              'method.response.header.Access-Control-Allow-Methods': true,
+            },
           },
-        },
-      ],
-    });
+        ],
+      }
+    );
 
     // Apollo Server v5 supports GET requests for queries
-    api.root.addMethod('GET', new apigateway.LambdaIntegration(fn, {
-      proxy: true,
-    }));
+    api.root.addMethod(
+      'GET',
+      new apigateway.LambdaIntegration(fn, {
+        proxy: true,
+      })
+    );
 
     new apigateway.GatewayResponse(this, 'UnauthorizedGatewayResponse', {
       restApi: api,
       type: apigateway.ResponseType.UNAUTHORIZED,
       statusCode: '401',
       responseHeaders: {
-        'Access-Control-Allow-Origin': '\'*\'',
+        'Access-Control-Allow-Origin': "'*'",
       },
     });
 
@@ -171,7 +180,7 @@ export class BackendStack extends cdk.Stack {
       restApi: api,
       type: apigateway.ResponseType.DEFAULT_4XX,
       responseHeaders: {
-        'Access-Control-Allow-Origin': '\'*\'',
+        'Access-Control-Allow-Origin': "'*'",
       },
     });
 
@@ -179,7 +188,7 @@ export class BackendStack extends cdk.Stack {
       restApi: api,
       type: apigateway.ResponseType.DEFAULT_5XX,
       responseHeaders: {
-        'Access-Control-Allow-Origin': '\'*\'',
+        'Access-Control-Allow-Origin': "'*'",
       },
     });
 

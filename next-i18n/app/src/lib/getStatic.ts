@@ -1,7 +1,7 @@
-import { serverSideTranslations } from 'next-i18next/pages/serverSideTranslations';
 import { Context } from 'vm';
-import i18nextConfig from '../../next-i18next.config';
 import type { SSRConfig } from 'next-i18next/pages';
+import { serverSideTranslations } from 'next-i18next/pages/serverSideTranslations';
+import i18nextConfig from '../../next-i18next.config';
 
 export const getI18nPaths = () =>
   i18nextConfig.i18n.locales.map((lng) => ({
@@ -17,7 +17,7 @@ export const getStaticPaths = () => ({
 
 export const getI18nProps = async (
   ctx: Context,
-  ns = ['common'],
+  ns = ['common']
 ): Promise<SSRConfig> => {
   const locale = ctx?.params?.locale;
   const props = {
@@ -28,6 +28,6 @@ export const getI18nProps = async (
 
 export const makeStaticProps =
   (ns: string[] = []) =>
-    async (ctx: Context) => ({
-      props: await getI18nProps(ctx, ns),
-    });
+  async (ctx: Context) => ({
+    props: await getI18nProps(ctx, ns),
+  });

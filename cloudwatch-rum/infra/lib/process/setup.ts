@@ -26,7 +26,7 @@ export const nextJsExport = () => {
     .forEach((file) =>
       fs.copyFileSync(
         `${nextJsAppRoot}/src/public/${file}`,
-        `${nextJsAppRoot}/out/${file}`,
-      ),
+        `${nextJsAppRoot}/out/${file}`
+      )
     );
 };

@@ -19,4 +19,3 @@ const config = {
 export default withBundleAnalyzer({
   enabled: import.meta.env?.ANALYZE === 'true',
 })(config);
-

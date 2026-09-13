@@ -1,17 +1,12 @@
 import {
-  Html,
-  Head,
-  Main,
-  NextScript,
-} from 'next/document';
-import {
   documentGetInitialProps,
   DocumentHeadTags,
 } from '@mui/material-nextjs/v15-pagesRouter';
+import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function NextDocument(props) {
   return (
-    <Html lang="en">
+    <Html lang='en'>
       <Head>
         <DocumentHeadTags {...props} />
         ...

@@ -1,13 +1,12 @@
-import { defineConfig, globalIgnores, includeIgnoreFile } from 'eslint/config';
-import eslint from '@eslint/js';
-import stylistic from '@stylistic/eslint-plugin';
-import pluginPromise from 'eslint-plugin-promise';
-import nextVitals from 'eslint-config-next/core-web-vitals';
-import nextTs from 'eslint-config-next/typescript';
-import { configs } from 'typescript-eslint';
-
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import eslint from '@eslint/js';
+import stylistic from '@stylistic/eslint-plugin';
+import nextVitals from 'eslint-config-next/core-web-vitals';
+import nextTs from 'eslint-config-next/typescript';
+import pluginPromise from 'eslint-plugin-promise';
+import { defineConfig, globalIgnores, includeIgnoreFile } from 'eslint/config';
+import { configs } from 'typescript-eslint';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -57,5 +56,5 @@ export default defineConfig(
       '@stylistic/arrow-parens': ['error', 'always'],
       '@stylistic/quotes': ['error', 'single'],
     },
-  },
+  }
 );

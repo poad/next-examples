@@ -30,7 +30,6 @@
     "**/cdk/*"
   ],
   "include": [
-    "eslint.config.ts",
     "next-env.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx",

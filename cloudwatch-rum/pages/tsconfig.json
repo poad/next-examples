@@ -43,7 +43,6 @@
   ],
   "include": [
     ".storybook/**/*.ts",
-    "eslint.config.ts",
     "next-env.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx",

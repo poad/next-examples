@@ -17,5 +17,12 @@
     "newlinesBetween": false,
     "ignoreCase": true
   },
-  "ignorePatterns": ["dist/*", "node_modules/**"]
+  "ignorePatterns": [
+    "dist/*",
+    "node_modules/**",
+    "**/generated/**",
+    "graphql.schema.json",
+    "cdk.out/**",
+    ".cdk.staging/**"
+  ]
 }

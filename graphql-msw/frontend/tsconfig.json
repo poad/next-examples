@@ -44,11 +44,5 @@
     ".next/types/**/*.ts",
     "**/cdk/*"
   ],
-  "include": [
-    "next-env.d.ts",
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "eslint.config.ts",
-    "next.config.ts"
-  ]
+  "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx", "next.config.ts"]
 }

@@ -20,7 +20,7 @@
     "cross-env": "^10.1.0",
     "graphql": "^16.14.2",
     "msw": "^2.15.0",
-    "next": "^16.3.6",
+    "next": "^16.4.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "rxjs": "^7.8.2",
@@ -32,11 +32,11 @@
     "@graphql-codegen/typescript-msw": "^3.0.1",
     "@graphql-codegen/typescript-react-apollo": "^4.4.2",
     "@graphql-typed-document-node/core": "^3.2.0",
-    "@next/bundle-analyzer": "^16.3.6",
-    "@types/node": "^24.13.6",
+    "@next/bundle-analyzer": "^16.4.0",
+    "@types/node": "^24.19.0",
     "@types/react": "^19.3.0",
     "oxfmt": "^0.65.0",
-    "oxlint": "^1.85.0",
+    "oxlint": "^1.86.0",
     "typescript": "^6.0.3"
   }
 }

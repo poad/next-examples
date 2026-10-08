@@ -14,15 +14,15 @@
     "lint-fix": "oxfmt && oxlint --fix"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.270.0",
+    "aws-cdk-lib": "^2.272.0",
     "constructs": "^10.8.1"
   },
   "devDependencies": {
-    "@types/node": "^24.13.6",
+    "@types/node": "^24.19.0",
     "@typescript/native": "npm:typescript@^7.0.2",
-    "aws-cdk": "^2.1142.0",
+    "aws-cdk": "^2.1143.0",
     "oxfmt": "^0.65.0",
-    "oxlint": "^1.85.0",
+    "oxlint": "^1.86.0",
     "tsx": "^4.23.15",
     "typescript": "npm:@typescript/typescript6@^6.0.2"
   }

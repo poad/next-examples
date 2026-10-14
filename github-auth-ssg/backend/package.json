@@ -27,7 +27,7 @@
     "aws-cdk": "^2.1144.0",
     "esbuild": "^0.28.2",
     "oxfmt": "^0.65.0",
-    "oxlint": "^1.86.0",
+    "oxlint": "^1.87.0",
     "tsx": "^4.23.15",
     "typescript": "npm:@typescript/typescript6@^6.0.2"
   }

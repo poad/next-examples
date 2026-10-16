@@ -47,7 +47,7 @@ const Home = (): JSX.Element => {
             lineHeight: '1.15',
           }}
         >
-          <Typography component='h1' align='center' fontSize='48px'>
+          <Typography component='h1' align='center' sx={{ fontSize: '48px' }}>
             Welcome to Next.js!
           </Typography>
         </Box>

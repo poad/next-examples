@@ -1,8 +1,11 @@
-import { graphql, HttpResponse } from 'msw';
+import { graphql } from 'msw/graphql';
+import { HttpResponse } from 'msw/http';
 import { QueryPokemonListDocument } from '../gql/graphql';
 
+const api = graphql.link(process.env.NEXT_PUBLIC_API_URL ?? '');
+
 export const handlers = [
-  graphql.query(QueryPokemonListDocument, () => {
+  api.query(QueryPokemonListDocument, () => {
     return HttpResponse.json({
       data: {
         list: [

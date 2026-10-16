@@ -6,8 +6,9 @@ export const nextJsExport = () => {
   const nextJsAppRoot = `${process.cwd()}/../pages`;
   [`${nextJsAppRoot}/.next`, `${nextJsAppRoot}/out`].forEach((dir) => {
     if (fs.existsSync(dir)) {
-      fs.rmdirSync(dir, {
+      fs.rmSync(dir, {
         recursive: true,
+        force: true,
       });
     }
   });

@@ -5,7 +5,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "pnpm -r --if-present --parallel build",
+    "build": "pnpm -r --if-present build",
     "lint": "pnpm -r --if-present --parallel lint",
     "lint-fix": "pnpm -r --if-present --parallel lint-fix"
   },
@@ -15,7 +15,7 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.13.0",
+      "version": "12.14.0",
       "onFail": "download"
     },
     "runtime": {

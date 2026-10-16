@@ -4,11 +4,12 @@
   "type": "module",
   "scripts": {
     "dev": "pnpm wasm && next dev --turbopack",
-    "build": "cargo install wasm-pack --force & pnpm wasm && next build --webpack",
+    "build": "pnpm wasm && next build --webpack",
     "start": "pnpm wasm && next start",
     "analyze": "ANALYZE=true next build",
     "export": "pnpm wasm && next build",
     "wasm": "wasm-pack build --target web --no-opt wasm",
+    "wasm:setup": "rustup target add wasm32-unknown-unknown && (command -v wasm-pack > /dev/null || npm install --global wasm-pack@0.15.0)",
     "lint": "oxfmt --check && oxlint",
     "lint-fix": "oxfmt && oxlint --fix"
   },

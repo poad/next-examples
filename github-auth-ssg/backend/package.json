@@ -21,13 +21,13 @@
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.164",
-    "@types/node": "^26.6.4",
+    "@types/node": "^26.6.5",
     "@types/qs": "^6.15.1",
     "@typescript/native": "npm:typescript@^7.0.2",
     "aws-cdk": "^2.1145.0",
     "esbuild": "^0.28.2",
     "oxfmt": "^0.72.0",
-    "oxlint": "^1.87.0",
+    "oxlint": "^1.88.0",
     "tsx": "^4.23.15",
     "typescript": "npm:@typescript/typescript6@^6.0.2"
   }

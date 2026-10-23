@@ -19,24 +19,24 @@
     "@apollo/client": "^4.3.3",
     "cross-env": "^10.1.0",
     "graphql": "^17.0.2",
-    "msw": "^3.0.2",
-    "next": "^16.4.2",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0",
+    "msw": "^3.0.3",
+    "next": "^16.4.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "rxjs": "^7.8.2",
     "web-vitals": "^6.2.3"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^7.4.6",
     "@graphql-codegen/client-preset": "^6.2.3",
-    "@graphql-codegen/typescript-msw": "^4.0.1",
+    "@graphql-codegen/typescript-msw": "^4.0.2",
     "@graphql-codegen/typescript-react-apollo": "^5.0.0",
     "@graphql-typed-document-node/core": "^3.2.0",
-    "@next/bundle-analyzer": "^16.4.2",
-    "@types/node": "^26.6.4",
+    "@next/bundle-analyzer": "^16.4.3",
+    "@types/node": "^26.6.5",
     "@types/react": "^19.3.0",
     "oxfmt": "^0.72.0",
-    "oxlint": "^1.87.0",
+    "oxlint": "^1.88.0",
     "typescript": "^7.0.2"
   }
 }

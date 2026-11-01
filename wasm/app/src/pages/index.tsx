@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { useState } from 'react';
-import { sums } from '../../wasm/pkg/wasm_bg.wasm';
+import { sums } from '../../wasm/pkg/wasm.js';
 
 const Home: NextPage = () => {
   const [value, setValue] = useState(0);

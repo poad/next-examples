@@ -52,17 +52,17 @@ minimumReleaseAgeExclude:
   - '@pnpm/exe.win32-arm64@12.17.0'
   - '@pnpm/exe.win32-x64@12.17.0'
 
-  - '@next/bundle-analyzer@16.4.3'
-  - '@next/env@16.4.3'
-  - '@next/swc-darwin-arm64@16.4.3'
-  - '@next/swc-darwin-x64@16.4.3'
-  - '@next/swc-linux-arm64-gnu@16.4.3'
-  - '@next/swc-linux-arm64-musl@16.4.3'
-  - '@next/swc-linux-x64-gnu@16.4.3'
-  - '@next/swc-linux-x64-musl@16.4.3'
-  - '@next/swc-win32-arm64-msvc@16.4.3'
-  - '@next/swc-win32-x64-msvc@16.4.3'
-  - next@16.4.3
+  - '@next/bundle-analyzer@16.4.4'
+  - '@next/env@16.4.4'
+  - '@next/swc-darwin-arm64@16.4.4'
+  - '@next/swc-darwin-x64@16.4.4'
+  - '@next/swc-linux-arm64-gnu@16.4.4'
+  - '@next/swc-linux-arm64-musl@16.4.4'
+  - '@next/swc-linux-x64-gnu@16.4.4'
+  - '@next/swc-linux-x64-musl@16.4.4'
+  - '@next/swc-win32-arm64-msvc@16.4.4'
+  - '@next/swc-win32-x64-msvc@16.4.4'
+  - next@16.4.4
 
   - body-parser@2.4.0
   - follow-redirects@1.16.2

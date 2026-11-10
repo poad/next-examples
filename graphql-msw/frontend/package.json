@@ -32,7 +32,7 @@
     "@graphql-codegen/typescript-msw": "^4.0.2",
     "@graphql-codegen/typescript-react-apollo": "^5.0.0",
     "@graphql-typed-document-node/core": "^3.2.0",
-    "@next/bundle-analyzer": "^16.4.3",
+    "@next/bundle-analyzer": "^16.4.6",
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "oxfmt": "^0.72.0",

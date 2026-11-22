@@ -14,8 +14,8 @@
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "oxfmt": "^0.72.0",
-    "oxlint": "^1.91.0"
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0"
   },
   "engines": {
     "npm": "use pnpm please!",

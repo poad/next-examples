@@ -16,10 +16,10 @@
     "all": "pnpm lint && pnpm build"
   },
   "dependencies": {
-    "@apollo/client": "^4.3.6",
+    "@apollo/client": "^4.3.8",
     "cross-env": "^10.1.0",
     "graphql": "^17.1.0",
-    "msw": "^3.0.3",
+    "msw": "^3.0.5",
     "next": "^16.4.6",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
@@ -27,16 +27,16 @@
     "web-vitals": "^6.2.3"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "^7.4.6",
-    "@graphql-codegen/client-preset": "^6.2.3",
-    "@graphql-codegen/typescript-msw": "^4.0.2",
-    "@graphql-codegen/typescript-react-apollo": "^5.0.0",
+    "@graphql-codegen/cli": "^8.0.0",
+    "@graphql-codegen/client-preset": "^7.0.0",
+    "@graphql-codegen/typescript-msw": "^5.0.0",
+    "@graphql-codegen/typescript-react-apollo": "^6.0.1",
     "@graphql-typed-document-node/core": "^3.2.0",
     "@next/bundle-analyzer": "^16.4.6",
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
-    "oxfmt": "^0.72.0",
-    "oxlint": "^1.91.0",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
     "typescript": "^7.0.2"
   }
 }

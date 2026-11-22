@@ -26,15 +26,15 @@
     "web-vitals": "^6.2.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.6.5",
+    "@biomejs/biome": "^2.6.7",
     "@next/bundle-analyzer": "^16.4.6",
-    "@tailwindcss/postcss": "^4.3.4",
+    "@tailwindcss/postcss": "^4.3.5",
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "autoprefixer": "^10.6.2",
-    "postcss": "^8.5.32",
+    "postcss": "^8.5.33",
     "rimraf": "^6.1.4",
-    "tailwindcss": "^4.3.4",
+    "tailwindcss": "^4.3.5",
     "typescript": "^7.0.2"
   }
 }

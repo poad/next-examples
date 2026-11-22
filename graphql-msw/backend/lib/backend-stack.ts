@@ -31,7 +31,7 @@ export class BackendStack extends cdk.Stack {
 
     const fn = new nodejs.NodejsFunction(this, 'LambdaFunction', {
       functionName,
-      runtime: lambda.Runtime.NODEJS_22_X,
+      runtime: lambda.Runtime.NODEJS_26_X,
       architecture: lambda.Architecture.ARM_64,
       entry: './lambda/index.ts',
       retryAttempts: 0,
